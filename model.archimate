@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<archimate:model xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:archimate="http://www.archimatetool.com/archimate" name="(new model)" id="id-9b95c4cb7b1d44c6900ed1264f2f1230" version="5.0.0">
+<archimate:model xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:archimate="http://www.archimatetool.com/archimate" name="Bank Raya" id="id-9b95c4cb7b1d44c6900ed1264f2f1230" version="5.0.0">
   <folder name="Strategy" id="id-a0500e75f2d44db48d99eea95f2abebb" type="strategy"/>
   <folder name="Business" id="id-2818b58fd9cd45d0a3bb7d746ce8fb1b" type="business"/>
   <folder name="Application" id="id-1d0b433baf0e4b0b91c6d6ee77ce356c" type="application"/>
@@ -9,6 +9,6 @@
   <folder name="Other" id="id-365c3907cacd4527b1dcdf3ff6dd9b60" type="other"/>
   <folder name="Relations" id="id-34b80ce5e76c4b5b8077a200920ba57a" type="relations"/>
   <folder name="Views" id="id-5f74c288aca549efa2518ac590a157ca" type="diagrams">
-    <element xsi:type="archimate:ArchimateDiagramModel" name="EA Raya" id="id-dcef9b670d474990b7d312dd89715a93"/>
+    <element xsi:type="archimate:ArchimateDiagramModel" name="00_EA Repository View" id="id-dcef9b670d474990b7d312dd89715a93"/>
   </folder>
 </archimate:model>
