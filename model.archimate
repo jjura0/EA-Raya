@@ -10,5 +10,7 @@
   <folder name="Relations" id="id-34b80ce5e76c4b5b8077a200920ba57a" type="relations"/>
   <folder name="Views" id="id-5f74c288aca549efa2518ac590a157ca" type="diagrams">
     <element xsi:type="archimate:ArchimateDiagramModel" name="00_EA Repository View" id="id-dcef9b670d474990b7d312dd89715a93"/>
+    <element xsi:type="archimate:ArchimateDiagramModel" name="BA_01_Organization Actor" id="id-df38c35df6ff414da7a6df7b355cdef7"/>
+    <element xsi:type="archimate:ArchimateDiagramModel" name="BA_02_Business Process" id="id-8d6b60a15f3349a9a1f0768ef69a3bc7"/>
   </folder>
 </archimate:model>
