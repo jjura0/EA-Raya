@@ -1,16 +1,767 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <archimate:model xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:archimate="http://www.archimatetool.com/archimate" name="Bank Raya" id="id-9b95c4cb7b1d44c6900ed1264f2f1230" version="5.0.0">
   <folder name="Strategy" id="id-a0500e75f2d44db48d99eea95f2abebb" type="strategy"/>
-  <folder name="Business" id="id-2818b58fd9cd45d0a3bb7d746ce8fb1b" type="business"/>
+  <folder name="Business" id="id-2818b58fd9cd45d0a3bb7d746ce8fb1b" type="business">
+    <folder name="BA_01_Organization Actor" id="id-a13602c749d04b65877f36dccc60830d">
+      <element xsi:type="archimate:BusinessActor" name="Bagian Accounting" id="bract039">
+        <documentation>Melaksanakan pencatatan, pembukuan, dan rekonsiliasi akuntansi terkait aktivitas bisnis.</documentation>
+        <property key="Actor ID" value="ACT-039"/>
+        <property key="Actor Type" value="Internal Organization"/>
+        <property key="Organization Level" value="Section / Bagian"/>
+        <property key="Parent Actor ID" value="TBC"/>
+        <property key="Business Domain" value="Accounting"/>
+        <property key="Location" value="Head Office"/>
+        <property key="Actor/Unit Owner" value="Kepala Bagian Accounting"/>
+        <property key="Source Document / System" value="SK B.451A/2024; BPM Pinang Dana Talangan"/>
+        <property key="Source Reference" value="BPM 01.02.17 — Penghapusbukuan Kredit Bermasalah; SK B.451A/2024 — struktur perlu validasi"/>
+        <property key="Repository Status" value="Draft"/>
+        <property key="Notes" value="SK B.451A/2024 mencantumkan Bagian Accounting Policy dalam struktur Finance Management. Belum dapat dipastikan apakah Bagian Accounting pada BPM mengacu ke unit tersebut."/>
+        <property key="Source Catalog Sheet" value="1_Organization Actor"/>
+        <property key="Source Excel Row" value="46"/>
+      </element>
+      <element xsi:type="archimate:BusinessActor" name="Bagian Core Banking System" id="bract037">
+        <documentation>Mengelola pengembangan serta dukungan sistem Core Banking yang digunakan perusahaan.</documentation>
+        <property key="Actor ID" value="ACT-037"/>
+        <property key="Actor Type" value="Internal Organization"/>
+        <property key="Organization Level" value="Section / Bagian"/>
+        <property key="Parent Actor ID" value="ACT-036"/>
+        <property key="Business Domain" value="Application Development"/>
+        <property key="Location" value="Head Office"/>
+        <property key="Actor/Unit Owner" value="Kepala Bagian Core Banking System"/>
+        <property key="Source Document / System" value="SK ASA/2024; BPM Pinang Dana Talangan"/>
+        <property key="Source Reference" value="SK SO ASA/2024 — Pasal 2; Lampiran 1"/>
+        <property key="Repository Status" value="Draft"/>
+        <property key="Source Catalog Sheet" value="1_Organization Actor"/>
+        <property key="Source Excel Row" value="44"/>
+      </element>
+      <element xsi:type="archimate:BusinessActor" name="Bagian Core Operation" id="bract027">
+        <documentation>Melaksanakan kegiatan operasional inti yang mendukung penyelesaian proses atau transaksi.</documentation>
+        <property key="Actor ID" value="ACT-027"/>
+        <property key="Actor Type" value="Internal Organization"/>
+        <property key="Organization Level" value="Section / Bagian"/>
+        <property key="Parent Actor ID" value="TBC"/>
+        <property key="Business Domain" value="Core Operations"/>
+        <property key="Location" value="Head Office"/>
+        <property key="Actor/Unit Owner" value="TBC"/>
+        <property key="Source Document / System" value="BPM Pinang Dana Talangan"/>
+        <property key="Source Reference" value="BPM 01.02.17 — Penghapusbukuan Kredit Bermasalah"/>
+        <property key="Repository Status" value="Draft"/>
+        <property key="Notes" value="Belum ditemukan unit dengan nama persis tersebut dalam struktur yang diperiksa."/>
+        <property key="Source Catalog Sheet" value="1_Organization Actor"/>
+        <property key="Source Excel Row" value="34"/>
+      </element>
+      <element xsi:type="archimate:BusinessActor" name="Bagian Digital &amp; Product Development" id="bract033">
+        <documentation>Melaksanakan kegiatan pengembangan dan pengelolaan produk digital.</documentation>
+        <property key="Actor ID" value="ACT-033"/>
+        <property key="Actor Type" value="Internal Organization"/>
+        <property key="Organization Level" value="Section / Bagian"/>
+        <property key="Parent Actor ID" value="TBC"/>
+        <property key="Business Domain" value="Product Development"/>
+        <property key="Location" value="Head Office"/>
+        <property key="Actor/Unit Owner" value="TBC"/>
+        <property key="Source Document / System" value="BPM Pinang Dana Talangan"/>
+        <property key="Source Reference" value="TBC — Referensi spesifik belum terkonfirmasi"/>
+        <property key="Repository Status" value="Draft"/>
+        <property key="Notes" value="SK B.346/2024 menjelaskan struktur Divisi Digital &amp; Product Development, tetapi tidak menetapkan Bagian dengan nama persis tersebut."/>
+        <property key="Source Catalog Sheet" value="1_Organization Actor"/>
+        <property key="Source Excel Row" value="40"/>
+      </element>
+      <element xsi:type="archimate:BusinessActor" name="Bagian Digital Contact &amp; Incident Management" id="bract025">
+        <documentation>Mengelola komunikasi, kontak layanan, dan koordinasi penanganan insiden digital.</documentation>
+        <property key="Actor ID" value="ACT-025"/>
+        <property key="Actor Type" value="Internal Organization"/>
+        <property key="Organization Level" value="Section / Bagian"/>
+        <property key="Parent Actor ID" value="ACT-018"/>
+        <property key="Business Domain" value="Customer Operations"/>
+        <property key="Location" value="Head Office"/>
+        <property key="Actor/Unit Owner" value="Kepala Bagian Digital Contact &amp; Incident Management"/>
+        <property key="Source Document / System" value="SK B.455/2024; BPM Pinang Dana Talangan "/>
+        <property key="Source Reference" value="SK B.455/2024 — Pasal 2; Lampiran 1"/>
+        <property key="Repository Status" value="Draft"/>
+        <property key="Source Catalog Sheet" value="1_Organization Actor"/>
+        <property key="Source Excel Row" value="32"/>
+      </element>
+      <element xsi:type="archimate:BusinessActor" name="Bagian Digital Problem Management" id="bract019">
+        <documentation>Melaksanakan penanganan permasalahan operasional digital, termasuk permohonan perubahan atau koreksi melalui mekanisme ticketing.</documentation>
+        <property key="Actor ID" value="ACT-019"/>
+        <property key="Actor Type" value="Internal Organization"/>
+        <property key="Organization Level" value="Section / Bagian"/>
+        <property key="Parent Actor ID" value="ACT-017"/>
+        <property key="Business Domain" value="Digital Operations"/>
+        <property key="Location" value="Head Office"/>
+        <property key="Actor/Unit Owner" value="Kepala Bagian Digital Problem Management"/>
+        <property key="Source Document / System" value="SK B.455/2024; BPM Pinang Dana Talangan "/>
+        <property key="Source Reference" value="SK B.455/2024 — Pasal 2; Lampiran 1; BPM 01.02.17"/>
+        <property key="Repository Status" value="Draft"/>
+        <property key="Source Catalog Sheet" value="1_Organization Actor"/>
+        <property key="Source Excel Row" value="26"/>
+      </element>
+      <element xsi:type="archimate:BusinessActor" name="Bagian Digital Reconciliation" id="bract021">
+        <documentation>Melaksanakan rekonsiliasi dan pemeriksaan kesesuaian transaksi atau data operasional digital.</documentation>
+        <property key="Actor ID" value="ACT-021"/>
+        <property key="Actor Type" value="Internal Organization"/>
+        <property key="Organization Level" value="Section / Bagian"/>
+        <property key="Parent Actor ID" value="ACT-017"/>
+        <property key="Business Domain" value="Digital Operations"/>
+        <property key="Location" value="Head Office"/>
+        <property key="Actor/Unit Owner" value="Kepala Bagian Digital Reconciliation"/>
+        <property key="Source Document / System" value="SK B.455/2024; BPM Pinang Dana Talangan "/>
+        <property key="Source Reference" value="SK B.455/2024 — Pasal 2; Lampiran 1"/>
+        <property key="Repository Status" value="Draft"/>
+        <property key="Source Catalog Sheet" value="1_Organization Actor"/>
+        <property key="Source Excel Row" value="28"/>
+      </element>
+      <element xsi:type="archimate:BusinessActor" name="Bagian Estimator" id="bract041">
+        <documentation>Melaksanakan kegiatan estimasi terkait kebutuhan bisnis atau operasional.</documentation>
+        <property key="Actor ID" value="ACT-041"/>
+        <property key="Actor Type" value="Internal Organization"/>
+        <property key="Organization Level" value="Section / Bagian"/>
+        <property key="Parent Actor ID" value="TBC"/>
+        <property key="Business Domain" value="Asset &amp; Procurement"/>
+        <property key="Location" value="Head Office"/>
+        <property key="Actor/Unit Owner" value="TBC"/>
+        <property key="Source Document / System" value="BPM Pinang Dana Talangan"/>
+        <property key="Source Reference" value="BPM 01.02.15 — Penerbitan Polis Asuransi Kredit; BPM 01.02.19 — Pembukuan Biaya Pemakaian Service VIDA"/>
+        <property key="Repository Status" value="Draft"/>
+        <property key="Notes" value="Nama persis Bagian Estimator belum terkonfirmasi sebagai unit mandiri dari struktur yang diperiksa."/>
+        <property key="Source Catalog Sheet" value="1_Organization Actor"/>
+        <property key="Source Excel Row" value="48"/>
+      </element>
+      <element xsi:type="archimate:BusinessActor" name="Bagian Estimator, Vendor Management &amp; Payment" id="bract040">
+        <documentation>Melaksanakan kegiatan estimasi, pengelolaan vendor, dan proses pembayaran terkait.</documentation>
+        <property key="Actor ID" value="ACT-040"/>
+        <property key="Actor Type" value="Internal Organization"/>
+        <property key="Organization Level" value="Section / Bagian"/>
+        <property key="Parent Actor ID" value="ACT-038"/>
+        <property key="Business Domain" value="Asset &amp; Procurement"/>
+        <property key="Location" value="Head Office"/>
+        <property key="Actor/Unit Owner" value="Kepala Bagian Estimator, Vendor Management &amp; Payment"/>
+        <property key="Source Document / System" value="SK B.451A/2024; BPM Pinang Dana Talangan"/>
+        <property key="Source Reference" value="SK B.451A/2024 — Lampiran 1 (nomenklatur perlu validasi)"/>
+        <property key="Repository Status" value="Draft"/>
+        <property key="Source Catalog Sheet" value="1_Organization Actor"/>
+        <property key="Source Excel Row" value="47"/>
+      </element>
+      <element xsi:type="archimate:BusinessActor" name="Bagian Operation Center" id="bract022">
+        <documentation>Melaksanakan pemantauan dan kegiatan operasional harian sistem atau proses digital.</documentation>
+        <property key="Actor ID" value="ACT-022"/>
+        <property key="Actor Type" value="Internal Organization"/>
+        <property key="Organization Level" value="Section / Bagian"/>
+        <property key="Parent Actor ID" value="ACT-017"/>
+        <property key="Business Domain" value="Digital Operations"/>
+        <property key="Location" value="Head Office"/>
+        <property key="Actor/Unit Owner" value="Kepala Bagian Operation Center"/>
+        <property key="Source Document / System" value="SK B.455/2024; BPM Pinang Dana Talangan "/>
+        <property key="Source Reference" value="SK B.455/2024 — Pasal 2; Lampiran 1"/>
+        <property key="Repository Status" value="Draft"/>
+        <property key="Source Catalog Sheet" value="1_Organization Actor"/>
+        <property key="Source Excel Row" value="29"/>
+      </element>
+      <element xsi:type="archimate:BusinessActor" name="Bagian Recovery &amp; Remedi" id="bract042">
+        <documentation>Melaksanakan kegiatan recovery dan remedial terkait kredit bermasalah.</documentation>
+        <property key="Actor ID" value="ACT-042"/>
+        <property key="Actor Type" value="Internal Organization"/>
+        <property key="Organization Level" value="Section / Bagian"/>
+        <property key="Parent Actor ID" value="ACT-031"/>
+        <property key="Business Domain" value="Credit Recovery"/>
+        <property key="Location" value="Head Office"/>
+        <property key="Actor/Unit Owner" value="TBC"/>
+        <property key="Source Document / System" value="BPM Pinang Dana Talangan"/>
+        <property key="Source Reference" value="BPM 01.02.16 — Penyelesaian Kredit Bermasalah"/>
+        <property key="Repository Status" value="Draft"/>
+        <property key="Source Catalog Sheet" value="1_Organization Actor"/>
+        <property key="Source Excel Row" value="49"/>
+      </element>
+      <element xsi:type="archimate:BusinessActor" name="Bagian Regional Business Office" id="bract023">
+        <documentation>Melaksanakan kegiatan operasional regional termasuk validasi dan koordinasi aktivitas bisnis.</documentation>
+        <property key="Actor ID" value="ACT-023"/>
+        <property key="Actor Type" value="Internal Organization"/>
+        <property key="Organization Level" value="Section / Bagian"/>
+        <property key="Parent Actor ID" value="TBC"/>
+        <property key="Business Domain" value="Regional Business"/>
+        <property key="Location" value="TBC"/>
+        <property key="Actor/Unit Owner" value="TBC"/>
+        <property key="Source Document / System" value="BPM Pinang Dana Talangan"/>
+        <property key="Source Reference" value="BPM 01.02.05 — Proses Whitelist - Partnership BRILink; BPM 01.02.15 — Penerbitan Polis Asuransi Kredit"/>
+        <property key="Repository Status" value="Draft"/>
+        <property key="Notes" value="SK B.344/2024 memuat struktur Divisi Regional Business Office, tetapi nama Bagian ini tidak ditemukan secara persis sebagai unit struktural."/>
+        <property key="Source Catalog Sheet" value="1_Organization Actor"/>
+        <property key="Source Excel Row" value="30"/>
+      </element>
+      <element xsi:type="archimate:BusinessActor" name="Bagian Sales &amp; Partnership" id="bract020">
+        <documentation>Melaksanakan kegiatan operasional sales dan partnership sesuai tanggung jawab yang diberikan.</documentation>
+        <property key="Actor ID" value="ACT-020"/>
+        <property key="Actor Type" value="Internal Organization"/>
+        <property key="Organization Level" value="Section / Bagian"/>
+        <property key="Parent Actor ID" value="ACT-015"/>
+        <property key="Business Domain" value="Sales &amp; Partnership"/>
+        <property key="Location" value="Head Office"/>
+        <property key="Actor/Unit Owner" value="Kepala Bagian Sales &amp; Partnership"/>
+        <property key="Source Document / System" value="BPM Pinang Dana Talangan"/>
+        <property key="Source Reference" value="BPM 01.02.06 — Proses Whitelist - Partnership Pegadaian; BPM 01.02.14 — Monitoring Kredit"/>
+        <property key="Repository Status" value="Draft"/>
+        <property key="Source Catalog Sheet" value="1_Organization Actor"/>
+        <property key="Source Excel Row" value="27"/>
+      </element>
+      <element xsi:type="archimate:BusinessActor" name="Community Branch" id="bract024">
+        <documentation>Melaksanakan layanan dan kegiatan operasional pada jaringan Community Branch terkait produk Pinang Dana Talangan.</documentation>
+        <property key="Actor ID" value="ACT-024"/>
+        <property key="Actor Type" value="Internal Organization"/>
+        <property key="Organization Level" value="Branch"/>
+        <property key="Parent Actor ID" value="TBC"/>
+        <property key="Business Domain" value="Branch Operations"/>
+        <property key="Location" value="TBC"/>
+        <property key="Actor/Unit Owner" value="TBC"/>
+        <property key="Source Document / System" value="BPM Pinang Dana Talangan"/>
+        <property key="Source Reference" value="BPM 01.02.05 — Proses Whitelist - Partnership BRILink; BPM 01.02.12 — Pembayaran Pinjaman; BPM 01.02.13 — Pelunasan Pinjaman Dipercepat; BPM 01.02.17 — Penghapusbukuan Kredit Bermasalah"/>
+        <property key="Repository Status" value="Draft"/>
+        <property key="Notes" value="SK B.217/2026 menampilkan Community Branch sebagai jaringan organisasi, tetapi tidak menjabarkan hubungan langsung setiap cabang ke unit induk tertentu."/>
+        <property key="Source Catalog Sheet" value="1_Organization Actor"/>
+        <property key="Source Excel Row" value="31"/>
+      </element>
+      <element xsi:type="archimate:BusinessActor" name="Departemen Application Development" id="bract036">
+        <documentation>Mengelola pengembangan, pemeliharaan, dan dukungan aplikasi yang digunakan dalam operasional perusahaan.</documentation>
+        <property key="Actor ID" value="ACT-036"/>
+        <property key="Actor Type" value="Internal Organization"/>
+        <property key="Organization Level" value="Department"/>
+        <property key="Parent Actor ID" value="ACT-035"/>
+        <property key="Business Domain" value="Application Development"/>
+        <property key="Location" value="Head Office"/>
+        <property key="Actor/Unit Owner" value="Kepala Departemen Application Development"/>
+        <property key="Source Document / System" value="SK ASA/2024"/>
+        <property key="Source Reference" value="SK SO ASA/2024 — Pasal 2; Lampiran 1"/>
+        <property key="Repository Status" value="Draft"/>
+        <property key="Source Catalog Sheet" value="1_Organization Actor"/>
+        <property key="Source Excel Row" value="43"/>
+      </element>
+      <element xsi:type="archimate:BusinessActor" name="Departemen Asset Management Procurement" id="bract038">
+        <documentation>Mengelola kegiatan pengadaan dan administrasi aset sesuai kewenangan yang berlaku.</documentation>
+        <property key="Actor ID" value="ACT-038"/>
+        <property key="Actor Type" value="Internal Organization"/>
+        <property key="Organization Level" value="Department"/>
+        <property key="Parent Actor ID" value="ACT-030"/>
+        <property key="Business Domain" value="Asset &amp; Procurement"/>
+        <property key="Location" value="Head Office"/>
+        <property key="Actor/Unit Owner" value="Kepala Departemen Asset Management Procurement"/>
+        <property key="Source Document / System" value="SK B.451A/2024; BPM Pinang Dana Talangan"/>
+        <property key="Source Reference" value="SK B.451A/2024 — Pasal 2; Lampiran 1 (nomenklatur perlu validasi)"/>
+        <property key="Repository Status" value="Draft"/>
+        <property key="Source Catalog Sheet" value="1_Organization Actor"/>
+        <property key="Source Excel Row" value="45"/>
+      </element>
+      <element xsi:type="archimate:BusinessActor" name="Departemen Customer Excellence" id="bract018">
+        <documentation>Mengelola kegiatan pelayanan dan penanganan kebutuhan serta permasalahan pelanggan.</documentation>
+        <property key="Actor ID" value="ACT-018"/>
+        <property key="Actor Type" value="Internal Organization"/>
+        <property key="Organization Level" value="Department"/>
+        <property key="Parent Actor ID" value="ACT-014"/>
+        <property key="Business Domain" value="Customer Operations"/>
+        <property key="Location" value="Head Office"/>
+        <property key="Actor/Unit Owner" value="Kepala Departemen Customer Excellence"/>
+        <property key="Source Document / System" value="SK B.455/2024"/>
+        <property key="Source Reference" value="SK B.455/2024 — Pasal 2; Lampiran 1"/>
+        <property key="Repository Status" value="Draft"/>
+        <property key="Source Catalog Sheet" value="1_Organization Actor"/>
+        <property key="Source Excel Row" value="25"/>
+      </element>
+      <element xsi:type="archimate:BusinessActor" name="Departemen Digital &amp; Product" id="bract032">
+        <documentation>Mengoordinasikan pengelolaan dan pengembangan produk digital.</documentation>
+        <property key="Actor ID" value="ACT-032"/>
+        <property key="Actor Type" value="Internal Organization"/>
+        <property key="Organization Level" value="Department"/>
+        <property key="Parent Actor ID" value="ACT-028"/>
+        <property key="Business Domain" value="Product Development"/>
+        <property key="Location" value="Head Office"/>
+        <property key="Actor/Unit Owner" value="Kepala Departemen Digital &amp; Product"/>
+        <property key="Source Document / System" value="BPM Pinang Dana Talangan"/>
+        <property key="Source Reference" value="BPM 01.02.15 — Penerbitan Polis Asuransi Kredit; SK B.346/2024 — perlu validasi nomenklatur"/>
+        <property key="Repository Status" value="Draft"/>
+        <property key="Source Catalog Sheet" value="1_Organization Actor"/>
+        <property key="Source Excel Row" value="39"/>
+      </element>
+      <element xsi:type="archimate:BusinessActor" name="Departemen Digital Operation" id="bract026">
+        <documentation>Menangani kegiatan operasional digital yang disebutkan pada dokumen proses.</documentation>
+        <property key="Actor ID" value="ACT-026"/>
+        <property key="Actor Type" value="Internal Organization"/>
+        <property key="Organization Level" value="Department"/>
+        <property key="Parent Actor ID" value="TBC"/>
+        <property key="Business Domain" value="Digital Operations"/>
+        <property key="Location" value="Head Office"/>
+        <property key="Actor/Unit Owner" value="TBC"/>
+        <property key="Source Document / System" value="BPM Pinang Dana Talangan"/>
+        <property key="Source Reference" value="TBC — Referensi spesifik belum terkonfirmasi"/>
+        <property key="Repository Status" value="Draft"/>
+        <property key="Notes" value="SK B.455/2024 menetapkan Divisi Digital Operation dengan Departemen Customer Excellence dan Operation Excellence, bukan Departemen Digital Operation."/>
+        <property key="Source Catalog Sheet" value="1_Organization Actor"/>
+        <property key="Source Excel Row" value="33"/>
+      </element>
+      <element xsi:type="archimate:BusinessActor" name="Departemen Operation Excellence" id="bract017">
+        <documentation>Mengelola kegiatan operation excellence termasuk operasional, rekonsiliasi, dan penanganan permasalahan digital.</documentation>
+        <property key="Actor ID" value="ACT-017"/>
+        <property key="Actor Type" value="Internal Organization"/>
+        <property key="Organization Level" value="Department"/>
+        <property key="Parent Actor ID" value="ACT-014"/>
+        <property key="Business Domain" value="Digital Operations"/>
+        <property key="Location" value="Head Office"/>
+        <property key="Actor/Unit Owner" value="Kepala Departemen Operation Excellence"/>
+        <property key="Source Document / System" value="SK B.455/2024"/>
+        <property key="Source Reference" value="SK B.455/2024 — Pasal 2; Lampiran 1"/>
+        <property key="Repository Status" value="Draft"/>
+        <property key="Source Catalog Sheet" value="1_Organization Actor"/>
+        <property key="Source Excel Row" value="24"/>
+      </element>
+      <element xsi:type="archimate:BusinessActor" name="Departemen Recovery &amp; Remedi" id="bract031">
+        <documentation>Mengoordinasikan kegiatan penanganan dan penyelesaian kredit bermasalah.</documentation>
+        <property key="Actor ID" value="ACT-031"/>
+        <property key="Actor Type" value="Internal Organization"/>
+        <property key="Organization Level" value="Department"/>
+        <property key="Parent Actor ID" value="ACT-029"/>
+        <property key="Business Domain" value="Credit Recovery"/>
+        <property key="Location" value="Head Office"/>
+        <property key="Actor/Unit Owner" value="Kepala Departemen Recovery &amp; Remedi"/>
+        <property key="Source Document / System" value="SK B.390/2024; Pinang Dana Talangan"/>
+        <property key="Source Reference" value="BPM 01.02.17 — Penghapusbukuan Kredit Bermasalah; SK B.390/2024 — perlu rekonsiliasi nama"/>
+        <property key="Repository Status" value="Draft"/>
+        <property key="Source Catalog Sheet" value="1_Organization Actor"/>
+        <property key="Source Excel Row" value="38"/>
+      </element>
+      <element xsi:type="archimate:BusinessActor" name="Departemen Regional Business" id="bract016">
+        <documentation>Menangani pengelolaan dan koordinasi kegiatan bisnis regional.</documentation>
+        <property key="Actor ID" value="ACT-016"/>
+        <property key="Actor Type" value="Internal Organization"/>
+        <property key="Organization Level" value="Department"/>
+        <property key="Parent Actor ID" value="ACT-013"/>
+        <property key="Business Domain" value="Regional Business"/>
+        <property key="Location" value="Head Office"/>
+        <property key="Actor/Unit Owner" value="Kepala Departemen Regional Business"/>
+        <property key="Source Document / System" value="BPM Pinang Dana Talangan"/>
+        <property key="Source Reference" value="BPM 01.02.22 — Proses Klaim Asuransi Kredit"/>
+        <property key="Repository Status" value="Draft"/>
+        <property key="Source Catalog Sheet" value="1_Organization Actor"/>
+        <property key="Source Excel Row" value="23"/>
+      </element>
+      <element xsi:type="archimate:BusinessActor" name="Departemen Sales &amp; Partnership" id="bract015">
+        <documentation>Menangani kegiatan sales dan partnership pada tingkat departemen.</documentation>
+        <property key="Actor ID" value="ACT-015"/>
+        <property key="Actor Type" value="Internal Organization"/>
+        <property key="Organization Level" value="Department"/>
+        <property key="Parent Actor ID" value="ACT-012"/>
+        <property key="Business Domain" value="Sales &amp; Partnership"/>
+        <property key="Location" value="Head Office"/>
+        <property key="Actor/Unit Owner" value="Kepala Departemen Sales &amp; Partnership"/>
+        <property key="Source Document / System" value="BPM Pinang Dana Talangan"/>
+        <property key="Source Reference" value="SK B.345/2024 — Pasal 2; Lampiran 1 (nomenklatur perlu validasi)"/>
+        <property key="Repository Status" value="Draft"/>
+        <property key="Source Catalog Sheet" value="1_Organization Actor"/>
+        <property key="Source Excel Row" value="22"/>
+      </element>
+      <element xsi:type="archimate:BusinessActor" name="Desk Enterprise Data Management" id="bract034">
+        <documentation>Mengelola arsitektur data, data engineering, analitik, dan penyediaan informasi untuk mendukung operasional dan pengambilan keputusan bisnis.</documentation>
+        <property key="Actor ID" value="ACT-034"/>
+        <property key="Actor Type" value="Internal Organization"/>
+        <property key="Organization Level" value="Desk"/>
+        <property key="Parent Actor ID" value="ACT-004"/>
+        <property key="Business Domain" value="Data Management"/>
+        <property key="Location" value="Head Office"/>
+        <property key="Actor/Unit Owner" value="Kepala Desk Enterprise Data Management"/>
+        <property key="Source Document / System" value="SK ASA/2024; BPM Pinang Dana Talangan"/>
+        <property key="Source Reference" value="SK B.407/2024 — Pasal 2; Lampiran 1; BPM 01.02.15"/>
+        <property key="Repository Status" value="Draft"/>
+        <property key="Source Catalog Sheet" value="1_Organization Actor"/>
+        <property key="Source Excel Row" value="41"/>
+      </element>
+      <element xsi:type="archimate:BusinessActor" name="Direktorat Bisnis" id="bract005">
+        <documentation>Mengarahkan kegiatan pengembangan produk, bisnis, penjualan, kemitraan, dan jaringan bisnis.</documentation>
+        <property key="Actor ID" value="ACT-005"/>
+        <property key="Actor Type" value="Internal Organization"/>
+        <property key="Organization Level" value="Directorate"/>
+        <property key="Parent Actor ID" value="ACT-001"/>
+        <property key="Business Domain" value="Business"/>
+        <property key="Location" value="Head Office"/>
+        <property key="Actor/Unit Owner" value="Direktur Bisnis"/>
+        <property key="Source Document / System" value="SK B.217/2026"/>
+        <property key="Source Reference" value="SK B.217/2026 — Lampiran Struktur Organisasi Perusahaan"/>
+        <property key="Repository Status" value="Draft"/>
+        <property key="Source Catalog Sheet" value="1_Organization Actor"/>
+        <property key="Source Excel Row" value="12"/>
+      </element>
+      <element xsi:type="archimate:BusinessActor" name="Direktorat Digital &amp; Operasional" id="bract004">
+        <documentation>Mengarahkan pengelolaan operasional digital, aplikasi, infrastruktur, data, dan operasional kredit.</documentation>
+        <property key="Actor ID" value="ACT-004"/>
+        <property key="Actor Type" value="Internal Organization"/>
+        <property key="Organization Level" value="Directorate"/>
+        <property key="Parent Actor ID" value="ACT-001"/>
+        <property key="Business Domain" value="Digital &amp; Operations"/>
+        <property key="Location" value="Head Office"/>
+        <property key="Actor/Unit Owner" value="Direktur Digital &amp; Operasional"/>
+        <property key="Source Document / System" value="SK B.217/2026"/>
+        <property key="Source Reference" value="SK B.217/2026 — Lampiran Struktur Organisasi Perusahaan"/>
+        <property key="Repository Status" value="Draft"/>
+        <property key="Source Catalog Sheet" value="1_Organization Actor"/>
+        <property key="Source Excel Row" value="11"/>
+      </element>
+      <element xsi:type="archimate:BusinessActor" name="Direktorat Keuangan" id="bract007">
+        <documentation>Mengarahkan pengelolaan keuangan, akuntansi, aset, dan fungsi keuangan terkait.</documentation>
+        <property key="Actor ID" value="ACT-007"/>
+        <property key="Actor Type" value="Internal Organization"/>
+        <property key="Organization Level" value="Directorate"/>
+        <property key="Parent Actor ID" value="ACT-001"/>
+        <property key="Business Domain" value="Finance"/>
+        <property key="Location" value="Head Office"/>
+        <property key="Actor/Unit Owner" value="Direktur Keuangan"/>
+        <property key="Source Document / System" value="SK B.217/2026"/>
+        <property key="Source Reference" value="SK B.217/2026 — Lampiran Struktur Organisasi Perusahaan"/>
+        <property key="Repository Status" value="Draft"/>
+        <property key="Source Catalog Sheet" value="1_Organization Actor"/>
+        <property key="Source Excel Row" value="14"/>
+      </element>
+      <element xsi:type="archimate:BusinessActor" name="Direktorat Manajemen Risiko, Kepatuhan &amp; SDM " id="bract006">
+        <documentation>Mengarahkan fungsi manajemen risiko, kepatuhan, sumber daya manusia, serta kebijakan dan prosedur perusahaan.</documentation>
+        <property key="Actor ID" value="ACT-006"/>
+        <property key="Actor Type" value="Internal Organization"/>
+        <property key="Organization Level" value="Directorate"/>
+        <property key="Parent Actor ID" value="ACT-001"/>
+        <property key="Business Domain" value="Risk, Compliance &amp; Human Capital"/>
+        <property key="Actor/Unit Owner" value="Direktur Manajemen Risiko, Kepatuhan &amp; SDM"/>
+        <property key="Source Document / System" value="B_217_SK_SO_Corporate_2026.pdf"/>
+        <property key="Source Reference" value="SK B.217/2026 — Lampiran Struktur Organisasi, Halaman 3"/>
+        <property key="Repository Status" value="Draft"/>
+        <property key="Source Catalog Sheet" value="1_Organization Actor"/>
+        <property key="Source Excel Row" value="13"/>
+      </element>
+      <element xsi:type="archimate:BusinessActor" name="Divisi Application, Strategy, &amp; Architecture" id="bract035">
+        <documentation>Mengelola strategi TI, pengembangan aplikasi, dan dukungan sistem aplikasi perusahaan.</documentation>
+        <property key="Actor ID" value="ACT-035"/>
+        <property key="Actor Type" value="Internal Organization"/>
+        <property key="Organization Level" value="Division"/>
+        <property key="Parent Actor ID" value="ACT-004"/>
+        <property key="Business Domain" value="Application &amp; IT"/>
+        <property key="Location" value="Head Office"/>
+        <property key="Actor/Unit Owner" value="Kepala Divisi Application, Strategy, &amp; Architecture"/>
+        <property key="Source Document / System" value="SK ASA/2024"/>
+        <property key="Source Reference" value="SK SO ASA/2024 — Pasal 2; Lampiran 1"/>
+        <property key="Repository Status" value="Draft"/>
+        <property key="Source Catalog Sheet" value="1_Organization Actor"/>
+        <property key="Source Excel Row" value="42"/>
+      </element>
+      <element xsi:type="archimate:BusinessActor" name="Divisi Credit Operation" id="bract009">
+        <documentation>Mengelola kegiatan operasional kredit, termasuk administrasi kredit, koordinasi dokumen kerja sama, pengelolaan proses kredit, serta dukungan operasional terkait produk Pinang Dana Talangan.</documentation>
+        <property key="Actor ID" value="ACT-009"/>
+        <property key="Actor Type" value="Internal Organization"/>
+        <property key="Organization Level" value="Division"/>
+        <property key="Parent Actor ID" value="ACT-004"/>
+        <property key="Business Domain" value="Credit Operation"/>
+        <property key="Location" value="Head Office"/>
+        <property key="Actor/Unit Owner" value="Kepala Divisi Credit Operation"/>
+        <property key="Source Document / System" value="b.406 SK SO COP.Text.Marked.pdf; BPM Pinang Dana Talangan"/>
+        <property key="Source Reference" value="SK B.406 — Pasal 2; Lampiran 1; BPM 01.02.02, 01.02.03, 01.02.15"/>
+        <property key="Repository Status" value="Draft"/>
+        <property key="Notes" value="Parent mengacu pada struktur organisasi 2026; rincian keterlibatan proses mengikuti BPM."/>
+        <property key="Source Catalog Sheet" value="1_Organization Actor"/>
+        <property key="Source Excel Row" value="16"/>
+      </element>
+      <element xsi:type="archimate:BusinessActor" name="Divisi Digital &amp; Product Development" id="bract028">
+        <documentation>Mengelola pengembangan dan pemeliharaan produk digital serta pengembangan bisnis produk terkait.</documentation>
+        <property key="Actor ID" value="ACT-028"/>
+        <property key="Actor Type" value="Internal Organization"/>
+        <property key="Organization Level" value="Division"/>
+        <property key="Parent Actor ID" value="ACT-005"/>
+        <property key="Business Domain" value="Product Development"/>
+        <property key="Location" value="Head Office"/>
+        <property key="Actor/Unit Owner" value="Kepala Divisi Digital &amp; Product Development"/>
+        <property key="Source Document / System" value="SK B.346/2024; BPM Pinang Dana Talangan"/>
+        <property key="Source Reference" value="SK B.346/2024 — Pasal 2; Lampiran 1"/>
+        <property key="Repository Status" value="Draft"/>
+        <property key="Source Catalog Sheet" value="1_Organization Actor"/>
+        <property key="Source Excel Row" value="35"/>
+      </element>
+      <element xsi:type="archimate:BusinessActor" name="Divisi Digital Operation" id="bract014">
+        <documentation>Mengelola operasional digital, pemrosesan transaksi, penanganan insiden, dan kegiatan operasional sistem.</documentation>
+        <property key="Actor ID" value="ACT-014"/>
+        <property key="Actor Type" value="Internal Organization"/>
+        <property key="Organization Level" value="Division"/>
+        <property key="Parent Actor ID" value="ACT-004"/>
+        <property key="Business Domain" value="Digital Operations"/>
+        <property key="Location" value="Head Office"/>
+        <property key="Actor/Unit Owner" value="Kepala Divisi Digital Operation"/>
+        <property key="Source Document / System" value="SK B.455/2024; BPM Pinang Dana Talangan "/>
+        <property key="Source Reference" value="SK B.455/2024 — Pasal 2; Lampiran 1"/>
+        <property key="Repository Status" value="Draft"/>
+        <property key="Source Catalog Sheet" value="1_Organization Actor"/>
+        <property key="Source Excel Row" value="21"/>
+      </element>
+      <element xsi:type="archimate:BusinessActor" name="Divisi Finance &amp; Asset Management" id="bract030">
+        <documentation>Mengelola keuangan, pembukuan, akuntansi, aset, dan aktivitas keuangan terkait.</documentation>
+        <property key="Actor ID" value="ACT-030"/>
+        <property key="Actor Type" value="Internal Organization"/>
+        <property key="Organization Level" value="Division"/>
+        <property key="Parent Actor ID" value="ACT-007"/>
+        <property key="Business Domain" value="Finance &amp; Accounting"/>
+        <property key="Location" value="Head Office"/>
+        <property key="Actor/Unit Owner" value="Kepala Divisi Finance &amp; Asset Management"/>
+        <property key="Source Document / System" value="SK B.451A/2024; BPM Pinang Dana Talangan"/>
+        <property key="Source Reference" value="SK B.451A/2024 — Pasal 2; Lampiran 1"/>
+        <property key="Repository Status" value="Draft"/>
+        <property key="Source Catalog Sheet" value="1_Organization Actor"/>
+        <property key="Source Excel Row" value="37"/>
+      </element>
+      <element xsi:type="archimate:BusinessActor" name="Divisi IT Infrastructure" id="bract011">
+        <documentation>Mengelola infrastruktur teknologi informasi dan mendukung kebutuhan teknis sistem operasional, termasuk koordinasi penyesuaian teknis yang terkait dengan proses penghapusbukuan kredit bermasalah.</documentation>
+        <property key="Actor ID" value="ACT-011"/>
+        <property key="Actor Type" value="Internal Organization"/>
+        <property key="Organization Level" value="Division"/>
+        <property key="Parent Actor ID" value="ACT-004"/>
+        <property key="Business Domain" value="IT Infrastructure"/>
+        <property key="Location" value="Head Office"/>
+        <property key="Actor/Unit Owner" value="Kepala Divisi IT Infrastructure"/>
+        <property key="Source Document / System" value="SK SO INF (11_2024).Text.Marked.pdf; BPM Pinang Dana Talangan"/>
+        <property key="Source Reference" value="SK SO INF — Pasal 2; Lampiran 1; BPM 01.02.17"/>
+        <property key="Repository Status" value="Draft"/>
+        <property key="Notes" value="Keterlibatan pada penghapusbukuan mengacu pada BPM; tidak otomatis berarti seluruh proses ditangani Divisi IT Infrastructure."/>
+        <property key="Source Catalog Sheet" value="1_Organization Actor"/>
+        <property key="Source Excel Row" value="18"/>
+      </element>
+      <element xsi:type="archimate:BusinessActor" name="Divisi Legal &amp; Compliance" id="bract010">
+        <documentation>Mengelola aspek hukum dan kepatuhan perusahaan, termasuk pemberian kajian hukum, pemeriksaan dokumen perjanjian kerja sama, dan dukungan pemenuhan ketentuan kepatuhan yang relevan dengan Pinang Dana Talangan.</documentation>
+        <property key="Actor ID" value="ACT-010"/>
+        <property key="Actor Type" value="Internal Organization"/>
+        <property key="Organization Level" value="Division"/>
+        <property key="Parent Actor ID" value="ACT-006"/>
+        <property key="Business Domain" value="Legal &amp; Compliance"/>
+        <property key="Location" value="Head Office"/>
+        <property key="Actor/Unit Owner" value="Kepala Divisi Legal &amp; Compliance"/>
+        <property key="Source Document / System" value="B.85 SK SO LCA (April 2025).Text.Marked.pdf; BPM Pinang Dana Talangan"/>
+        <property key="Source Reference" value="SK B.85 — Pasal 2; Lampiran 1; BPM 01.02.02, 01.02.03"/>
+        <property key="Repository Status" value="Draft"/>
+        <property key="Source Catalog Sheet" value="1_Organization Actor"/>
+        <property key="Source Excel Row" value="17"/>
+      </element>
+      <element xsi:type="archimate:BusinessActor" name="Divisi Recovery &amp; Remedi" id="bract029">
+        <documentation>Mengelola kegiatan penyelamatan, penyelesaian, recovery, serta penghapusbukuan kredit bermasalah.</documentation>
+        <property key="Actor ID" value="ACT-029"/>
+        <property key="Actor Type" value="Internal Organization"/>
+        <property key="Organization Level" value="Division"/>
+        <property key="Parent Actor ID" value="ACT-008"/>
+        <property key="Business Domain" value="Credit Recovery"/>
+        <property key="Location" value="Head Office"/>
+        <property key="Actor/Unit Owner" value="Kepala Divisi Recovery &amp; Remedi"/>
+        <property key="Source Document / System" value="SK B.390/2024; BPM Pinang Dana Talangan"/>
+        <property key="Source Reference" value="SK B.390/2024 — Pasal 2; Lampiran 1; BPM 01.02.17"/>
+        <property key="Repository Status" value="Draft"/>
+        <property key="Notes" value="SK B.217/2026 menempatkan Recovery &amp; Remedy pada jalur SEVP Credit Risk &amp; Recovery."/>
+        <property key="Source Catalog Sheet" value="1_Organization Actor"/>
+        <property key="Source Excel Row" value="36"/>
+      </element>
+      <element xsi:type="archimate:BusinessActor" name="Divisi Regional Business Office" id="bract013">
+        <documentation>Mengelola aktivitas bisnis regional, koordinasi jaringan bisnis, serta kegiatan operasional produk melalui unit terkait.</documentation>
+        <property key="Actor ID" value="ACT-013"/>
+        <property key="Actor Type" value="Internal Organization"/>
+        <property key="Organization Level" value="Division"/>
+        <property key="Parent Actor ID" value="ACT-005"/>
+        <property key="Business Domain" value="Regional Business"/>
+        <property key="Location" value="Head Office"/>
+        <property key="Actor/Unit Owner" value="Kepala Divisi Regional Business Office"/>
+        <property key="Source Document / System" value="SK B.344/2024; BPM Pinang Dana Talangan"/>
+        <property key="Source Reference" value="SK B.344/2024 — Pasal 2; Lampiran 1"/>
+        <property key="Repository Status" value="Draft"/>
+        <property key="Source Catalog Sheet" value="1_Organization Actor"/>
+        <property key="Source Excel Row" value="20"/>
+      </element>
+      <element xsi:type="archimate:BusinessActor" name="Divisi Sales &amp; Partnership" id="bract012">
+        <documentation>Mengelola aktivitas penjualan dan kemitraan, termasuk akuisisi dan kerja sama dengan mitra bisnis.</documentation>
+        <property key="Actor ID" value="ACT-012"/>
+        <property key="Actor Type" value="Internal Organization"/>
+        <property key="Organization Level" value="Division"/>
+        <property key="Parent Actor ID" value="ACT-005"/>
+        <property key="Business Domain" value="Sales &amp; Partnership"/>
+        <property key="Location" value="Head Office"/>
+        <property key="Actor/Unit Owner" value="Kepala Divisi Sales &amp; Partnership"/>
+        <property key="Source Document / System" value="SK B.345/2024; BPM Pinang Dana Talangan"/>
+        <property key="Source Reference" value="SK B.345/2024 — Pasal 2; Lampiran 1"/>
+        <property key="Repository Status" value="Draft"/>
+        <property key="Source Catalog Sheet" value="1_Organization Actor"/>
+        <property key="Source Excel Row" value="19"/>
+      </element>
+      <element xsi:type="archimate:BusinessActor" name="Komite Kredit Direksi" id="bract003">
+        <documentation>Forum kolektif yang melaksanakan pengambilan keputusan atau persetujuan kredit sesuai kewenangannya.</documentation>
+        <property key="Actor ID" value="ACT-003"/>
+        <property key="Actor Type" value="Committee / Collective Body"/>
+        <property key="Organization Level" value="Committee"/>
+        <property key="Parent Actor ID" value="TBC"/>
+        <property key="Business Domain" value="Credit Decision"/>
+        <property key="Location" value="Head Office"/>
+        <property key="Actor/Unit Owner" value="TBC"/>
+        <property key="Source Document / System" value="BPM Pinang Dana Talangan"/>
+        <property key="Source Reference" value="BPM 01.02.17 — Penghapusbukuan Kredit Bermasalah"/>
+        <property key="Repository Status" value="Draft"/>
+        <property key="Notes" value="Klasifikasi komite"/>
+        <property key="Source Catalog Sheet" value="1_Organization Actor"/>
+        <property key="Source Excel Row" value="10"/>
+      </element>
+      <element xsi:type="archimate:BusinessActor" name="PT Bank Raya Indonesia Tbk." id="bract001">
+        <documentation>Perusahaan yang menyelenggarakan dan mengelola produk Pinang Dana Talangan.</documentation>
+        <property key="Actor ID" value="ACT-001"/>
+        <property key="Actor Type" value="Internal Organization"/>
+        <property key="Organization Level" value="Enterprise"/>
+        <property key="Parent Actor ID" value="N/A"/>
+        <property key="Business Domain" value="Enterprise"/>
+        <property key="Location" value="Head Office"/>
+        <property key="Actor/Unit Owner" value="Direksi"/>
+        <property key="Source Document / System" value="SK B.217/2026"/>
+        <property key="Source Reference" value="SK B.217/2026 — Lampiran Struktur Organisasi Perusahaan"/>
+        <property key="Repository Status" value="Draft"/>
+        <property key="Notes" value="Enterprise utama"/>
+        <property key="Source Catalog Sheet" value="1_Organization Actor"/>
+        <property key="Source Excel Row" value="8"/>
+      </element>
+      <element xsi:type="archimate:BusinessActor" name="SEVP Credit Risk &amp; Recovery" id="bract008">
+        <documentation>Mengkoordinasikan fungsi analisis risiko kredit dan penanganan serta penyelesaian kredit bermasalah.</documentation>
+        <property key="Actor ID" value="ACT-008"/>
+        <property key="Actor Type" value="Internal Organization"/>
+        <property key="Organization Level" value="Other"/>
+        <property key="Parent Actor ID" value="ACT-001"/>
+        <property key="Business Domain" value="Credit Risk &amp; Recovery"/>
+        <property key="Actor/Unit Owner" value="SEVP Credit Risk &amp; Recovery"/>
+        <property key="Source Document / System" value="B_217_SK_SO_Corporate_2026.pdf"/>
+        <property key="Source Reference" value="SK B.217/2026 — Lampiran Struktur Organisasi, Halaman 3"/>
+        <property key="Repository Status" value="Draft"/>
+        <property key="Source Catalog Sheet" value="1_Organization Actor"/>
+        <property key="Source Excel Row" value="15"/>
+      </element>
+      <element xsi:type="archimate:BusinessActor" name="Direksi" id="bract002">
+        <documentation>Organ pengurus perusahaan yang memiliki kewenangan pengambilan keputusan dan persetujuan sesuai ketentuan.</documentation>
+        <property key="Actor ID" value="ACT-002"/>
+        <property key="Actor Type" value="Committee / Collective Body"/>
+        <property key="Organization Level" value="Other"/>
+        <property key="Parent Actor ID" value="ACT-001"/>
+        <property key="Business Domain" value="Executive Management"/>
+        <property key="Location" value="Head Office"/>
+        <property key="Actor/Unit Owner" value="Direksi"/>
+        <property key="Source Document / System" value="SK B.217/2026; BPM Pinang Dana Talangan"/>
+        <property key="Source Reference" value="SK B.217/2026 — Struktur Organisasi Perusahaan; BPM 01.02.03 — Penandatanganan Perjanjian Kerjasama; BPM 01.02.17"/>
+        <property key="Repository Status" value="Draft"/>
+        <property key="Notes" value="Governing Body"/>
+        <property key="Source Catalog Sheet" value="1_Organization Actor"/>
+        <property key="Source Excel Row" value="9"/>
+      </element>
+    </folder>
+    <folder name="BA_02_Business Process" id="id-4da53d8df8c342438ca6566517804693"/>
+    <folder name="BA_03_Business Capabilities" id="id-100654ba2f3a48f48e5d08c780346d0d"/>
+    <folder name="BA_04_Business Services" id="id-cf8e6ce58817431ea35ea91bf7c24fcf"/>
+  </folder>
   <folder name="Application" id="id-1d0b433baf0e4b0b91c6d6ee77ce356c" type="application"/>
   <folder name="Technology &amp; Physical" id="id-0004ea60594b49b59c4a7b7ed2d9740a" type="technology"/>
   <folder name="Motivation" id="id-b496a8d99312435faff6416419d72190" type="motivation"/>
   <folder name="Implementation &amp; Migration" id="id-51abbd9d6018449f8250e95a176106ce" type="implementation_migration"/>
   <folder name="Other" id="id-365c3907cacd4527b1dcdf3ff6dd9b60" type="other"/>
-  <folder name="Relations" id="id-34b80ce5e76c4b5b8077a200920ba57a" type="relations"/>
+  <folder name="Relations" id="id-34b80ce5e76c4b5b8077a200920ba57a" type="relations">
+    <folder name="BA_01_Organization Actor" id="id-9ec35e68c5be46a1a61acf9dc0d487f7">
+      <element xsi:type="archimate:CompositionRelationship" id="brrel004" source="bract001" target="bract004">
+        <documentation>Derived from Parent Actor ID in the existing Organization Actor Catalog; relationship type Composition proposed for structural hierarchy and subject to validation.</documentation>
+      </element>
+      <element xsi:type="archimate:CompositionRelationship" id="brrel005" source="bract001" target="bract005">
+        <documentation>Derived from Parent Actor ID in the existing Organization Actor Catalog; relationship type Composition proposed for structural hierarchy and subject to validation.</documentation>
+      </element>
+      <element xsi:type="archimate:CompositionRelationship" id="brrel006" source="bract001" target="bract006">
+        <documentation>Derived from Parent Actor ID in the existing Organization Actor Catalog; relationship type Composition proposed for structural hierarchy and subject to validation.</documentation>
+      </element>
+      <element xsi:type="archimate:CompositionRelationship" id="brrel007" source="bract001" target="bract007">
+        <documentation>Derived from Parent Actor ID in the existing Organization Actor Catalog; relationship type Composition proposed for structural hierarchy and subject to validation.</documentation>
+      </element>
+      <element xsi:type="archimate:CompositionRelationship" id="brrel008" source="bract001" target="bract008">
+        <documentation>Derived from Parent Actor ID in the existing Organization Actor Catalog; relationship type Composition proposed for structural hierarchy and subject to validation.</documentation>
+      </element>
+      <element xsi:type="archimate:CompositionRelationship" id="brrel009" source="bract004" target="bract009">
+        <documentation>Derived from Parent Actor ID in the existing Organization Actor Catalog; relationship type Composition proposed for structural hierarchy and subject to validation.</documentation>
+      </element>
+      <element xsi:type="archimate:CompositionRelationship" id="brrel010" source="bract006" target="bract010">
+        <documentation>Derived from Parent Actor ID in the existing Organization Actor Catalog; relationship type Composition proposed for structural hierarchy and subject to validation.</documentation>
+      </element>
+      <element xsi:type="archimate:CompositionRelationship" id="brrel011" source="bract004" target="bract011">
+        <documentation>Derived from Parent Actor ID in the existing Organization Actor Catalog; relationship type Composition proposed for structural hierarchy and subject to validation.</documentation>
+      </element>
+      <element xsi:type="archimate:CompositionRelationship" id="brrel012" source="bract005" target="bract012">
+        <documentation>Derived from Parent Actor ID in the existing Organization Actor Catalog; relationship type Composition proposed for structural hierarchy and subject to validation.</documentation>
+      </element>
+      <element xsi:type="archimate:CompositionRelationship" id="brrel013" source="bract005" target="bract013">
+        <documentation>Derived from Parent Actor ID in the existing Organization Actor Catalog; relationship type Composition proposed for structural hierarchy and subject to validation.</documentation>
+      </element>
+      <element xsi:type="archimate:CompositionRelationship" id="brrel014" source="bract004" target="bract014">
+        <documentation>Derived from Parent Actor ID in the existing Organization Actor Catalog; relationship type Composition proposed for structural hierarchy and subject to validation.</documentation>
+      </element>
+      <element xsi:type="archimate:CompositionRelationship" id="brrel015" source="bract012" target="bract015">
+        <documentation>Derived from Parent Actor ID in the existing Organization Actor Catalog; relationship type Composition proposed for structural hierarchy and subject to validation.</documentation>
+      </element>
+      <element xsi:type="archimate:CompositionRelationship" id="brrel016" source="bract013" target="bract016">
+        <documentation>Derived from Parent Actor ID in the existing Organization Actor Catalog; relationship type Composition proposed for structural hierarchy and subject to validation.</documentation>
+      </element>
+      <element xsi:type="archimate:CompositionRelationship" id="brrel017" source="bract014" target="bract017">
+        <documentation>Derived from Parent Actor ID in the existing Organization Actor Catalog; relationship type Composition proposed for structural hierarchy and subject to validation.</documentation>
+      </element>
+      <element xsi:type="archimate:CompositionRelationship" id="brrel018" source="bract014" target="bract018">
+        <documentation>Derived from Parent Actor ID in the existing Organization Actor Catalog; relationship type Composition proposed for structural hierarchy and subject to validation.</documentation>
+      </element>
+      <element xsi:type="archimate:CompositionRelationship" id="brrel019" source="bract017" target="bract019">
+        <documentation>Derived from Parent Actor ID in the existing Organization Actor Catalog; relationship type Composition proposed for structural hierarchy and subject to validation.</documentation>
+      </element>
+      <element xsi:type="archimate:CompositionRelationship" id="brrel020" source="bract015" target="bract020">
+        <documentation>Derived from Parent Actor ID in the existing Organization Actor Catalog; relationship type Composition proposed for structural hierarchy and subject to validation.</documentation>
+      </element>
+      <element xsi:type="archimate:CompositionRelationship" id="brrel021" source="bract017" target="bract021">
+        <documentation>Derived from Parent Actor ID in the existing Organization Actor Catalog; relationship type Composition proposed for structural hierarchy and subject to validation.</documentation>
+      </element>
+      <element xsi:type="archimate:CompositionRelationship" id="brrel022" source="bract017" target="bract022">
+        <documentation>Derived from Parent Actor ID in the existing Organization Actor Catalog; relationship type Composition proposed for structural hierarchy and subject to validation.</documentation>
+      </element>
+      <element xsi:type="archimate:CompositionRelationship" id="brrel025" source="bract018" target="bract025">
+        <documentation>Derived from Parent Actor ID in the existing Organization Actor Catalog; relationship type Composition proposed for structural hierarchy and subject to validation.</documentation>
+      </element>
+      <element xsi:type="archimate:CompositionRelationship" id="brrel028" source="bract005" target="bract028">
+        <documentation>Derived from Parent Actor ID in the existing Organization Actor Catalog; relationship type Composition proposed for structural hierarchy and subject to validation.</documentation>
+      </element>
+      <element xsi:type="archimate:CompositionRelationship" id="brrel029" source="bract008" target="bract029">
+        <documentation>Derived from Parent Actor ID in the existing Organization Actor Catalog; relationship type Composition proposed for structural hierarchy and subject to validation.</documentation>
+      </element>
+      <element xsi:type="archimate:CompositionRelationship" id="brrel030" source="bract007" target="bract030">
+        <documentation>Derived from Parent Actor ID in the existing Organization Actor Catalog; relationship type Composition proposed for structural hierarchy and subject to validation.</documentation>
+      </element>
+      <element xsi:type="archimate:CompositionRelationship" id="brrel031" source="bract029" target="bract031">
+        <documentation>Derived from Parent Actor ID in the existing Organization Actor Catalog; relationship type Composition proposed for structural hierarchy and subject to validation.</documentation>
+      </element>
+      <element xsi:type="archimate:CompositionRelationship" id="brrel032" source="bract028" target="bract032">
+        <documentation>Derived from Parent Actor ID in the existing Organization Actor Catalog; relationship type Composition proposed for structural hierarchy and subject to validation.</documentation>
+      </element>
+      <element xsi:type="archimate:CompositionRelationship" id="brrel034" source="bract004" target="bract034">
+        <documentation>Derived from Parent Actor ID in the existing Organization Actor Catalog; relationship type Composition proposed for structural hierarchy and subject to validation.</documentation>
+      </element>
+      <element xsi:type="archimate:CompositionRelationship" id="brrel035" source="bract004" target="bract035">
+        <documentation>Derived from Parent Actor ID in the existing Organization Actor Catalog; relationship type Composition proposed for structural hierarchy and subject to validation.</documentation>
+      </element>
+      <element xsi:type="archimate:CompositionRelationship" id="brrel036" source="bract035" target="bract036">
+        <documentation>Derived from Parent Actor ID in the existing Organization Actor Catalog; relationship type Composition proposed for structural hierarchy and subject to validation.</documentation>
+      </element>
+      <element xsi:type="archimate:CompositionRelationship" id="brrel037" source="bract036" target="bract037">
+        <documentation>Derived from Parent Actor ID in the existing Organization Actor Catalog; relationship type Composition proposed for structural hierarchy and subject to validation.</documentation>
+      </element>
+      <element xsi:type="archimate:CompositionRelationship" id="brrel038" source="bract030" target="bract038">
+        <documentation>Derived from Parent Actor ID in the existing Organization Actor Catalog; relationship type Composition proposed for structural hierarchy and subject to validation.</documentation>
+      </element>
+      <element xsi:type="archimate:CompositionRelationship" id="brrel040" source="bract038" target="bract040">
+        <documentation>Derived from Parent Actor ID in the existing Organization Actor Catalog; relationship type Composition proposed for structural hierarchy and subject to validation.</documentation>
+      </element>
+      <element xsi:type="archimate:CompositionRelationship" id="brrel042" source="bract031" target="bract042">
+        <documentation>Derived from Parent Actor ID in the existing Organization Actor Catalog; relationship type Composition proposed for structural hierarchy and subject to validation.</documentation>
+      </element>
+      <element xsi:type="archimate:CompositionRelationship" id="brrel002" source="bract001" target="bract002">
+        <documentation>Derived from Parent Actor ID in the existing Organization Actor Catalog; relationship type Composition proposed for structural hierarchy and subject to validation.</documentation>
+      </element>
+    </folder>
+  </folder>
   <folder name="Views" id="id-5f74c288aca549efa2518ac590a157ca" type="diagrams">
-    <element xsi:type="archimate:ArchimateDiagramModel" name="00_EA Repository View" id="id-dcef9b670d474990b7d312dd89715a93"/>
+    <element xsi:type="archimate:ArchimateDiagramModel" name="00_EA Repository View" id="id-dcef9b670d474990b7d312dd89715a93" viewpoint="organization"/>
     <element xsi:type="archimate:ArchimateDiagramModel" name="BA_01_Organization Actor" id="id-df38c35df6ff414da7a6df7b355cdef7"/>
     <element xsi:type="archimate:ArchimateDiagramModel" name="BA_02_Business Process" id="id-8d6b60a15f3349a9a1f0768ef69a3bc7"/>
+    <element xsi:type="archimate:ArchimateDiagramModel" name="BA_03_Business Capabilities" id="id-333b416e977d403ea7b093e4df388077"/>
+    <element xsi:type="archimate:ArchimateDiagramModel" name="BA_04_Business Services" id="id-b3cdecc53c1d43da9a81fa182d3fc956"/>
   </folder>
 </archimate:model>
