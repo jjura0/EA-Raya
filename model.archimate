@@ -1979,12 +1979,1596 @@
         <property key="Notes / Change Basis" value="Jabatan dimodelkan sebagai Business Role; relationship ke unit adalah reporting association, bukan composition."/>
       </element>
     </folder>
-    <folder name="BA_02_Business Process" id="id-4da53d8df8c342438ca6566517804693"/>
+    <folder name="BA_02_Business Process" id="id-4da53d8df8c342438ca6566517804693">
+      <element xsi:type="archimate:BusinessProcess" name="Akuisisi Calon Mitra/Partner" id="brbp003">
+        <documentation>Proses penerimaan permohonan kerja sama dari calon mitra/partner, pelaksanaan kunjungan dan penggalian informasi, penyusunan Laporan Kunjungan Nasabah (LKN), serta review dan persetujuan LKN sebagai dasar analisis kelayakan mitra/partner.</documentation>
+        <property key="Process ID" value="BP-003"/>
+        <property key="Process Name" value="Akuisisi Calon Mitra/Partner"/>
+        <property key="Process Level" value="L3"/>
+        <property key="Parent Process ID" value="BP-002"/>
+        <property key="Business Domain" value="Product Pinang Dana Talangan"/>
+        <property key="Process Description" value="Proses penerimaan permohonan kerja sama dari calon mitra/partner, pelaksanaan kunjungan dan penggalian informasi, penyusunan Laporan Kunjungan Nasabah (LKN), serta review dan persetujuan LKN sebagai dasar analisis kelayakan mitra/partner."/>
+        <property key="Trigger / Event" value="Diterimanya permohonan kerja sama dari calon mitra/partner."/>
+        <property key="Key Input" value="Permohonan Kerjasama Calon Mitra/Partner."/>
+        <property key="Key Output" value="Laporan Kunjungan Nasabah (LKN) (Approved)."/>
+        <property key="Business Service (ID)" value="BS-001"/>
+        <property key="Process Owner" value="TBC"/>
+        <property key="Performing Role" value="Staf Divisi Sales &amp; Partnership/Regional Business Office; Kepala Bagian dan Kepala Departemen Sales &amp; Partnership/Regional Business Office; Kepala Divisi Sales &amp; Partnership/Regional Business Office"/>
+        <property key="Performing Actor / Unit (ID)" value="ACT-012; ACT-013"/>
+        <property key="Supporting Application ID(s)" value="APP-014"/>
+        <property key="Key Control" value="Review kesesuaian draft LKN oleh Kepala Bagian/Kepala Departemen dan persetujuan LKN oleh Kepala Divisi."/>
+        <property key="Source Document / System" value="01.02.01 Akuisisi Calon Mitra or Partner.pdf"/>
+        <property key="Source Reference" value="01.02.01 | Halaman 1 dari 1"/>
+        <property key="Repository Status" value="Draft"/>
+        <property key="ArchiMate Element" value="Business Process"/>
+        <property key="Catalog Source Row" value="10"/>
+      </element>
+      <element xsi:type="archimate:BusinessProcess" name="Analisis &amp; Putusan Memorandum Analisis Uji Kelayakan (MAUK) Partner" id="brbp004">
+        <documentation>Proses pengumpulan dokumen pendukung, penyusunan dan evaluasi MAUK Partner, pengambilan keputusan kerja sama, serta pelaksanaan uji kepatuhan atas keputusan kemitraan sebelum dilanjutkan ke perjanjian kerja sama.</documentation>
+        <property key="Process ID" value="BP-004"/>
+        <property key="Process Name" value="Analisis &amp; Putusan Memorandum Analisis Uji Kelayakan (MAUK) Partner"/>
+        <property key="Process Level" value="L3"/>
+        <property key="Parent Process ID" value="BP-002"/>
+        <property key="Business Domain" value="Product Pinang Dana Talangan"/>
+        <property key="Process Description" value="Proses pengumpulan dokumen pendukung, penyusunan dan evaluasi MAUK Partner, pengambilan keputusan kerja sama, serta pelaksanaan uji kepatuhan atas keputusan kemitraan sebelum dilanjutkan ke perjanjian kerja sama."/>
+        <property key="Trigger / Event" value="Selesainya proses akuisisi calon mitra/partner."/>
+        <property key="Key Input" value="LKN (Approved); dokumen pendukung calon mitra/partner; Non-Disclosure Agreement."/>
+        <property key="Key Output" value="MAUK Partner beserta keputusan kelayakan dan hasil uji kepatuhan/keputusan kemitraan."/>
+        <property key="Business Service (ID)" value="BS-001"/>
+        <property key="Process Owner" value="TBC"/>
+        <property key="Performing Role" value="Staf Divisi Sales &amp; Partnership/Regional Business Office; Staf Divisi Credit Operation; Komite Kredit Divisi/Direksi/Utama; Staf Divisi Legal &amp; Compliance"/>
+        <property key="Performing Actor / Unit (ID)" value="ACT-012; ACT-013; ACT-009; ACT-010; ACT-003"/>
+        <property key="Supporting Application ID(s)" value="-"/>
+        <property key="Key Control" value="Review dan persetujuan MAUK; keputusan sesuai kewenangan; uji kepatuhan dan persetujuan hasilnya."/>
+        <property key="Source Document / System" value="01.02.02 Analisis &amp; Putusan MAUK Partner.pdf"/>
+        <property key="Source Reference" value="01.02.02 | Halaman 1-3 dari 3"/>
+        <property key="Repository Status" value="Draft"/>
+        <property key="ArchiMate Element" value="Business Process"/>
+        <property key="Catalog Source Row" value="11"/>
+      </element>
+      <element xsi:type="archimate:BusinessProcess" name="Monitoring Kredit - Bulanan" id="brbp017">
+        <documentation>Proses penyusunan dan pemaparan materi Performance Update kepada pimpinan terkait, serta tindak lanjut arahan dan koordinasi dengan unit kerja yang relevan.</documentation>
+        <property key="Process ID" value="BP-017"/>
+        <property key="Process Name" value="Monitoring Kredit - Bulanan"/>
+        <property key="Process Level" value="L3"/>
+        <property key="Parent Process ID" value="BP-002"/>
+        <property key="Business Domain" value="Product Pinang Dana Talangan"/>
+        <property key="Process Description" value="Proses penyusunan dan pemaparan materi Performance Update kepada pimpinan terkait, serta tindak lanjut arahan dan koordinasi dengan unit kerja yang relevan."/>
+        <property key="Trigger / Event" value="Pelaksanaan siklus pelaporan performance bulanan."/>
+        <property key="Key Input" value="Materi dan data Performance Update."/>
+        <property key="Key Output" value="Materi Performance Update yang dipaparkan; tindak lanjut atas arahan pimpinan jika ada."/>
+        <property key="Business Service (ID)" value="BS-007"/>
+        <property key="Process Owner" value="TBC"/>
+        <property key="Performing Role" value="Pelaksana Divisi Digital &amp; Product Development/Sales &amp; Partnership/Regional Business Office — rincian jabatan TBC"/>
+        <property key="Performing Actor / Unit (ID)" value="ACT-028; ACT-012; ACT-013"/>
+        <property key="Supporting Application ID(s)" value="APP-023; APP-024; APP-053"/>
+        <property key="Key Control" value="Review melalui forum pemaparan pimpinan dan tindak lanjut terhadap arahan yang diberikan."/>
+        <property key="Source Document / System" value="01.02.14 Monitoring Kredit-Harian.pdf"/>
+        <property key="Source Reference" value="01.02.14 | Halaman 3 dari 3"/>
+        <property key="Repository Status" value="Draft"/>
+        <property key="ArchiMate Element" value="Business Process"/>
+        <property key="Catalog Source Row" value="24"/>
+      </element>
+      <element xsi:type="archimate:BusinessProcess" name="Monitoring Kredit - Ekspansi" id="brbp016">
+        <documentation>Proses pemantauan peluang ekspansi produk melalui pemutakhiran data whitelist, penyampaian komunikasi komersial, pembinaan atau kunjungan calon mitra, serta tindak lanjut hasil monitoring untuk peluang kerja sama.</documentation>
+        <property key="Process ID" value="BP-016"/>
+        <property key="Process Name" value="Monitoring Kredit - Ekspansi"/>
+        <property key="Process Level" value="L3"/>
+        <property key="Parent Process ID" value="BP-002"/>
+        <property key="Business Domain" value="Product Pinang Dana Talangan"/>
+        <property key="Process Description" value="Proses pemantauan peluang ekspansi produk melalui pemutakhiran data whitelist, penyampaian komunikasi komersial, pembinaan atau kunjungan calon mitra, serta tindak lanjut hasil monitoring untuk peluang kerja sama."/>
+        <property key="Trigger / Event" value="Pelaksanaan monitoring ekspansi produk dan tersedianya data whitelist terbaru."/>
+        <property key="Key Input" value="Data Whitelist; informasi calon mitra atau nasabah potensial; hasil monitoring ekspansi."/>
+        <property key="Key Output" value="Hasil pembinaan/kunjungan dan umpan balik calon mitra; tindak lanjut peluang kerja sama atau pemutakhiran data."/>
+        <property key="Business Service (ID)" value="BS-007"/>
+        <property key="Process Owner" value="TBC"/>
+        <property key="Performing Role" value="Staf Bagian Sales &amp; Partnership/Regional Business Office; Staf Desk Enterprise Data Management"/>
+        <property key="Performing Actor / Unit (ID)" value="ACT-012; ACT-013; ACT-034"/>
+        <property key="Supporting Application ID(s)" value="APP-001; APP-007; APP-014"/>
+        <property key="Key Control" value="Penentuan jenis pembinaan dan evaluasi hasil interaksi untuk tindak lanjut akuisisi mitra."/>
+        <property key="Source Document / System" value="01.02.14 Monitoring Kredit-Harian.pdf"/>
+        <property key="Source Reference" value="01.02.14 | Halaman 2 dari 3"/>
+        <property key="Repository Status" value="Draft"/>
+        <property key="ArchiMate Element" value="Business Process"/>
+        <property key="Catalog Source Row" value="23"/>
+      </element>
+      <element xsi:type="archimate:BusinessProcess" name="Monitoring Kredit - Harian" id="brbp015">
+        <documentation>Proses pemantauan harian performa kredit menggunakan dashboard, identifikasi anomali, koordinasi dengan unit terkait, serta eskalasi atas kondisi yang memerlukan penanganan lebih lanjut.</documentation>
+        <property key="Process ID" value="BP-015"/>
+        <property key="Process Name" value="Monitoring Kredit - Harian"/>
+        <property key="Process Level" value="L3"/>
+        <property key="Parent Process ID" value="BP-002"/>
+        <property key="Business Domain" value="Product Pinang Dana Talangan"/>
+        <property key="Process Description" value="Proses pemantauan harian performa kredit menggunakan dashboard, identifikasi anomali, koordinasi dengan unit terkait, serta eskalasi atas kondisi yang memerlukan penanganan lebih lanjut."/>
+        <property key="Trigger / Event" value="Pelaksanaan kegiatan monitoring performa kredit harian."/>
+        <property key="Key Input" value="Data Performance Kredit; dashboard monitoring RAYASIM."/>
+        <property key="Key Output" value="Hasil monitoring performa kredit harian; informasi anomali; Nota Dinas Eskalasi jika diperlukan."/>
+        <property key="Business Service (ID)" value="BS-007"/>
+        <property key="Process Owner" value="TBC"/>
+        <property key="Performing Role" value="Staf Bagian Sales &amp; Partnership/Regional Business Office; Staf Desk Enterprise Data Management; Kepala Bagian/Kepala Departemen Sales &amp; Partnership/Regional Business Office"/>
+        <property key="Performing Actor / Unit (ID)" value="ACT-012; ACT-013; ACT-034"/>
+        <property key="Supporting Application ID(s)" value="APP-024; APP-053"/>
+        <property key="Key Control" value="Review anomali, penentuan kebutuhan eskalasi, dan koordinasi dengan unit terkait."/>
+        <property key="Source Document / System" value="01.02.14 Monitoring Kredit-Harian.pdf"/>
+        <property key="Source Reference" value="01.02.14 | Halaman 1 dari 3"/>
+        <property key="Repository Status" value="Draft"/>
+        <property key="ArchiMate Element" value="Business Process"/>
+        <property key="Catalog Source Row" value="22"/>
+      </element>
+      <element xsi:type="archimate:BusinessProcess" name="On Boarding Calon Debitur" id="brbp006">
+        <documentation>Proses pendaftaran calon pengguna Pinang Dana Talangan melalui persetujuan syarat dan ketentuan, pengisian informasi pengguna, serta verifikasi nomor handphone menggunakan One-Time Password (OTP).</documentation>
+        <property key="Process ID" value="BP-006"/>
+        <property key="Process Name" value="On Boarding Calon Debitur"/>
+        <property key="Process Level" value="L3"/>
+        <property key="Parent Process ID" value="BP-002"/>
+        <property key="Business Domain" value="Product Pinang Dana Talangan"/>
+        <property key="Process Description" value="Proses pendaftaran calon pengguna Pinang Dana Talangan melalui persetujuan syarat dan ketentuan, pengisian informasi pengguna, serta verifikasi nomor handphone menggunakan One-Time Password (OTP)."/>
+        <property key="Trigger / Event" value="Calon pengguna memulai pendaftaran akun Pinang Dana Talangan."/>
+        <property key="Key Input" value="Data pendaftaran calon pengguna; nomor handphone; PIN; persetujuan syarat dan ketentuan serta Customer Consent."/>
+        <property key="Key Output" value="Akun pengguna yang berhasil didaftarkan dan notifikasi hasil pendaftaran."/>
+        <property key="Business Service (ID)" value="BS-002"/>
+        <property key="Process Owner" value="TBC"/>
+        <property key="Performing Role" value="Sistem Pinang Dana Talangan; Staf Bagian Digital Contact &amp; Incident Management (untuk penanganan tertentu)"/>
+        <property key="Performing Actor / Unit (ID)" value="ACT-014; ACT-025"/>
+        <property key="Supporting Application ID(s)" value="APP-001; APP-009; APP-019"/>
+        <property key="Key Control" value="Persetujuan syarat dan ketentuan/Customer Consent serta verifikasi OTP."/>
+        <property key="Source Document / System" value="01.02.04 On Boarding Calon Debitur.pdf"/>
+        <property key="Source Reference" value="01.02.04 | Halaman 1 dari 1"/>
+        <property key="Repository Status" value="Draft"/>
+        <property key="ArchiMate Element" value="Business Process"/>
+        <property key="Catalog Source Row" value="13"/>
+      </element>
+      <element xsi:type="archimate:BusinessProcess" name="Pelunasan Pinjaman Dipercepat" id="brbp014">
+        <documentation>Proses penerimaan dan pemrosesan permohonan pelunasan sebelum jatuh tempo melalui perhitungan kewajiban, validasi pembayaran, pelaksanaan paid off, dan pembukuan serta rekonsiliasi transaksi pelunasan.</documentation>
+        <property key="Process ID" value="BP-014"/>
+        <property key="Process Name" value="Pelunasan Pinjaman Dipercepat"/>
+        <property key="Process Level" value="L3"/>
+        <property key="Parent Process ID" value="BP-002"/>
+        <property key="Business Domain" value="Product Pinang Dana Talangan"/>
+        <property key="Process Description" value="Proses penerimaan dan pemrosesan permohonan pelunasan sebelum jatuh tempo melalui perhitungan kewajiban, validasi pembayaran, pelaksanaan paid off, dan pembukuan serta rekonsiliasi transaksi pelunasan."/>
+        <property key="Trigger / Event" value="Debitur mengajukan pelunasan pinjaman dipercepat."/>
+        <property key="Key Input" value="Permohonan pelunasan dipercepat; informasi rekening dan sisa kewajiban; dokumen pembayaran."/>
+        <property key="Key Output" value="Pelunasan dipercepat yang diproses dan dibukukan; status pinjaman lunas."/>
+        <property key="Business Service (ID)" value="BS-006"/>
+        <property key="Process Owner" value="TBC"/>
+        <property key="Performing Role" value="Sistem Pinang Dana Talangan; Staf OPK Community Branch"/>
+        <property key="Performing Actor / Unit (ID)" value="ACT-014; ACT-024"/>
+        <property key="Supporting Application ID(s)" value="APP-001; APP-002; APP-026; APP-034"/>
+        <property key="Key Control" value="Validasi pembayaran, persetujuan dokumen atau transaksi manual, dan review hasil pembukuan/rekonsiliasi."/>
+        <property key="Source Document / System" value="01.02.13 Pelunasan Pinjaman Dipercepat.pdf"/>
+        <property key="Source Reference" value="01.02.13 | Halaman 1-3 dari 3"/>
+        <property key="Repository Status" value="Draft"/>
+        <property key="ArchiMate Element" value="Business Process"/>
+        <property key="Catalog Source Row" value="21"/>
+      </element>
+      <element xsi:type="archimate:BusinessProcess" name="Pembayaran Pinjaman" id="brbp013">
+        <documentation>Proses penerimaan dan pemrosesan pembayaran angsuran pinjaman melalui mekanisme pembayaran yang tersedia, termasuk autodebet, validasi transaksi, pembukuan, dan rekonsiliasi pembayaran.</documentation>
+        <property key="Process ID" value="BP-013"/>
+        <property key="Process Name" value="Pembayaran Pinjaman"/>
+        <property key="Process Level" value="L3"/>
+        <property key="Parent Process ID" value="BP-002"/>
+        <property key="Business Domain" value="Product Pinang Dana Talangan"/>
+        <property key="Process Description" value="Proses penerimaan dan pemrosesan pembayaran angsuran pinjaman melalui mekanisme pembayaran yang tersedia, termasuk autodebet, validasi transaksi, pembukuan, dan rekonsiliasi pembayaran."/>
+        <property key="Trigger / Event" value="Jatuh tempo angsuran atau diterimanya pembayaran pinjaman dari debitur."/>
+        <property key="Key Input" value="Informasi kewajiban angsuran; data rekening; informasi/dokumen pembayaran pinjaman."/>
+        <property key="Key Output" value="Transaksi pembayaran pinjaman yang dibukukan dan hasil rekonsiliasi pembayaran."/>
+        <property key="Business Service (ID)" value="BS-006"/>
+        <property key="Process Owner" value="TBC"/>
+        <property key="Performing Role" value="Sistem Pinang Dana Talangan; Staf OPK Community Branch"/>
+        <property key="Performing Actor / Unit (ID)" value="ACT-014; ACT-024"/>
+        <property key="Supporting Application ID(s)" value="APP-001; APP-002; APP-026; APP-034"/>
+        <property key="Key Control" value="Validasi dokumen pembayaran, persetujuan transaksi manual jika diperlukan, serta rekonsiliasi dan review hasil pembayaran."/>
+        <property key="Source Document / System" value="01.02.12 Pembayaran Pinjaman.pdf"/>
+        <property key="Source Reference" value="01.02.12 | Halaman 1-3 dari 3"/>
+        <property key="Repository Status" value="Draft"/>
+        <property key="ArchiMate Element" value="Business Process"/>
+        <property key="Catalog Source Row" value="20"/>
+      </element>
+      <element xsi:type="archimate:BusinessProcess" name="Pembukuan Biaya Pemakaian Service VIDA" id="brbp021">
+        <documentation>Proses rekonsiliasi data pemakaian layanan VIDA dengan data realisasi internal, pemeriksaan tagihan, permohonan pembayaran, serta pelaksanaan pembayaran dan pembukuan biaya penggunaan layanan.</documentation>
+        <property key="Process ID" value="BP-021"/>
+        <property key="Process Name" value="Pembukuan Biaya Pemakaian Service VIDA"/>
+        <property key="Process Level" value="L3"/>
+        <property key="Parent Process ID" value="BP-002"/>
+        <property key="Business Domain" value="Product Pinang Dana Talangan"/>
+        <property key="Process Description" value="Proses rekonsiliasi data pemakaian layanan VIDA dengan data realisasi internal, pemeriksaan tagihan, permohonan pembayaran, serta pelaksanaan pembayaran dan pembukuan biaya penggunaan layanan."/>
+        <property key="Trigger / Event" value="Tersedianya data pemakaian Service VIDA untuk periode bulanan sebelumnya."/>
+        <property key="Key Input" value="Data Pemakaian Service VIDA; Data Realisasi Pemakaian; Invoice; BAST; kertas kerja rekonsiliasi."/>
+        <property key="Key Output" value="Kertas kerja rekonsiliasi yang disetujui; pembayaran dan bukti pembayaran biaya pemakaian VIDA."/>
+        <property key="Business Service (ID)" value="BS-010"/>
+        <property key="Process Owner" value="TBC"/>
+        <property key="Performing Role" value="Pelaksana Divisi Digital Operation; pelaksana Divisi Finance &amp; Asset Management"/>
+        <property key="Performing Actor / Unit (ID)" value="ACT-014; ACT-030"/>
+        <property key="Supporting Application ID(s)" value="APP-003; APP-002"/>
+        <property key="Key Control" value="Rekonsiliasi dan pemeriksaan data match/unmatch; review kertas kerja; verifikasi dokumen tagihan dan persetujuan pembayaran."/>
+        <property key="Source Document / System" value="01.02.19 Pembukuan Biaya Pemakaian Service VIDA.pdf"/>
+        <property key="Source Reference" value="01.02.19 | Halaman 1-4 dari 4"/>
+        <property key="Repository Status" value="Draft"/>
+        <property key="ArchiMate Element" value="Business Process"/>
+        <property key="Catalog Source Row" value="28"/>
+      </element>
+      <element xsi:type="archimate:BusinessProcess" name="Penagihan Penghapusbukuan Kredit Bermasalah" id="brbp023">
+        <documentation>Proses penagihan atas fasilitas yang telah dihapusbukukan, termasuk koordinasi tindak lanjut, pencatatan hasil, dan pelaporan penerimaan.</documentation>
+        <property key="Process ID" value="BP-023"/>
+        <property key="Process Name" value="Penagihan Penghapusbukuan Kredit Bermasalah"/>
+        <property key="Process Level" value="L3"/>
+        <property key="Parent Process ID" value="BP-002"/>
+        <property key="Business Domain" value="Product Pinang Dana Talangan"/>
+        <property key="Process Description" value="Proses penagihan atas fasilitas yang telah dihapusbukukan, termasuk koordinasi tindak lanjut, pencatatan hasil, dan pelaporan penerimaan."/>
+        <property key="Trigger / Event" value="Debitur dengan kredit yang telah dihapusbukukan menjadi sasaran penagihan."/>
+        <property key="Key Input" value="Daftar debitur write-off; informasi tunggakan; catatan penagihan."/>
+        <property key="Key Output" value="Hasil penagihan; penerimaan/pembukuan pembayaran; laporan tindak lanjut."/>
+        <property key="Business Service (ID)" value="BS-009"/>
+        <property key="Process Owner" value="TBC"/>
+        <property key="Performing Role" value="Recovery &amp; Remedi; EDM; Digital Operation; Finance &amp; Asset Management; Community Branch"/>
+        <property key="Performing Actor / Unit (ID)" value="ACT-029; ACT-034; ACT-014; ACT-030; ACT-024"/>
+        <property key="Supporting Application ID(s)" value="APP-002"/>
+        <property key="Key Control" value="Validasi data tagihan dan rekonsiliasi/pembukuan penerimaan."/>
+        <property key="Source Document / System" value="01.02.18 Penagihan Penghapusbukuan Kredit Bermasalah.pdf"/>
+        <property key="Source Reference" value="01.02.18 | Halaman 1-4 dari 4"/>
+        <property key="Repository Status" value="Draft"/>
+        <property key="ArchiMate Element" value="Business Process"/>
+        <property key="Catalog Source Row" value="30"/>
+      </element>
+      <element xsi:type="archimate:BusinessProcess" name="Penandatanganan Perjanjian Kerjasama" id="brbp005">
+        <documentation>Proses penyusunan, pemeriksaan, persetujuan, dan penandatanganan dokumen kerja sama antara Bank Raya dengan mitra/partner berdasarkan keputusan kemitraan yang telah diperoleh.</documentation>
+        <property key="Process ID" value="BP-005"/>
+        <property key="Process Name" value="Penandatanganan Perjanjian Kerjasama"/>
+        <property key="Process Level" value="L3"/>
+        <property key="Parent Process ID" value="BP-002"/>
+        <property key="Business Domain" value="Product Pinang Dana Talangan"/>
+        <property key="Process Description" value="Proses penyusunan, pemeriksaan, persetujuan, dan penandatanganan dokumen kerja sama antara Bank Raya dengan mitra/partner berdasarkan keputusan kemitraan yang telah diperoleh."/>
+        <property key="Trigger / Event" value="Persetujuan kelayakan dan keputusan kerja sama dengan calon mitra/partner."/>
+        <property key="Key Input" value="Hasil keputusan MAUK Partner; dokumen kerja sama; Surat Penawaran Kerjasama Kemitraan."/>
+        <property key="Key Output" value="Perjanjian Kerjasama yang telah ditandatangani para pihak."/>
+        <property key="Business Service (ID)" value="BS-001"/>
+        <property key="Process Owner" value="TBC"/>
+        <property key="Performing Role" value="Staf Bagian Sales &amp; Partnership/Regional Business Office; Kepala Divisi Legal &amp; Compliance; Direksi"/>
+        <property key="Performing Actor / Unit (ID)" value="ACT-012; ACT-013; ACT-009; ACT-010; ACT-002"/>
+        <property key="Supporting Application ID(s)" value="APP-004"/>
+        <property key="Key Control" value="Review draft perjanjian, legal review, serta persetujuan dan penandatanganan sesuai kewenangan."/>
+        <property key="Source Document / System" value="01.02.03 Penandatanganan Perjanjian Kerjasama.pdf"/>
+        <property key="Source Reference" value="01.02.03 | Halaman 1-3 dari 3"/>
+        <property key="Repository Status" value="Draft"/>
+        <property key="ArchiMate Element" value="Business Process"/>
+        <property key="Catalog Source Row" value="12"/>
+      </element>
+      <element xsi:type="archimate:BusinessProcess" name="Pencairan Pinjaman" id="brbp012">
+        <documentation>Proses finalisasi persetujuan debitur atas penawaran pinjaman, verifikasi identitas dan dokumen perjanjian elektronik, pelaksanaan pencairan dana, serta pembukuan dan pemantauan status pencairan pinjaman.</documentation>
+        <property key="Process ID" value="BP-012"/>
+        <property key="Process Name" value="Pencairan Pinjaman"/>
+        <property key="Process Level" value="L3"/>
+        <property key="Parent Process ID" value="BP-002"/>
+        <property key="Business Domain" value="Product Pinang Dana Talangan"/>
+        <property key="Process Description" value="Proses finalisasi persetujuan debitur atas penawaran pinjaman, verifikasi identitas dan dokumen perjanjian elektronik, pelaksanaan pencairan dana, serta pembukuan dan pemantauan status pencairan pinjaman."/>
+        <property key="Trigger / Event" value="Pengajuan pinjaman telah memenuhi persyaratan untuk dilanjutkan ke pencairan."/>
+        <property key="Key Input" value="Hasil analisis calon debitur; penawaran pinjaman; verifikasi wajah; persetujuan debitur; dokumen perjanjian elektronik."/>
+        <property key="Key Output" value="Dana pinjaman yang dicairkan; catatan pembukuan pencairan; status pencairan pinjaman."/>
+        <property key="Business Service (ID)" value="BS-005"/>
+        <property key="Process Owner" value="TBC"/>
+        <property key="Performing Role" value="Sistem Pinang Dana Talangan; pelaksana proses pencairan TBC"/>
+        <property key="Performing Actor / Unit (ID)" value="ACT-014"/>
+        <property key="Supporting Application ID(s)" value="APP-001; APP-002; APP-003; APP-004; APP-026; APP-034"/>
+        <property key="Key Control" value="Verifikasi wajah, OTP dan persetujuan perjanjian elektronik; validasi pencairan manual apabila diperlukan; monitoring status pencairan."/>
+        <property key="Source Document / System" value="01.02.11 Pencairan Pinjaman.pdf"/>
+        <property key="Source Reference" value="01.02.11 | Halaman 1-2 dari 2"/>
+        <property key="Repository Status" value="Draft"/>
+        <property key="ArchiMate Element" value="Business Process"/>
+        <property key="Catalog Source Row" value="19"/>
+      </element>
+      <element xsi:type="archimate:BusinessProcess" name="Penerbitan Polis Asuransi Kredit" id="brbp018">
+        <documentation>Proses pengumpulan dan verifikasi data pencairan kredit untuk penutupan asuransi, pengajuan dan pembayaran premi, serta koordinasi penerbitan polis asuransi kredit.</documentation>
+        <property key="Process ID" value="BP-018"/>
+        <property key="Process Name" value="Penerbitan Polis Asuransi Kredit"/>
+        <property key="Process Level" value="L3"/>
+        <property key="Parent Process ID" value="BP-002"/>
+        <property key="Business Domain" value="Product Pinang Dana Talangan"/>
+        <property key="Process Description" value="Proses pengumpulan dan verifikasi data pencairan kredit untuk penutupan asuransi, pengajuan dan pembayaran premi, serta koordinasi penerbitan polis asuransi kredit."/>
+        <property key="Trigger / Event" value="Tersedianya data pencairan kredit yang membutuhkan penutupan asuransi."/>
+        <property key="Key Input" value="Data Disbursement Produk; perjanjian dengan perusahaan asuransi; Invoice Asuransi; dokumen penutupan asuransi."/>
+        <property key="Key Output" value="Pembayaran premi dan polis asuransi kredit yang diterbitkan."/>
+        <property key="Business Service (ID)" value="BS-008"/>
+        <property key="Process Owner" value="TBC"/>
+        <property key="Performing Role" value="Staf Bagian Credit Policy &amp; Support Services; Staf/Kepala Bagian Regional Business Office; Staf Desk Enterprise Data Management; pelaksana pembayaran pada Divisi Finance &amp; Asset Management"/>
+        <property key="Performing Actor / Unit (ID)" value="ACT-009; ACT-013; ACT-034; ACT-028; ACT-030"/>
+        <property key="Supporting Application ID(s)" value="APP-001; APP-002"/>
+        <property key="Key Control" value="Verifikasi kelengkapan data penutupan asuransi; review dan persetujuan pembayaran premi; verifikasi dokumen pembayaran."/>
+        <property key="Source Document / System" value="01.02.15 Penerbitan Polis Asuransi Kredit.pdf"/>
+        <property key="Source Reference" value="01.02.15 | Halaman 1-4 dari 4"/>
+        <property key="Repository Status" value="Draft"/>
+        <property key="ArchiMate Element" value="Business Process"/>
+        <property key="Catalog Source Row" value="25"/>
+      </element>
+      <element xsi:type="archimate:BusinessProcess" name="Penghapusbukuan Kredit Bermasalah" id="brbp020">
+        <documentation>Proses pengajuan, review dan persetujuan penghapusbukuan kredit bermasalah, pelaksanaan transaksi write-off, serta verifikasi pembukuan dan penanganan koreksi yang diperlukan.</documentation>
+        <property key="Process ID" value="BP-020"/>
+        <property key="Process Name" value="Penghapusbukuan Kredit Bermasalah"/>
+        <property key="Process Level" value="L3"/>
+        <property key="Parent Process ID" value="BP-002"/>
+        <property key="Business Domain" value="Product Pinang Dana Talangan"/>
+        <property key="Process Description" value="Proses pengajuan, review dan persetujuan penghapusbukuan kredit bermasalah, pelaksanaan transaksi write-off, serta verifikasi pembukuan dan penanganan koreksi yang diperlukan."/>
+        <property key="Trigger / Event" value="Tersedianya daftar kredit/debitur yang diusulkan untuk penghapusbukuan."/>
+        <property key="Key Input" value="List Debitur Calon Write-off; Nota Dinas Pengajuan; persetujuan penghapusbukuan; informasi CKPN."/>
+        <property key="Key Output" value="Kredit yang telah dihapusbukukan beserta catatan pembukuan dan tindak lanjut koreksi."/>
+        <property key="Business Service (ID)" value="BS-009"/>
+        <property key="Process Owner" value="TBC"/>
+        <property key="Performing Role" value="Staf Divisi Recovery &amp; Remedi; Staf/Kepala Bagian Digital Problem Management; Komite Kredit Direksi; Staf OPK Community Branch; pelaksana Accounting dan unit TI terkait"/>
+        <property key="Performing Actor / Unit (ID)" value="ACT-029; ACT-019; ACT-024; ACT-039; ACT-003; ACT-011"/>
+        <property key="Supporting Application ID(s)" value="APP-002; APP-034"/>
+        <property key="Key Control" value="Review dan persetujuan penghapusbukuan sesuai kewenangan; verifikasi pembentukan CKPN 100%; verifikasi pembukuan write-off dan koreksi."/>
+        <property key="Source Document / System" value="01.02.17 Penghapusbukuan Kredit Bermasalah.pdf"/>
+        <property key="Source Reference" value="01.02.17 | Halaman 1-5 dari 5"/>
+        <property key="Repository Status" value="Draft"/>
+        <property key="ArchiMate Element" value="Business Process"/>
+        <property key="Catalog Source Row" value="27"/>
+      </element>
+      <element xsi:type="archimate:BusinessProcess" name="Penyelesaian Kredit Bermasalah" id="brbp019">
+        <documentation>Proses penanganan kredit bermasalah melalui pengingat pembayaran, penagihan, koordinasi dengan pihak terkait, serta pemantauan komitmen pembayaran debitur.</documentation>
+        <property key="Process ID" value="BP-019"/>
+        <property key="Process Name" value="Penyelesaian Kredit Bermasalah"/>
+        <property key="Process Level" value="L3"/>
+        <property key="Parent Process ID" value="BP-002"/>
+        <property key="Business Domain" value="Product Pinang Dana Talangan"/>
+        <property key="Process Description" value="Proses penanganan kredit bermasalah melalui pengingat pembayaran, penagihan, koordinasi dengan pihak terkait, serta pemantauan komitmen pembayaran debitur."/>
+        <property key="Trigger / Event" value="Kredit menunjukkan kondisi keterlambatan atau memenuhi kriteria penanganan kredit bermasalah."/>
+        <property key="Key Input" value="Data kredit dan tunggakan debitur; informasi kolektibilitas; hasil komunikasi atau penagihan."/>
+        <property key="Key Output" value="Hasil tindak lanjut penagihan dan status penanganan kredit bermasalah."/>
+        <property key="Business Service (ID)" value="BS-007"/>
+        <property key="Process Owner" value="TBC"/>
+        <property key="Performing Role" value="Pelaksana Divisi Regional Business Office; Staf Divisi Recovery &amp; Remedi"/>
+        <property key="Performing Actor / Unit (ID)" value="ACT-013; ACT-029"/>
+        <property key="Supporting Application ID(s)" value="APP-001; APP-002"/>
+        <property key="Key Control" value="Pemantauan penagihan, monitoring komitmen debitur, dan eskalasi penanganan sesuai ketentuan."/>
+        <property key="Source Document / System" value="01.02.16 Penyelesaian Kredit Bermasalah.pdf"/>
+        <property key="Source Reference" value="01.02.16 | Halaman 1-2 dari 2"/>
+        <property key="Repository Status" value="Draft"/>
+        <property key="ArchiMate Element" value="Business Process"/>
+        <property key="Catalog Source Row" value="26"/>
+      </element>
+      <element xsi:type="archimate:BusinessProcess" name="Pinang Dana Talangan" id="brbp002">
+        <documentation>Rangkaian proses bisnis pengelolaan produk Pinang Dana Talangan yang mencakup akuisisi dan kerja sama mitra, onboarding dan whitelist calon debitur, pengajuan serta analisis pinjaman, pencairan, pembayaran, monitoring kredit, penerbitan asuransi, hingga penyelesaian kredit bermasalah dan penghapusbukuan.</documentation>
+        <property key="Process ID" value="BP-002"/>
+        <property key="Process Name" value="Pinang Dana Talangan"/>
+        <property key="Process Level" value="L2"/>
+        <property key="Parent Process ID" value="BP-001"/>
+        <property key="Business Domain" value="Product Pinang Dana Talangan"/>
+        <property key="Process Description" value="Rangkaian proses bisnis pengelolaan produk Pinang Dana Talangan yang mencakup akuisisi dan kerja sama mitra, onboarding dan whitelist calon debitur, pengajuan serta analisis pinjaman, pencairan, pembayaran, monitoring kredit, penerbitan asuransi, hingga penyelesaian kredit bermasalah dan penghapusbukuan."/>
+        <property key="Trigger / Event" value="Adanya kebutuhan pelaksanaan layanan Pinang Dana Talangan melalui kerja sama mitra dan pengajuan pinjaman oleh calon debitur."/>
+        <property key="Key Input" value="Informasi mitra dan calon debitur; dokumen kerja sama; data pengajuan pinjaman; ketentuan produk dan kredit; data transaksi serta informasi kredit."/>
+        <property key="Key Output" value="Kerja sama mitra yang terlaksana, pinjaman yang diproses dan dikelola, pembayaran yang dibukukan, hasil monitoring kredit, serta penyelesaian kewajiban dan kredit bermasalah."/>
+        <property key="Business Service (ID)" value="N/A"/>
+        <property key="Process Owner" value="Related Product Owner"/>
+        <property key="Performing Role" value="Related Product Owner"/>
+        <property key="Performing Actor / Unit (ID)" value="Related Product Owner"/>
+        <property key="Supporting Application ID(s)" value="N/A"/>
+        <property key="Key Control" value="Pengendalian kelayakan mitra dan calon debitur, verifikasi dan persetujuan kredit, pengendalian pencairan dan pembayaran, monitoring kredit, serta mekanisme penyelesaian dan penghapusbukuan sesuai kewenangan."/>
+        <property key="Source Document / System" value="Dokumen BPM keseluruhan"/>
+        <property key="Source Reference" value="01.02 — Level 2 (struktur proses)"/>
+        <property key="Repository Status" value="Draft"/>
+        <property key="ArchiMate Element" value="Business Process"/>
+        <property key="Catalog Source Row" value="9"/>
+      </element>
+      <element xsi:type="archimate:BusinessProcess" name="Product (Revenue to Cash)" id="brbp001">
+        <documentation>Rangkaian proses bisnis yang mencakup pengelolaan produk dan layanan kepada nasabah, mulai dari pengembangan dan kerja sama bisnis, akuisisi, penyediaan produk, pelaksanaan transaksi, pengelolaan pembayaran, hingga monitoring dan penyelesaian kewajiban untuk mendukung penciptaan serta penerimaan pendapatan perusahaan.</documentation>
+        <property key="Process ID" value="BP-001"/>
+        <property key="Process Name" value="Product (Revenue to Cash)"/>
+        <property key="Process Level" value="L1"/>
+        <property key="Parent Process ID" value="N/A"/>
+        <property key="Business Domain" value="Product"/>
+        <property key="Process Description" value="Rangkaian proses bisnis yang mencakup pengelolaan produk dan layanan kepada nasabah, mulai dari pengembangan dan kerja sama bisnis, akuisisi, penyediaan produk, pelaksanaan transaksi, pengelolaan pembayaran, hingga monitoring dan penyelesaian kewajiban untuk mendukung penciptaan serta penerimaan pendapatan perusahaan."/>
+        <property key="Trigger / Event" value="Adanya kebutuhan pengembangan atau penyelenggaraan produk dan layanan bisnis untuk menghasilkan pendapatan perusahaan."/>
+        <property key="Key Input" value="Strategi dan kebijakan bisnis; informasi produk dan layanan; kebutuhan nasabah dan mitra; ketentuan operasional bisnis."/>
+        <property key="Key Output" value="Produk dan layanan yang dikelola serta transaksi, pendapatan, dan kewajiban terkait yang diproses sepanjang siklus bisnis."/>
+        <property key="Business Service (ID)" value="N/A"/>
+        <property key="Process Owner" value="Related Product Owner"/>
+        <property key="Performing Role" value="Related Product Owner"/>
+        <property key="Performing Actor / Unit (ID)" value="Related Product Owner"/>
+        <property key="Supporting Application ID(s)" value="N/A"/>
+        <property key="Key Control" value="Penerapan mekanisme persetujuan produk atau kerja sama, pengendalian transaksi, monitoring kinerja, dan pengelolaan risiko sesuai ketentuan perusahaan."/>
+        <property key="Source Document / System" value="Dokumen BPM keseluruhan"/>
+        <property key="Source Reference" value="01 — Level 1 (struktur proses)"/>
+        <property key="Repository Status" value="Draft"/>
+        <property key="ArchiMate Element" value="Business Process"/>
+        <property key="Catalog Source Row" value="8"/>
+      </element>
+      <element xsi:type="archimate:BusinessProcess" name="Proses Analisa Calon Debitur" id="brbp011">
+        <documentation>Proses analisis kelayakan calon debitur melalui pemeriksaan data dan riwayat kredit, verifikasi identitas, serta penentuan hasil pengajuan pinjaman sebelum proses pencairan.</documentation>
+        <property key="Process ID" value="BP-011"/>
+        <property key="Process Name" value="Proses Analisa Calon Debitur"/>
+        <property key="Process Level" value="L3"/>
+        <property key="Parent Process ID" value="BP-002"/>
+        <property key="Business Domain" value="Product Pinang Dana Talangan"/>
+        <property key="Process Description" value="Proses analisis kelayakan calon debitur melalui pemeriksaan data dan riwayat kredit, verifikasi identitas, serta penentuan hasil pengajuan pinjaman sebelum proses pencairan."/>
+        <property key="Trigger / Event" value="Diterimanya pengajuan pinjaman dari calon debitur."/>
+        <property key="Key Input" value="Data calon debitur; data pengajuan pinjaman; informasi identitas dan riwayat kredit."/>
+        <property key="Key Output" value="Status hasil analisis/pengajuan pinjaman dan informasi kepada calon debitur."/>
+        <property key="Business Service (ID)" value="BS-004"/>
+        <property key="Process Owner" value="TBC"/>
+        <property key="Performing Role" value="Sistem Pinang Dana Talangan; pelaksana verifikasi/analisis manual TBC"/>
+        <property key="Performing Actor / Unit (ID)" value="ACT-014"/>
+        <property key="Supporting Application ID(s)" value="APP-005; APP-006; APP-037"/>
+        <property key="Key Control" value="Pemeriksaan prescreening melalui sumber data yang ditetapkan dan verifikasi identitas, termasuk pemeriksaan manual pada kondisi tertentu."/>
+        <property key="Source Document / System" value="01.02.10 Analisa Calon Debitur.pdf"/>
+        <property key="Source Reference" value="01.02.10 | Halaman 1 dari 1"/>
+        <property key="Repository Status" value="Draft"/>
+        <property key="ArchiMate Element" value="Business Process"/>
+        <property key="Catalog Source Row" value="18"/>
+      </element>
+      <element xsi:type="archimate:BusinessProcess" name="Proses Klaim Asuransi Kredit" id="brbp022">
+        <documentation>Proses penyusunan dan pemeriksaan berkas klaim kredit bermasalah, pengajuan klaim kepada perusahaan asuransi atau pialang, penerimaan hasil klaim, dan tindak lanjut atas keputusan klaim.</documentation>
+        <property key="Process ID" value="BP-022"/>
+        <property key="Process Name" value="Proses Klaim Asuransi Kredit"/>
+        <property key="Process Level" value="L3"/>
+        <property key="Parent Process ID" value="BP-002"/>
+        <property key="Business Domain" value="Product Pinang Dana Talangan"/>
+        <property key="Process Description" value="Proses penyusunan dan pemeriksaan berkas klaim kredit bermasalah, pengajuan klaim kepada perusahaan asuransi atau pialang, penerimaan hasil klaim, dan tindak lanjut atas keputusan klaim."/>
+        <property key="Trigger / Event" value="Kredit bermasalah memenuhi kondisi untuk dilakukan pengajuan klaim asuransi."/>
+        <property key="Key Input" value="Berkas Klaim Debitur; dokumen pendukung; informasi penyelesaian kredit bermasalah."/>
+        <property key="Key Output" value="Surat Pengajuan Klaim Asuransi yang disetujui; hasil keputusan klaim; tindak lanjut penerimaan, penolakan, atau banding klaim."/>
+        <property key="Business Service (ID)" value="BS-008"/>
+        <property key="Process Owner" value="TBC"/>
+        <property key="Performing Role" value="Pelaksana Divisi Regional Business Office; koordinasi dengan Divisi Recovery &amp; Remedi"/>
+        <property key="Performing Actor / Unit (ID)" value="ACT-013; ACT-029"/>
+        <property key="Supporting Application ID(s)" value="APP-001; APP-002"/>
+        <property key="Key Control" value="Review kelengkapan berkas klaim dan persetujuan pengajuan klaim sebelum disampaikan kepada perusahaan asuransi/pialang."/>
+        <property key="Source Document / System" value="01.02.22 Klaim Asuransi Kredit.pdf"/>
+        <property key="Source Reference" value="01.02.22 | Halaman 1 dari 1"/>
+        <property key="Repository Status" value="Draft"/>
+        <property key="ArchiMate Element" value="Business Process"/>
+        <property key="Catalog Source Row" value="29"/>
+      </element>
+      <element xsi:type="archimate:BusinessProcess" name="Proses Pengajuan Pinjaman - Partnership BRILink &amp; BRI Merchant" id="brbp010">
+        <documentation>Proses pengajuan pinjaman calon debitur melalui verifikasi akun whitelist, informasi plafon dan tenor, verifikasi identitas, serta penerimaan formulir pengajuan untuk proses analisis calon debitur.</documentation>
+        <property key="Process ID" value="BP-010"/>
+        <property key="Process Name" value="Proses Pengajuan Pinjaman - Partnership BRILink &amp; BRI Merchant"/>
+        <property key="Process Level" value="L3"/>
+        <property key="Parent Process ID" value="BP-002"/>
+        <property key="Business Domain" value="Product Pinang Dana Talangan"/>
+        <property key="Process Description" value="Proses pengajuan pinjaman calon debitur melalui verifikasi akun whitelist, informasi plafon dan tenor, verifikasi identitas, serta penerimaan formulir pengajuan untuk proses analisis calon debitur."/>
+        <property key="Trigger / Event" value="Calon debitur dari partnership BRILink atau BRI Merchant mengakses layanan pengajuan pinjaman."/>
+        <property key="Key Input" value="Data whitelist; data calon debitur; Foto KTP; informasi pengajuan pinjaman."/>
+        <property key="Key Output" value="Data Formulir Pengisian Informasi Calon Debitur untuk proses analisis."/>
+        <property key="Business Service (ID)" value="BS-004"/>
+        <property key="Process Owner" value="TBC"/>
+        <property key="Performing Role" value="Sistem Pinang Dana Talangan; pelaksana penanganan pengecualian TBC"/>
+        <property key="Performing Actor / Unit (ID)" value="ACT-014"/>
+        <property key="Supporting Application ID(s)" value="APP-001; APP-025; APP-029"/>
+        <property key="Key Control" value="Pemeriksaan eligibility whitelist dan verifikasi dokumen identitas dengan batas percobaan yang ditetapkan sistem."/>
+        <property key="Source Document / System" value="01.02.09 Pengajuan Pinjaman Partnership BRILink &amp; BRI Merchant.pdf"/>
+        <property key="Source Reference" value="01.02.09 | Halaman 1 dari 1"/>
+        <property key="Repository Status" value="Draft"/>
+        <property key="ArchiMate Element" value="Business Process"/>
+        <property key="Catalog Source Row" value="17"/>
+      </element>
+      <element xsi:type="archimate:BusinessProcess" name="Proses Pengajuan Pinjaman - Partnership Pegadaian" id="brbp009">
+        <documentation>Proses pengajuan pinjaman calon debitur melalui verifikasi akun whitelist, informasi plafon dan tenor, verifikasi identitas, serta penerimaan data formulir pengajuan untuk diproses pada analisis calon debitur.</documentation>
+        <property key="Process ID" value="BP-009"/>
+        <property key="Process Name" value="Proses Pengajuan Pinjaman - Partnership Pegadaian"/>
+        <property key="Process Level" value="L3"/>
+        <property key="Parent Process ID" value="BP-002"/>
+        <property key="Business Domain" value="Product Pinang Dana Talangan"/>
+        <property key="Process Description" value="Proses pengajuan pinjaman calon debitur melalui verifikasi akun whitelist, informasi plafon dan tenor, verifikasi identitas, serta penerimaan data formulir pengajuan untuk diproses pada analisis calon debitur."/>
+        <property key="Trigger / Event" value="Calon debitur dari partnership Pegadaian mengakses layanan pengajuan pinjaman."/>
+        <property key="Key Input" value="Data whitelist; data calon debitur; Foto KTP; informasi pengajuan pinjaman."/>
+        <property key="Key Output" value="Data Formulir Pengisian Informasi Calon Debitur untuk proses analisis."/>
+        <property key="Business Service (ID)" value="BS-004"/>
+        <property key="Process Owner" value="TBC"/>
+        <property key="Performing Role" value="Sistem Pinang Dana Talangan; pelaksana penanganan pengecualian TBC"/>
+        <property key="Performing Actor / Unit (ID)" value="ACT-014"/>
+        <property key="Supporting Application ID(s)" value="APP-001; APP-028"/>
+        <property key="Key Control" value="Pemeriksaan eligibility whitelist dan verifikasi dokumen identitas dengan batas percobaan yang ditetapkan sistem."/>
+        <property key="Source Document / System" value="01.02.08 Pengajuan Pinjaman Partnership Pegadaian.pdf"/>
+        <property key="Source Reference" value="01.02.08 | Halaman 1 dari 1"/>
+        <property key="Repository Status" value="Draft"/>
+        <property key="ArchiMate Element" value="Business Process"/>
+        <property key="Catalog Source Row" value="16"/>
+      </element>
+      <element xsi:type="archimate:BusinessProcess" name="Proses Whitelist - Partnership BRILink" id="brbp007">
+        <documentation>Proses pengelolaan whitelist calon debitur melalui penilaian kelayakan, penyediaan dan validasi data, koordinasi dengan Community Branch, serta pembaruan database Pinang Dana Talangan.</documentation>
+        <property key="Process ID" value="BP-007"/>
+        <property key="Process Name" value="Proses Whitelist - Partnership BRILink"/>
+        <property key="Process Level" value="L3"/>
+        <property key="Parent Process ID" value="BP-002"/>
+        <property key="Business Domain" value="Product Pinang Dana Talangan"/>
+        <property key="Process Description" value="Proses pengelolaan whitelist calon debitur melalui penilaian kelayakan, penyediaan dan validasi data, koordinasi dengan Community Branch, serta pembaruan database Pinang Dana Talangan."/>
+        <property key="Trigger / Event" value="Tersedianya data calon debitur/agen untuk proses whitelist berdasarkan mekanisme kemitraan BRILink."/>
+        <property key="Key Input" value="Data Lee Way; data whitelist; hasil penilaian eligibility/scoring; laporan validasi."/>
+        <property key="Key Output" value="Data whitelist yang telah diperbarui pada database Pinang Dana Talangan."/>
+        <property key="Business Service (ID)" value="BS-003"/>
+        <property key="Process Owner" value="TBC"/>
+        <property key="Performing Role" value="Staf Desk Enterprise Data Management; Staf/Kepala Bagian Regional Business Office; Kepala Departemen Regional Business Office; pelaksana Community Branch"/>
+        <property key="Performing Actor / Unit (ID)" value="ACT-034; ACT-013; ACT-024; ACT-014"/>
+        <property key="Supporting Application ID(s)" value="APP-001; APP-007; APP-036"/>
+        <property key="Key Control" value="Eligibility dan credit risk scoring; verifikasi laporan validasi; review dan persetujuan pembaruan data."/>
+        <property key="Source Document / System" value="01.02.05 Proses Whitelist Partnership BRILink.pdf"/>
+        <property key="Source Reference" value="01.02.05 | Halaman 1-2 dari 2"/>
+        <property key="Repository Status" value="Draft"/>
+        <property key="ArchiMate Element" value="Business Process"/>
+        <property key="Catalog Source Row" value="14"/>
+      </element>
+      <element xsi:type="archimate:BusinessProcess" name="Proses Whitelist - Partnership Pegadaian" id="brbp008">
+        <documentation>Proses penerimaan dan verifikasi data calon debitur dari mitra Pegadaian, persetujuan permohonan pengelolaan data, serta pembaruan data whitelist untuk mendukung proses pengajuan pinjaman.</documentation>
+        <property key="Process ID" value="BP-008"/>
+        <property key="Process Name" value="Proses Whitelist - Partnership Pegadaian"/>
+        <property key="Process Level" value="L3"/>
+        <property key="Parent Process ID" value="BP-002"/>
+        <property key="Business Domain" value="Product Pinang Dana Talangan"/>
+        <property key="Process Description" value="Proses penerimaan dan verifikasi data calon debitur dari mitra Pegadaian, persetujuan permohonan pengelolaan data, serta pembaruan data whitelist untuk mendukung proses pengajuan pinjaman."/>
+        <property key="Trigger / Event" value="Diterimanya atau dimintanya data calon debitur dari mitra Pegadaian."/>
+        <property key="Key Input" value="Data Calon Debitur; permohonan pengelolaan data calon debitur."/>
+        <property key="Key Output" value="Data calon debitur yang telah divalidasi dan diproses dalam pengelolaan whitelist."/>
+        <property key="Business Service (ID)" value="BS-003"/>
+        <property key="Process Owner" value="TBC"/>
+        <property key="Performing Role" value="Staf Bagian Sales &amp; Partnership; Kepala Bagian Sales &amp; Partnership; staf Desk Enterprise Data Management; pelaksana operasional digital"/>
+        <property key="Performing Actor / Unit (ID)" value="ACT-012; ACT-034; ACT-014; ACT-028"/>
+        <property key="Supporting Application ID(s)" value="APP-001; APP-007; APP-036"/>
+        <property key="Key Control" value="Verifikasi data calon debitur dan persetujuan permohonan pengelolaan data secara berjenjang."/>
+        <property key="Source Document / System" value="01.02.06 Proses Whitelist-Partnership Pegadaian.pdf"/>
+        <property key="Source Reference" value="01.02.06 | Halaman 1-3 dari 3"/>
+        <property key="Repository Status" value="Draft"/>
+        <property key="ArchiMate Element" value="Business Process"/>
+        <property key="Catalog Source Row" value="15"/>
+      </element>
+    </folder>
     <folder name="BA_03_Business Capabilities" id="id-100654ba2f3a48f48e5d08c780346d0d"/>
     <folder name="BA_04_Business Services" id="id-cf8e6ce58817431ea35ea91bf7c24fcf"/>
   </folder>
-  <folder name="Application" id="id-1d0b433baf0e4b0b91c6d6ee77ce356c" type="application"/>
-  <folder name="Technology &amp; Physical" id="id-0004ea60594b49b59c4a7b7ed2d9740a" type="technology"/>
+  <folder name="Application" id="id-1d0b433baf0e4b0b91c6d6ee77ce356c" type="application">
+    <folder name="DA_01_Data Entity" id="id-1e2ada579e1846a1a8b9ae5a07a8b082">
+      <element xsi:type="archimate:DataObject" name="Bukti Pembayaran" id="brdat025">
+        <documentation>Kandidat representasi data logis untuk Bukti Pembayaran. Definisi, identitas entity dan batasannya perlu dikonfirmasi terhadap pemilik proses dan model data.</documentation>
+        <property key="Data ID" value="DAT-025"/>
+        <property key="Data Name" value="Bukti Pembayaran"/>
+        <property key="Object Classification" value="Data Entity"/>
+        <property key="Data Level" value="Logical Data Entity"/>
+        <property key="Data Domain" value="Finance"/>
+        <property key="Data Sub-Domain" value="Expense Management"/>
+        <property key="Data Description" value="Kandidat representasi data logis untuk Bukti Pembayaran. Definisi, identitas entity dan batasannya perlu dikonfirmasi terhadap pemilik proses dan model data."/>
+        <property key="Data Category" value="Transaction Data"/>
+        <property key="Business Owner" value="TBC"/>
+        <property key="Data Steward" value="TBC"/>
+        <property key="Related Capability ID(s)" value="BC-033; BC-034; BC-035; BC-036"/>
+        <property key="Related Process ID(s)" value="BP-021"/>
+        <property key="Sensitivity Classification" value="TBC"/>
+        <property key="Criticality" value="TBC"/>
+        <property key="Lifecycle Status" value="Active"/>
+        <property key="Source Document / System" value="01.02.19 Pembukuan Biaya Pemakaian Service VIDA.pdf"/>
+        <property key="Repository Status" value="Draft"/>
+        <property key="ArchiMate Mapping Note" value="Data Object"/>
+        <property key="Catalog Source Row" value="32"/>
+      </element>
+      <element xsi:type="archimate:DataObject" name="Daftar Debitur Hapus Buku" id="brdat018">
+        <documentation>Kandidat entitas data logis: Daftar Debitur Hapus Buku. Definisi bisnis perlu validasi.</documentation>
+        <property key="Data ID" value="DAT-018"/>
+        <property key="Data Name" value="Daftar Debitur Hapus Buku"/>
+        <property key="Object Classification" value="Data Entity"/>
+        <property key="Data Level" value="Logical Data Entity"/>
+        <property key="Data Domain" value="Credit"/>
+        <property key="Data Sub-Domain" value="Credit Recovery"/>
+        <property key="Data Description" value="Kandidat entitas data logis: Daftar Debitur Hapus Buku. Definisi bisnis perlu validasi."/>
+        <property key="Data Category" value="Transaction Data"/>
+        <property key="Business Owner" value="TBC"/>
+        <property key="Data Steward" value="TBC"/>
+        <property key="Related Capability ID(s)" value="BC-024; BC-026; BC-027"/>
+        <property key="Related Process ID(s)" value="BP-020"/>
+        <property key="Sensitivity Classification" value="TBC"/>
+        <property key="Criticality" value="TBC"/>
+        <property key="Lifecycle Status" value="Active"/>
+        <property key="Source Document / System" value="01.02.17 Penghapusbukuan Kredit Bermasalah.pdf"/>
+        <property key="Repository Status" value="Draft"/>
+        <property key="ArchiMate Mapping Note" value="Data Object"/>
+        <property key="Catalog Source Row" value="25"/>
+      </element>
+      <element xsi:type="archimate:DataObject" name="Data Calon Debitur" id="brdat008">
+        <documentation>Kandidat entitas data logis: Data Calon Debitur. Definisi bisnis perlu validasi.</documentation>
+        <property key="Data ID" value="DAT-008"/>
+        <property key="Data Name" value="Data Calon Debitur"/>
+        <property key="Object Classification" value="Data Entity"/>
+        <property key="Data Level" value="Logical Data Entity"/>
+        <property key="Data Domain" value="Customer"/>
+        <property key="Data Sub-Domain" value="Customer Identity &amp; Profile"/>
+        <property key="Data Description" value="Kandidat entitas data logis: Data Calon Debitur. Definisi bisnis perlu validasi."/>
+        <property key="Data Category" value="Master Data"/>
+        <property key="Business Owner" value="TBC"/>
+        <property key="Data Steward" value="TBC"/>
+        <property key="Related Capability ID(s)" value="BC-005; BC-008; BC-009; BC-011; BC-012"/>
+        <property key="Related Process ID(s)" value="BP-008; BP-011"/>
+        <property key="Sensitivity Classification" value="TBC"/>
+        <property key="Criticality" value="TBC"/>
+        <property key="Lifecycle Status" value="Active"/>
+        <property key="Source Document / System" value="01.02.06 Proses Whitelist-Partnership Pegadaian.pdf; 01.02.10 Analisa Calon Debitur.pdf"/>
+        <property key="Repository Status" value="Draft"/>
+        <property key="ArchiMate Mapping Note" value="Data Object"/>
+        <property key="Catalog Source Row" value="15"/>
+      </element>
+      <element xsi:type="archimate:DataObject" name="Data Calon Pengguna" id="brdat004">
+        <documentation>Kandidat entitas data logis: Data Calon Pengguna. Definisi bisnis perlu validasi.</documentation>
+        <property key="Data ID" value="DAT-004"/>
+        <property key="Data Name" value="Data Calon Pengguna"/>
+        <property key="Object Classification" value="Data Entity"/>
+        <property key="Data Level" value="Logical Data Entity"/>
+        <property key="Data Domain" value="Customer"/>
+        <property key="Data Sub-Domain" value="Customer Identity &amp; Profile"/>
+        <property key="Data Description" value="Kandidat entitas data logis: Data Calon Pengguna. Definisi bisnis perlu validasi."/>
+        <property key="Data Category" value="Master Data"/>
+        <property key="Business Owner" value="TBC"/>
+        <property key="Data Steward" value="TBC"/>
+        <property key="Related Capability ID(s)" value="BC-005; BC-006; BC-007"/>
+        <property key="Related Process ID(s)" value="BP-006"/>
+        <property key="Sensitivity Classification" value="TBC"/>
+        <property key="Criticality" value="TBC"/>
+        <property key="Lifecycle Status" value="Active"/>
+        <property key="Source Document / System" value="01.02.04 On Boarding Calon Debitur.pdf"/>
+        <property key="Repository Status" value="Draft"/>
+        <property key="ArchiMate Mapping Note" value="Data Object"/>
+        <property key="Catalog Source Row" value="11"/>
+      </element>
+      <element xsi:type="archimate:DataObject" name="Data Lee Way LKN" id="brdat006">
+        <documentation>Kandidat entitas data logis: Data Lee Way LKN. Definisi bisnis perlu validasi.</documentation>
+        <property key="Data ID" value="DAT-006"/>
+        <property key="Data Name" value="Data Lee Way LKN"/>
+        <property key="Object Classification" value="Data Entity"/>
+        <property key="Data Level" value="Logical Data Entity"/>
+        <property key="Data Domain" value="Customer"/>
+        <property key="Data Sub-Domain" value="Eligibility &amp; Whitelist"/>
+        <property key="Data Description" value="Kandidat entitas data logis: Data Lee Way LKN. Definisi bisnis perlu validasi."/>
+        <property key="Data Category" value="Derived Data"/>
+        <property key="Business Owner" value="TBC"/>
+        <property key="Data Steward" value="TBC"/>
+        <property key="Related Capability ID(s)" value="BC-005; BC-008"/>
+        <property key="Related Process ID(s)" value="BP-007"/>
+        <property key="Sensitivity Classification" value="TBC"/>
+        <property key="Criticality" value="TBC"/>
+        <property key="Lifecycle Status" value="Active"/>
+        <property key="Source Document / System" value="01.02.05 Proses Whitelist Partnership BRILink.pdf"/>
+        <property key="Repository Status" value="Draft"/>
+        <property key="ArchiMate Mapping Note" value="Data Object"/>
+        <property key="Catalog Source Row" value="13"/>
+      </element>
+      <element xsi:type="archimate:DataObject" name="Data Lee Way Non LKN" id="brdat005">
+        <documentation>Kandidat entitas data logis: Data Lee Way Non LKN. Definisi bisnis perlu validasi.</documentation>
+        <property key="Data ID" value="DAT-005"/>
+        <property key="Data Name" value="Data Lee Way Non LKN"/>
+        <property key="Object Classification" value="Data Entity"/>
+        <property key="Data Level" value="Logical Data Entity"/>
+        <property key="Data Domain" value="Customer"/>
+        <property key="Data Sub-Domain" value="Eligibility &amp; Whitelist"/>
+        <property key="Data Description" value="Kandidat entitas data logis: Data Lee Way Non LKN. Definisi bisnis perlu validasi."/>
+        <property key="Data Category" value="Derived Data"/>
+        <property key="Business Owner" value="TBC"/>
+        <property key="Data Steward" value="TBC"/>
+        <property key="Related Capability ID(s)" value="BC-005; BC-008"/>
+        <property key="Related Process ID(s)" value="BP-007"/>
+        <property key="Sensitivity Classification" value="TBC"/>
+        <property key="Criticality" value="TBC"/>
+        <property key="Lifecycle Status" value="Active"/>
+        <property key="Source Document / System" value="01.02.05 Proses Whitelist Partnership BRILink.pdf"/>
+        <property key="Repository Status" value="Draft"/>
+        <property key="ArchiMate Mapping Note" value="Data Object"/>
+        <property key="Catalog Source Row" value="12"/>
+      </element>
+      <element xsi:type="archimate:DataObject" name="Data Pemakaian Service VIDA" id="brdat022">
+        <documentation>Kandidat representasi data logis untuk Data Pemakaian Service VIDA. Definisi, identitas entity dan batasannya perlu dikonfirmasi terhadap pemilik proses dan model data.</documentation>
+        <property key="Data ID" value="DAT-022"/>
+        <property key="Data Name" value="Data Pemakaian Service VIDA"/>
+        <property key="Object Classification" value="Data Entity"/>
+        <property key="Data Level" value="Logical Data Entity"/>
+        <property key="Data Domain" value="Finance"/>
+        <property key="Data Sub-Domain" value="Expense Management"/>
+        <property key="Data Description" value="Kandidat representasi data logis untuk Data Pemakaian Service VIDA. Definisi, identitas entity dan batasannya perlu dikonfirmasi terhadap pemilik proses dan model data."/>
+        <property key="Data Category" value="Transaction Data"/>
+        <property key="Business Owner" value="TBC"/>
+        <property key="Data Steward" value="TBC"/>
+        <property key="Related Capability ID(s)" value="BC-033; BC-034; BC-035; BC-036"/>
+        <property key="Related Process ID(s)" value="BP-021"/>
+        <property key="Sensitivity Classification" value="TBC"/>
+        <property key="Criticality" value="TBC"/>
+        <property key="Lifecycle Status" value="Active"/>
+        <property key="Source Document / System" value="01.02.19 Pembukuan Biaya Pemakaian Service VIDA.pdf"/>
+        <property key="Repository Status" value="Draft"/>
+        <property key="ArchiMate Mapping Note" value="Data Object"/>
+        <property key="Catalog Source Row" value="29"/>
+      </element>
+      <element xsi:type="archimate:DataObject" name="Data Pembukaan Rekening" id="brdat009">
+        <documentation>Kandidat entitas data logis: Data Pembukaan Rekening. Definisi bisnis perlu validasi.</documentation>
+        <property key="Data ID" value="DAT-009"/>
+        <property key="Data Name" value="Data Pembukaan Rekening"/>
+        <property key="Object Classification" value="Data Entity"/>
+        <property key="Data Level" value="Logical Data Entity"/>
+        <property key="Data Domain" value="Account"/>
+        <property key="Data Sub-Domain" value="Account Opening"/>
+        <property key="Data Description" value="Kandidat entitas data logis: Data Pembukaan Rekening. Definisi bisnis perlu validasi."/>
+        <property key="Data Category" value="Transaction Data"/>
+        <property key="Business Owner" value="TBC"/>
+        <property key="Data Steward" value="TBC"/>
+        <property key="Related Capability ID(s)" value="BC-009; BC-010"/>
+        <property key="Related Process ID(s)" value="BP-009"/>
+        <property key="Sensitivity Classification" value="TBC"/>
+        <property key="Criticality" value="TBC"/>
+        <property key="Lifecycle Status" value="Active"/>
+        <property key="Source Document / System" value="01.02.08 Pengajuan Pinjaman Partnership Pegadaian.pdf"/>
+        <property key="Repository Status" value="Draft"/>
+        <property key="ArchiMate Mapping Note" value="Data Object"/>
+        <property key="Catalog Source Row" value="16"/>
+      </element>
+      <element xsi:type="archimate:DataObject" name="Data Pengisian Informasi Calon Debitur" id="brdat010">
+        <documentation>Kandidat entitas data logis: Data Pengisian Informasi Calon Debitur. Definisi bisnis perlu validasi.</documentation>
+        <property key="Data ID" value="DAT-010"/>
+        <property key="Data Name" value="Data Pengisian Informasi Calon Debitur"/>
+        <property key="Object Classification" value="Data Entity"/>
+        <property key="Data Level" value="Logical Data Entity"/>
+        <property key="Data Domain" value="Customer"/>
+        <property key="Data Sub-Domain" value="Customer Identity &amp; Profile"/>
+        <property key="Data Description" value="Kandidat entitas data logis: Data Pengisian Informasi Calon Debitur. Definisi bisnis perlu validasi."/>
+        <property key="Data Category" value="Master Data"/>
+        <property key="Business Owner" value="TBC"/>
+        <property key="Data Steward" value="TBC"/>
+        <property key="Related Capability ID(s)" value="BC-009; BC-010"/>
+        <property key="Related Process ID(s)" value="BP-009; BP-010"/>
+        <property key="Sensitivity Classification" value="TBC"/>
+        <property key="Criticality" value="TBC"/>
+        <property key="Lifecycle Status" value="Active"/>
+        <property key="Source Document / System" value="01.02.08 Pengajuan Pinjaman Partnership Pegadaian.pdf; 01.02.09 Pengajuan Pinjaman Partnership BRILink &amp; BRI Merchant.pdf"/>
+        <property key="Repository Status" value="Draft"/>
+        <property key="ArchiMate Mapping Note" value="Data Object"/>
+        <property key="Catalog Source Row" value="17"/>
+      </element>
+      <element xsi:type="archimate:DataObject" name="Data Realisasi Pemakaian Service VIDA" id="brdat023">
+        <documentation>Kandidat representasi data logis untuk Data Realisasi Pemakaian Service VIDA. Definisi, identitas entity dan batasannya perlu dikonfirmasi terhadap pemilik proses dan model data.</documentation>
+        <property key="Data ID" value="DAT-023"/>
+        <property key="Data Name" value="Data Realisasi Pemakaian Service VIDA"/>
+        <property key="Object Classification" value="Data Entity"/>
+        <property key="Data Level" value="Logical Data Entity"/>
+        <property key="Data Domain" value="Finance"/>
+        <property key="Data Sub-Domain" value="Expense Management"/>
+        <property key="Data Description" value="Kandidat representasi data logis untuk Data Realisasi Pemakaian Service VIDA. Definisi, identitas entity dan batasannya perlu dikonfirmasi terhadap pemilik proses dan model data."/>
+        <property key="Data Category" value="Transaction Data"/>
+        <property key="Business Owner" value="TBC"/>
+        <property key="Data Steward" value="TBC"/>
+        <property key="Related Capability ID(s)" value="BC-033; BC-034; BC-035; BC-036"/>
+        <property key="Related Process ID(s)" value="BP-021"/>
+        <property key="Sensitivity Classification" value="TBC"/>
+        <property key="Criticality" value="TBC"/>
+        <property key="Lifecycle Status" value="Active"/>
+        <property key="Source Document / System" value="01.02.19 Pembukuan Biaya Pemakaian Service VIDA.pdf"/>
+        <property key="Repository Status" value="Draft"/>
+        <property key="ArchiMate Mapping Note" value="Data Object"/>
+        <property key="Catalog Source Row" value="30"/>
+      </element>
+      <element xsi:type="archimate:DataObject" name="Data Update Performance Kredit" id="brdat014">
+        <documentation>Kandidat representasi data logis untuk Data Update Performance Kredit. Definisi, identitas entity dan batasannya perlu dikonfirmasi terhadap pemilik proses dan model data.</documentation>
+        <property key="Data ID" value="DAT-014"/>
+        <property key="Data Name" value="Data Update Performance Kredit"/>
+        <property key="Object Classification" value="Data Entity"/>
+        <property key="Data Level" value="Logical Data Entity"/>
+        <property key="Data Domain" value="Credit"/>
+        <property key="Data Sub-Domain" value="Portfolio Monitoring"/>
+        <property key="Data Description" value="Kandidat representasi data logis untuk Data Update Performance Kredit. Definisi, identitas entity dan batasannya perlu dikonfirmasi terhadap pemilik proses dan model data."/>
+        <property key="Data Category" value="Transaction Data"/>
+        <property key="Business Owner" value="TBC"/>
+        <property key="Data Steward" value="TBC"/>
+        <property key="Related Capability ID(s)" value="BC-019; BC-020; BC-021; BC-022; BC-023"/>
+        <property key="Related Process ID(s)" value="BP-015; BP-016; BP-017"/>
+        <property key="Sensitivity Classification" value="TBC"/>
+        <property key="Criticality" value="TBC"/>
+        <property key="Lifecycle Status" value="Active"/>
+        <property key="Source Document / System" value="01.02.14 Monitoring Kredit-Harian.pdf"/>
+        <property key="Repository Status" value="Draft"/>
+        <property key="ArchiMate Mapping Note" value="Data Object"/>
+        <property key="Catalog Source Row" value="21"/>
+      </element>
+      <element xsi:type="archimate:DataObject" name="Data Whitelist Eligible" id="brdat007">
+        <documentation>Kandidat entitas data logis: Data Whitelist Eligible. Definisi bisnis perlu validasi.</documentation>
+        <property key="Data ID" value="DAT-007"/>
+        <property key="Data Name" value="Data Whitelist Eligible"/>
+        <property key="Object Classification" value="Data Entity"/>
+        <property key="Data Level" value="Logical Data Entity"/>
+        <property key="Data Domain" value="Customer"/>
+        <property key="Data Sub-Domain" value="Eligibility &amp; Whitelist"/>
+        <property key="Data Description" value="Kandidat entitas data logis: Data Whitelist Eligible. Definisi bisnis perlu validasi."/>
+        <property key="Data Category" value="Derived Data"/>
+        <property key="Business Owner" value="TBC"/>
+        <property key="Data Steward" value="TBC"/>
+        <property key="Related Capability ID(s)" value="BC-005; BC-008; BC-019; BC-020; BC-021; BC-022; BC-023"/>
+        <property key="Related Process ID(s)" value="BP-007; BP-008; BP-015; BP-016; BP-017"/>
+        <property key="Sensitivity Classification" value="TBC"/>
+        <property key="Criticality" value="TBC"/>
+        <property key="Lifecycle Status" value="Active"/>
+        <property key="Source Document / System" value="01.02.05 Proses Whitelist Partnership BRILink.pdf; 01.02.06 Proses Whitelist-Partnership Pegadaian.pdf; 01.02.14 Monitoring Kredit-Harian.pdf"/>
+        <property key="Repository Status" value="Draft"/>
+        <property key="ArchiMate Mapping Note" value="Data Object"/>
+        <property key="Catalog Source Row" value="14"/>
+      </element>
+      <element xsi:type="archimate:DataObject" name="Hasil Credit Risk Scoring" id="brdat001">
+        <documentation>Hasil penilaian risiko kredit yang dihasilkan dari proses credit risk scoring dan digunakan untuk keputusan/klasifikasi lanjutan.</documentation>
+        <property key="Data ID" value="DAT-001"/>
+        <property key="Data Name" value="Hasil Credit Risk Scoring"/>
+        <property key="Object Classification" value="Data Entity"/>
+        <property key="Data Level" value="Logical Data Entity"/>
+        <property key="Data Domain" value="Credit"/>
+        <property key="Data Sub-Domain" value="Credit Risk"/>
+        <property key="Data Description" value="Hasil penilaian risiko kredit yang dihasilkan dari proses credit risk scoring dan digunakan untuk keputusan/klasifikasi lanjutan."/>
+        <property key="Data Category" value="Derived Data"/>
+        <property key="Business Owner" value="TBC"/>
+        <property key="Data Steward" value="TBC"/>
+        <property key="Related Capability ID(s)" value="BC-005; BC-008"/>
+        <property key="Related Process ID(s)" value="BP-007"/>
+        <property key="Sensitivity Classification" value="TBC"/>
+        <property key="Criticality" value="TBC"/>
+        <property key="Lifecycle Status" value="Active"/>
+        <property key="Source Document / System" value="01.02.05 Proses Whitelist Partnership BRILink.pdf"/>
+        <property key="Repository Status" value="Draft"/>
+        <property key="ArchiMate Mapping Note" value="Data Object"/>
+        <property key="Catalog Source Row" value="8"/>
+      </element>
+      <element xsi:type="archimate:DataObject" name="Hasil Klaim Asuransi" id="brdat027">
+        <documentation>Kandidat representasi data logis untuk Hasil Klaim Asuransi. Definisi, identitas entity dan batasannya perlu dikonfirmasi terhadap pemilik proses dan model data.</documentation>
+        <property key="Data ID" value="DAT-027"/>
+        <property key="Data Name" value="Hasil Klaim Asuransi"/>
+        <property key="Object Classification" value="Data Entity"/>
+        <property key="Data Level" value="Logical Data Entity"/>
+        <property key="Data Domain" value="Insurance"/>
+        <property key="Data Sub-Domain" value="Credit Insurance"/>
+        <property key="Data Description" value="Kandidat representasi data logis untuk Hasil Klaim Asuransi. Definisi, identitas entity dan batasannya perlu dikonfirmasi terhadap pemilik proses dan model data."/>
+        <property key="Data Category" value="Reference Data"/>
+        <property key="Business Owner" value="TBC"/>
+        <property key="Data Steward" value="TBC"/>
+        <property key="Sensitivity Classification" value="TBC"/>
+        <property key="Criticality" value="TBC"/>
+        <property key="Lifecycle Status" value="Active"/>
+        <property key="Source Document / System" value="01.02.22 Klaim Asuransi Kredit.pdf"/>
+        <property key="Repository Status" value="Draft"/>
+        <property key="ArchiMate Mapping Note" value="Data Object"/>
+        <property key="Catalog Source Row" value="34"/>
+      </element>
+      <element xsi:type="archimate:DataObject" name="Hasil Pembukuan Pelunasan Dipercepat" id="brdat013">
+        <documentation>Kandidat representasi data logis untuk Hasil Pembukuan Pelunasan Dipercepat. Definisi, identitas entity dan batasannya perlu dikonfirmasi terhadap pemilik proses dan model data.</documentation>
+        <property key="Data ID" value="DAT-013"/>
+        <property key="Data Name" value="Hasil Pembukuan Pelunasan Dipercepat"/>
+        <property key="Object Classification" value="Data Entity"/>
+        <property key="Data Level" value="Logical Data Entity"/>
+        <property key="Data Domain" value="Credit"/>
+        <property key="Data Sub-Domain" value="Loan Servicing"/>
+        <property key="Data Description" value="Kandidat representasi data logis untuk Hasil Pembukuan Pelunasan Dipercepat. Definisi, identitas entity dan batasannya perlu dikonfirmasi terhadap pemilik proses dan model data."/>
+        <property key="Data Category" value="Transaction Data"/>
+        <property key="Business Owner" value="TBC"/>
+        <property key="Data Steward" value="TBC"/>
+        <property key="Related Capability ID(s)" value="BC-014; BC-017; BC-018"/>
+        <property key="Related Process ID(s)" value="BP-014"/>
+        <property key="Sensitivity Classification" value="TBC"/>
+        <property key="Criticality" value="TBC"/>
+        <property key="Lifecycle Status" value="Active"/>
+        <property key="Source Document / System" value="01.02.13 Pelunasan Pinjaman Dipercepat.pdf"/>
+        <property key="Repository Status" value="Draft"/>
+        <property key="ArchiMate Mapping Note" value="Data Object"/>
+        <property key="Catalog Source Row" value="20"/>
+      </element>
+      <element xsi:type="archimate:DataObject" name="Hasil Pembukuan Pembayaran Pinjaman" id="brdat012">
+        <documentation>Kandidat representasi data logis untuk Hasil Pembukuan Pembayaran Pinjaman. Definisi, identitas entity dan batasannya perlu dikonfirmasi terhadap pemilik proses dan model data.</documentation>
+        <property key="Data ID" value="DAT-012"/>
+        <property key="Data Name" value="Hasil Pembukuan Pembayaran Pinjaman"/>
+        <property key="Object Classification" value="Data Entity"/>
+        <property key="Data Level" value="Logical Data Entity"/>
+        <property key="Data Domain" value="Credit"/>
+        <property key="Data Sub-Domain" value="Loan Servicing"/>
+        <property key="Data Description" value="Kandidat representasi data logis untuk Hasil Pembukuan Pembayaran Pinjaman. Definisi, identitas entity dan batasannya perlu dikonfirmasi terhadap pemilik proses dan model data."/>
+        <property key="Data Category" value="Transaction Data"/>
+        <property key="Business Owner" value="TBC"/>
+        <property key="Data Steward" value="TBC"/>
+        <property key="Related Capability ID(s)" value="BC-014; BC-016; BC-018"/>
+        <property key="Related Process ID(s)" value="BP-013"/>
+        <property key="Sensitivity Classification" value="TBC"/>
+        <property key="Criticality" value="TBC"/>
+        <property key="Lifecycle Status" value="Active"/>
+        <property key="Source Document / System" value="01.02.12 Pembayaran Pinjaman.pdf"/>
+        <property key="Repository Status" value="Draft"/>
+        <property key="ArchiMate Mapping Note" value="Data Object"/>
+        <property key="Catalog Source Row" value="19"/>
+      </element>
+      <element xsi:type="archimate:DataObject" name="Invoice Asuransi" id="brdat015">
+        <documentation>Kandidat representasi data logis untuk Invoice Asuransi. Definisi, identitas entity dan batasannya perlu dikonfirmasi terhadap pemilik proses dan model data.</documentation>
+        <property key="Data ID" value="DAT-015"/>
+        <property key="Data Name" value="Invoice Asuransi"/>
+        <property key="Object Classification" value="Data Entity"/>
+        <property key="Data Level" value="Logical Data Entity"/>
+        <property key="Data Domain" value="Insurance"/>
+        <property key="Data Sub-Domain" value="Credit Insurance"/>
+        <property key="Data Description" value="Kandidat representasi data logis untuk Invoice Asuransi. Definisi, identitas entity dan batasannya perlu dikonfirmasi terhadap pemilik proses dan model data."/>
+        <property key="Data Category" value="Transaction Data"/>
+        <property key="Business Owner" value="TBC"/>
+        <property key="Data Steward" value="TBC"/>
+        <property key="Related Capability ID(s)" value="BC-029; BC-030; BC-031"/>
+        <property key="Related Process ID(s)" value="BP-018"/>
+        <property key="Sensitivity Classification" value="TBC"/>
+        <property key="Criticality" value="TBC"/>
+        <property key="Lifecycle Status" value="Active"/>
+        <property key="Source Document / System" value="01.02.15 Penerbitan Polis Asuransi Kredit.pdf"/>
+        <property key="Repository Status" value="Draft"/>
+        <property key="ArchiMate Mapping Note" value="Data Object"/>
+        <property key="Catalog Source Row" value="22"/>
+      </element>
+      <element xsi:type="archimate:DataObject" name="Invoice Penagihan" id="brdat024">
+        <documentation>Kandidat representasi data logis untuk Invoice Penagihan. Definisi, identitas entity dan batasannya perlu dikonfirmasi terhadap pemilik proses dan model data.</documentation>
+        <property key="Data ID" value="DAT-024"/>
+        <property key="Data Name" value="Invoice Penagihan"/>
+        <property key="Object Classification" value="Data Entity"/>
+        <property key="Data Level" value="Logical Data Entity"/>
+        <property key="Data Domain" value="Finance"/>
+        <property key="Data Sub-Domain" value="Expense Management"/>
+        <property key="Data Description" value="Kandidat representasi data logis untuk Invoice Penagihan. Definisi, identitas entity dan batasannya perlu dikonfirmasi terhadap pemilik proses dan model data."/>
+        <property key="Data Category" value="Transaction Data"/>
+        <property key="Business Owner" value="TBC"/>
+        <property key="Data Steward" value="TBC"/>
+        <property key="Related Capability ID(s)" value="BC-033; BC-034; BC-035; BC-036"/>
+        <property key="Related Process ID(s)" value="BP-021"/>
+        <property key="Sensitivity Classification" value="TBC"/>
+        <property key="Criticality" value="TBC"/>
+        <property key="Lifecycle Status" value="Active"/>
+        <property key="Source Document / System" value="01.02.19 Pembukuan Biaya Pemakaian Service VIDA.pdf"/>
+        <property key="Repository Status" value="Draft"/>
+        <property key="ArchiMate Mapping Note" value="Data Object"/>
+        <property key="Catalog Source Row" value="31"/>
+      </element>
+      <element xsi:type="archimate:DataObject" name="Jurnal Biaya Pemakaian Service VIDA" id="brdat026">
+        <documentation>Kandidat representasi data logis untuk Jurnal Biaya Pemakaian Service VIDA. Definisi, identitas entity dan batasannya perlu dikonfirmasi terhadap pemilik proses dan model data.</documentation>
+        <property key="Data ID" value="DAT-026"/>
+        <property key="Data Name" value="Jurnal Biaya Pemakaian Service VIDA"/>
+        <property key="Object Classification" value="Data Entity"/>
+        <property key="Data Level" value="Logical Data Entity"/>
+        <property key="Data Domain" value="Finance"/>
+        <property key="Data Sub-Domain" value="Expense Management"/>
+        <property key="Data Description" value="Kandidat representasi data logis untuk Jurnal Biaya Pemakaian Service VIDA. Definisi, identitas entity dan batasannya perlu dikonfirmasi terhadap pemilik proses dan model data."/>
+        <property key="Data Category" value="Transaction Data"/>
+        <property key="Business Owner" value="TBC"/>
+        <property key="Data Steward" value="TBC"/>
+        <property key="Related Capability ID(s)" value="BC-033; BC-034; BC-035; BC-036"/>
+        <property key="Related Process ID(s)" value="BP-021"/>
+        <property key="Sensitivity Classification" value="TBC"/>
+        <property key="Criticality" value="TBC"/>
+        <property key="Lifecycle Status" value="Active"/>
+        <property key="Source Document / System" value="01.02.19 Pembukuan Biaya Pemakaian Service VIDA.pdf"/>
+        <property key="Repository Status" value="Draft"/>
+        <property key="ArchiMate Mapping Note" value="Data Object"/>
+        <property key="Catalog Source Row" value="33"/>
+      </element>
+      <element xsi:type="archimate:DataObject" name="Jurnal Penambahan CKPN" id="brdat021">
+        <documentation>Kandidat representasi data logis untuk Jurnal Penambahan CKPN. Definisi, identitas entity dan batasannya perlu dikonfirmasi terhadap pemilik proses dan model data.</documentation>
+        <property key="Data ID" value="DAT-021"/>
+        <property key="Data Name" value="Jurnal Penambahan CKPN"/>
+        <property key="Object Classification" value="Data Entity"/>
+        <property key="Data Level" value="Logical Data Entity"/>
+        <property key="Data Domain" value="Credit"/>
+        <property key="Data Sub-Domain" value="Credit Recovery"/>
+        <property key="Data Description" value="Kandidat representasi data logis untuk Jurnal Penambahan CKPN. Definisi, identitas entity dan batasannya perlu dikonfirmasi terhadap pemilik proses dan model data."/>
+        <property key="Data Category" value="Transaction Data"/>
+        <property key="Business Owner" value="TBC"/>
+        <property key="Data Steward" value="TBC"/>
+        <property key="Related Capability ID(s)" value="BC-024; BC-026; BC-027"/>
+        <property key="Related Process ID(s)" value="BP-020"/>
+        <property key="Sensitivity Classification" value="TBC"/>
+        <property key="Criticality" value="TBC"/>
+        <property key="Lifecycle Status" value="Active"/>
+        <property key="Source Document / System" value="01.02.17 Penghapusbukuan Kredit Bermasalah.pdf"/>
+        <property key="Repository Status" value="Draft"/>
+        <property key="ArchiMate Mapping Note" value="Data Object"/>
+        <property key="Catalog Source Row" value="28"/>
+      </element>
+      <element xsi:type="archimate:DataObject" name="List Debitur Calon Write-off" id="brdat017">
+        <documentation>Kandidat entitas data logis: List Debitur Calon Write-off. Definisi bisnis perlu validasi.</documentation>
+        <property key="Data ID" value="DAT-017"/>
+        <property key="Data Name" value="List Debitur Calon Write-off"/>
+        <property key="Object Classification" value="Data Entity"/>
+        <property key="Data Level" value="Logical Data Entity"/>
+        <property key="Data Domain" value="Credit"/>
+        <property key="Data Sub-Domain" value="Credit Recovery"/>
+        <property key="Data Description" value="Kandidat entitas data logis: List Debitur Calon Write-off. Definisi bisnis perlu validasi."/>
+        <property key="Data Category" value="Transaction Data"/>
+        <property key="Business Owner" value="TBC"/>
+        <property key="Data Steward" value="TBC"/>
+        <property key="Related Capability ID(s)" value="BC-024; BC-026; BC-027"/>
+        <property key="Related Process ID(s)" value="BP-020"/>
+        <property key="Sensitivity Classification" value="TBC"/>
+        <property key="Criticality" value="TBC"/>
+        <property key="Lifecycle Status" value="Active"/>
+        <property key="Source Document / System" value="01.02.17 Penghapusbukuan Kredit Bermasalah.pdf"/>
+        <property key="Repository Status" value="Draft"/>
+        <property key="ArchiMate Mapping Note" value="Data Object"/>
+        <property key="Catalog Source Row" value="24"/>
+      </element>
+      <element xsi:type="archimate:DataObject" name="List Debitur Write-off" id="brdat019">
+        <documentation>Kandidat entitas data logis: List Debitur Write-off. Definisi bisnis perlu validasi.</documentation>
+        <property key="Data ID" value="DAT-019"/>
+        <property key="Data Name" value="List Debitur Write-off"/>
+        <property key="Object Classification" value="Data Entity"/>
+        <property key="Data Level" value="Logical Data Entity"/>
+        <property key="Data Domain" value="Credit"/>
+        <property key="Data Sub-Domain" value="Credit Recovery"/>
+        <property key="Data Description" value="Kandidat entitas data logis: List Debitur Write-off. Definisi bisnis perlu validasi."/>
+        <property key="Data Category" value="Transaction Data"/>
+        <property key="Business Owner" value="TBC"/>
+        <property key="Data Steward" value="TBC"/>
+        <property key="Related Capability ID(s)" value="BC-024; BC-026; BC-027"/>
+        <property key="Related Process ID(s)" value="BP-020"/>
+        <property key="Sensitivity Classification" value="TBC"/>
+        <property key="Criticality" value="TBC"/>
+        <property key="Lifecycle Status" value="Active"/>
+        <property key="Source Document / System" value="01.02.17 Penghapusbukuan Kredit Bermasalah.pdf"/>
+        <property key="Repository Status" value="Draft"/>
+        <property key="ArchiMate Mapping Note" value="Data Object"/>
+        <property key="Catalog Source Row" value="26"/>
+      </element>
+      <element xsi:type="archimate:DataObject" name="Loss Write Off" id="brdat020">
+        <documentation>Kandidat representasi data logis untuk Loss Write Off. Definisi, identitas entity dan batasannya perlu dikonfirmasi terhadap pemilik proses dan model data.</documentation>
+        <property key="Data ID" value="DAT-020"/>
+        <property key="Data Name" value="Loss Write Off"/>
+        <property key="Object Classification" value="Data Entity"/>
+        <property key="Data Level" value="Logical Data Entity"/>
+        <property key="Data Domain" value="Credit"/>
+        <property key="Data Sub-Domain" value="Credit Recovery"/>
+        <property key="Data Description" value="Kandidat representasi data logis untuk Loss Write Off. Definisi, identitas entity dan batasannya perlu dikonfirmasi terhadap pemilik proses dan model data."/>
+        <property key="Data Category" value="Transaction Data"/>
+        <property key="Business Owner" value="TBC"/>
+        <property key="Data Steward" value="TBC"/>
+        <property key="Related Capability ID(s)" value="BC-024; BC-026; BC-027"/>
+        <property key="Related Process ID(s)" value="BP-020"/>
+        <property key="Sensitivity Classification" value="TBC"/>
+        <property key="Criticality" value="TBC"/>
+        <property key="Lifecycle Status" value="Active"/>
+        <property key="Source Document / System" value="01.02.17 Penghapusbukuan Kredit Bermasalah.pdf"/>
+        <property key="Repository Status" value="Draft"/>
+        <property key="ArchiMate Mapping Note" value="Data Object"/>
+        <property key="Catalog Source Row" value="27"/>
+      </element>
+      <element xsi:type="archimate:DataObject" name="Memorandum Analisis Uji Kelayakan (MAUK)" id="brdat002">
+        <documentation>Kandidat representasi data logis untuk Memorandum Analisis Uji Kelayakan (MAUK). Definisi, identitas entity dan batasannya perlu dikonfirmasi terhadap pemilik proses dan model data.</documentation>
+        <property key="Data ID" value="DAT-002"/>
+        <property key="Data Name" value="Memorandum Analisis Uji Kelayakan (MAUK)"/>
+        <property key="Object Classification" value="Data Entity"/>
+        <property key="Data Level" value="Logical Data Entity"/>
+        <property key="Data Domain" value="Partnership"/>
+        <property key="Data Sub-Domain" value="Partnership Operations"/>
+        <property key="Data Description" value="Kandidat representasi data logis untuk Memorandum Analisis Uji Kelayakan (MAUK). Definisi, identitas entity dan batasannya perlu dikonfirmasi terhadap pemilik proses dan model data."/>
+        <property key="Data Category" value="Reference Data"/>
+        <property key="Business Owner" value="TBC"/>
+        <property key="Data Steward" value="TBC"/>
+        <property key="Related Capability ID(s)" value="BC-001; BC-003"/>
+        <property key="Related Process ID(s)" value="BP-004"/>
+        <property key="Sensitivity Classification" value="TBC"/>
+        <property key="Criticality" value="TBC"/>
+        <property key="Lifecycle Status" value="Active"/>
+        <property key="Source Document / System" value="01.02.02 Analisis &amp; Putusan MAUK Partner.pdf"/>
+        <property key="Repository Status" value="Draft"/>
+        <property key="ArchiMate Mapping Note" value="Data Object"/>
+        <property key="Catalog Source Row" value="9"/>
+      </element>
+      <element xsi:type="archimate:DataObject" name="Perjanjian Kerjasama" id="brdat003">
+        <documentation>Kandidat representasi data logis untuk Perjanjian Kerjasama. Definisi, identitas entity dan batasannya perlu dikonfirmasi terhadap pemilik proses dan model data.</documentation>
+        <property key="Data ID" value="DAT-003"/>
+        <property key="Data Name" value="Perjanjian Kerjasama"/>
+        <property key="Object Classification" value="Data Entity"/>
+        <property key="Data Level" value="Logical Data Entity"/>
+        <property key="Data Domain" value="Partnership"/>
+        <property key="Data Sub-Domain" value="Partnership Operations"/>
+        <property key="Data Description" value="Kandidat representasi data logis untuk Perjanjian Kerjasama. Definisi, identitas entity dan batasannya perlu dikonfirmasi terhadap pemilik proses dan model data."/>
+        <property key="Data Category" value="Reference Data"/>
+        <property key="Business Owner" value="TBC"/>
+        <property key="Data Steward" value="TBC"/>
+        <property key="Related Capability ID(s)" value="BC-001; BC-004"/>
+        <property key="Related Process ID(s)" value="BP-005"/>
+        <property key="Sensitivity Classification" value="TBC"/>
+        <property key="Criticality" value="TBC"/>
+        <property key="Lifecycle Status" value="Active"/>
+        <property key="Source Document / System" value="01.02.03 Penandatanganan Perjanjian Kerjasama.pdf"/>
+        <property key="Repository Status" value="Draft"/>
+        <property key="ArchiMate Mapping Note" value="Data Object"/>
+        <property key="Catalog Source Row" value="10"/>
+      </element>
+      <element xsi:type="archimate:DataObject" name="Perjanjian Pinjaman Elektronik" id="brdat011">
+        <documentation>Kandidat representasi data logis untuk Perjanjian Pinjaman Elektronik. Definisi, identitas entity dan batasannya perlu dikonfirmasi terhadap pemilik proses dan model data.</documentation>
+        <property key="Data ID" value="DAT-011"/>
+        <property key="Data Name" value="Perjanjian Pinjaman Elektronik"/>
+        <property key="Object Classification" value="Data Entity"/>
+        <property key="Data Level" value="Logical Data Entity"/>
+        <property key="Data Domain" value="Credit"/>
+        <property key="Data Sub-Domain" value="Origination"/>
+        <property key="Data Description" value="Kandidat representasi data logis untuk Perjanjian Pinjaman Elektronik. Definisi, identitas entity dan batasannya perlu dikonfirmasi terhadap pemilik proses dan model data."/>
+        <property key="Data Category" value="Reference Data"/>
+        <property key="Business Owner" value="TBC"/>
+        <property key="Data Steward" value="TBC"/>
+        <property key="Related Capability ID(s)" value="BC-009; BC-013; BC-014; BC-015"/>
+        <property key="Related Process ID(s)" value="BP-012"/>
+        <property key="Sensitivity Classification" value="TBC"/>
+        <property key="Criticality" value="TBC"/>
+        <property key="Lifecycle Status" value="Active"/>
+        <property key="Source Document / System" value="01.02.11 Pencairan Pinjaman.pdf"/>
+        <property key="Repository Status" value="Draft"/>
+        <property key="ArchiMate Mapping Note" value="Data Object"/>
+        <property key="Catalog Source Row" value="18"/>
+      </element>
+      <element xsi:type="archimate:DataObject" name="Polis Asuransi" id="brdat016">
+        <documentation>Kandidat representasi data logis untuk Polis Asuransi. Definisi, identitas entity dan batasannya perlu dikonfirmasi terhadap pemilik proses dan model data.</documentation>
+        <property key="Data ID" value="DAT-016"/>
+        <property key="Data Name" value="Polis Asuransi"/>
+        <property key="Object Classification" value="Data Entity"/>
+        <property key="Data Level" value="Logical Data Entity"/>
+        <property key="Data Domain" value="Insurance"/>
+        <property key="Data Sub-Domain" value="Credit Insurance"/>
+        <property key="Data Description" value="Kandidat representasi data logis untuk Polis Asuransi. Definisi, identitas entity dan batasannya perlu dikonfirmasi terhadap pemilik proses dan model data."/>
+        <property key="Data Category" value="Reference Data"/>
+        <property key="Business Owner" value="TBC"/>
+        <property key="Data Steward" value="TBC"/>
+        <property key="Related Capability ID(s)" value="BC-029; BC-030; BC-031"/>
+        <property key="Related Process ID(s)" value="BP-018"/>
+        <property key="Sensitivity Classification" value="TBC"/>
+        <property key="Criticality" value="TBC"/>
+        <property key="Lifecycle Status" value="Active"/>
+        <property key="Source Document / System" value="01.02.15 Penerbitan Polis Asuransi Kredit.pdf"/>
+        <property key="Repository Status" value="Draft"/>
+        <property key="ArchiMate Mapping Note" value="Data Object"/>
+        <property key="Catalog Source Row" value="23"/>
+      </element>
+    </folder>
+  </folder>
+  <folder name="Technology &amp; Physical" id="id-0004ea60594b49b59c4a7b7ed2d9740a" type="technology">
+    <folder name="TE_01_Technology Portfolio" id="id-17e372516a4c4231a552a1d4f56f0343">
+      <element xsi:type="archimate:TechnologyService" name="DB Authentication New" id="brtech008">
+        <documentation>Database untuk mendukung layanan autentikasi baru.</documentation>
+        <property key="Technology ID" value="TECH-008"/>
+        <property key="Technology Name" value="DB Authentication New"/>
+        <property key="Object Classification" value="Database Platform"/>
+        <property key="TOGAF TRM Service Category" value="Data Management Services"/>
+        <property key="TOGAF TRM Functional Service" value="Database Management System (DBMS) Services"/>
+        <property key="Technology Description" value="Database untuk mendukung layanan autentikasi baru."/>
+        <property key="Vendor" value="PostgreSQL Global Development Group"/>
+        <property key="Product" value="PostgreSQL"/>
+        <property key="Version" value="TBC"/>
+        <property key="Environment" value="Production"/>
+        <property key="Supported Application ID(s)" value="APP-031"/>
+        <property key="Technology Service" value="Authentication Database Service"/>
+        <property key="Lifecycle Status" value="Active"/>
+        <property key="Support Status" value="TBC"/>
+        <property key="Criticality" value="TBC"/>
+        <property key="Technology Owner" value="IT Infrastructure"/>
+        <property key="Source Document / System" value="Drawio - Pinang Dana Talangan"/>
+        <property key="Source Reference" value="Sheet - Master Backup"/>
+        <property key="Status" value="Draft"/>
+        <property key="ArchiMate Element" value="Technology Service"/>
+        <property key="Catalog Source Row" value="15"/>
+      </element>
+      <element xsi:type="archimate:TechnologyService" name="DB Pinang CMS" id="brtech006">
+        <documentation>Database pendukung Content Management System Dana Talangan.</documentation>
+        <property key="Technology ID" value="TECH-006"/>
+        <property key="Technology Name" value="DB Pinang CMS"/>
+        <property key="Object Classification" value="Database Platform"/>
+        <property key="TOGAF TRM Service Category" value="Data Management Services"/>
+        <property key="TOGAF TRM Functional Service" value="Database Management System (DBMS) Services"/>
+        <property key="Technology Description" value="Database pendukung Content Management System Dana Talangan."/>
+        <property key="Vendor" value="PostgreSQL Global Development Group"/>
+        <property key="Product" value="PostgreSQL"/>
+        <property key="Version" value="TBC"/>
+        <property key="Environment" value="Production"/>
+        <property key="Supported Application ID(s)" value="APP-023"/>
+        <property key="Technology Service" value="CMS Database Service"/>
+        <property key="Lifecycle Status" value="Active"/>
+        <property key="Support Status" value="TBC"/>
+        <property key="Criticality" value="TBC"/>
+        <property key="Technology Owner" value="IT Infrastructure"/>
+        <property key="Source Document / System" value="Drawio - Pinang Dana Talangan"/>
+        <property key="Source Reference" value="Sheet - Master Backup"/>
+        <property key="Status" value="Draft"/>
+        <property key="ArchiMate Element" value="Technology Service"/>
+        <property key="Catalog Source Row" value="13"/>
+      </element>
+      <element xsi:type="archimate:TechnologyService" name="DB Pinang Master" id="brtech004">
+        <documentation>Database utama yang mendukung penyimpanan data aplikasi Pinang.</documentation>
+        <property key="Technology ID" value="TECH-004"/>
+        <property key="Technology Name" value="DB Pinang Master"/>
+        <property key="Object Classification" value="Database Platform"/>
+        <property key="TOGAF TRM Service Category" value="Data Management Services"/>
+        <property key="TOGAF TRM Functional Service" value="Database Management System (DBMS) Services"/>
+        <property key="Technology Description" value="Database utama yang mendukung penyimpanan data aplikasi Pinang."/>
+        <property key="Vendor" value="PostgreSQL Global Development Group"/>
+        <property key="Product" value="PostgreSQL"/>
+        <property key="Version" value="TBC"/>
+        <property key="Environment" value="Production"/>
+        <property key="Supported Application ID(s)" value="APP-001; APP-026"/>
+        <property key="Technology Service" value="Pinang Database Service"/>
+        <property key="Lifecycle Status" value="Active"/>
+        <property key="Support Status" value="TBC"/>
+        <property key="Criticality" value="TBC"/>
+        <property key="Technology Owner" value="IT Infrastructure"/>
+        <property key="Source Document / System" value="Drawio - Pinang Dana Talangan"/>
+        <property key="Source Reference" value="Sheet - Master Backup"/>
+        <property key="Status" value="Draft"/>
+        <property key="ArchiMate Element" value="Technology Service"/>
+        <property key="Catalog Source Row" value="11"/>
+      </element>
+      <element xsi:type="archimate:TechnologyService" name="DB Pinang Slave" id="brtech005">
+        <documentation>Database sekunder yang mendukung arsitektur database Pinang.</documentation>
+        <property key="Technology ID" value="TECH-005"/>
+        <property key="Technology Name" value="DB Pinang Slave"/>
+        <property key="Object Classification" value="Database Platform"/>
+        <property key="TOGAF TRM Service Category" value="Data Management Services"/>
+        <property key="TOGAF TRM Functional Service" value="Database Management System (DBMS) Services"/>
+        <property key="Technology Description" value="Database sekunder yang mendukung arsitektur database Pinang."/>
+        <property key="Vendor" value="PostgreSQL Global Development Group"/>
+        <property key="Product" value="PostgreSQL"/>
+        <property key="Version" value="TBC"/>
+        <property key="Environment" value="Production"/>
+        <property key="Supported Application ID(s)" value="APP-001; APP-026"/>
+        <property key="Technology Service" value="Pinang Database Replication Service"/>
+        <property key="Lifecycle Status" value="Active"/>
+        <property key="Support Status" value="TBC"/>
+        <property key="Criticality" value="TBC"/>
+        <property key="Technology Owner" value="IT Infrastructure"/>
+        <property key="Source Document / System" value="Drawio - Pinang Dana Talangan"/>
+        <property key="Source Reference" value="Sheet - Master Backup"/>
+        <property key="Status" value="Draft"/>
+        <property key="ArchiMate Element" value="Technology Service"/>
+        <property key="Catalog Source Row" value="12"/>
+      </element>
+      <element xsi:type="archimate:TechnologyService" name="DB Whitelist" id="brtech007">
+        <documentation>Database yang digunakan untuk menyimpan informasi whitelist.</documentation>
+        <property key="Technology ID" value="TECH-007"/>
+        <property key="Technology Name" value="DB Whitelist"/>
+        <property key="Object Classification" value="Database Platform"/>
+        <property key="TOGAF TRM Service Category" value="Data Management Services"/>
+        <property key="TOGAF TRM Functional Service" value="Database Management System (DBMS) Services"/>
+        <property key="Technology Description" value="Database yang digunakan untuk menyimpan informasi whitelist."/>
+        <property key="Vendor" value="PostgreSQL Global Development Group"/>
+        <property key="Product" value="PostgreSQL"/>
+        <property key="Version" value="TBC"/>
+        <property key="Environment" value="Production"/>
+        <property key="Supported Application ID(s)" value="APP-007; APP-036"/>
+        <property key="Technology Service" value="Whitelist Database Service"/>
+        <property key="Lifecycle Status" value="Active"/>
+        <property key="Support Status" value="TBC"/>
+        <property key="Criticality" value="TBC"/>
+        <property key="Technology Owner" value="IT Infrastructure"/>
+        <property key="Source Document / System" value="Drawio - Pinang Dana Talangan"/>
+        <property key="Source Reference" value="Sheet - Master Backup"/>
+        <property key="Status" value="Draft"/>
+        <property key="ArchiMate Element" value="Technology Service"/>
+        <property key="Catalog Source Row" value="14"/>
+      </element>
+      <element xsi:type="archimate:TechnologyService" name="ESB AGRO" id="brtech016">
+        <documentation>Enterprise Service Bus untuk integrasi layanan pada lingkungan AGRO.</documentation>
+        <property key="Technology ID" value="TECH-016"/>
+        <property key="Technology Name" value="ESB AGRO"/>
+        <property key="Object Classification" value="Integration Platform"/>
+        <property key="TOGAF TRM Service Category" value="Data Interchange Services"/>
+        <property key="TOGAF TRM Functional Service" value="Electronic Data interchange Services"/>
+        <property key="Technology Description" value="Enterprise Service Bus untuk integrasi layanan pada lingkungan AGRO."/>
+        <property key="Vendor" value="TBC"/>
+        <property key="Product" value="ESB AGRO"/>
+        <property key="Version" value="TBC"/>
+        <property key="Environment" value="Production"/>
+        <property key="Supported Application ID(s)" value="APP-008"/>
+        <property key="Technology Service" value="Enterprise Application Integration Service"/>
+        <property key="Lifecycle Status" value="Active"/>
+        <property key="Support Status" value="TBC"/>
+        <property key="Criticality" value="TBC"/>
+        <property key="Technology Owner" value="IT Infrastructure"/>
+        <property key="Source Document / System" value="Drawio - Pinang Dana Talangan"/>
+        <property key="Source Reference" value="Sheet - Master Backup"/>
+        <property key="Status" value="Draft"/>
+        <property key="ArchiMate Element" value="Technology Service"/>
+        <property key="Catalog Source Row" value="23"/>
+      </element>
+      <element xsi:type="archimate:TechnologyService" name="ESB BRI" id="brtech017">
+        <documentation>Enterprise Service Bus untuk integrasi layanan dengan BRI.</documentation>
+        <property key="Technology ID" value="TECH-017"/>
+        <property key="Technology Name" value="ESB BRI"/>
+        <property key="Object Classification" value="Integration Platform"/>
+        <property key="TOGAF TRM Service Category" value="Data Interchange Services"/>
+        <property key="TOGAF TRM Functional Service" value="Electronic Data interchange Services"/>
+        <property key="Technology Description" value="Enterprise Service Bus untuk integrasi layanan dengan BRI."/>
+        <property key="Vendor" value="TBC"/>
+        <property key="Product" value="ESB BRI"/>
+        <property key="Version" value="TBC"/>
+        <property key="Environment" value="Production"/>
+        <property key="Supported Application ID(s)" value="TBC"/>
+        <property key="Technology Service" value="Enterprise Application Integration Service"/>
+        <property key="Lifecycle Status" value="Active"/>
+        <property key="Support Status" value="TBC"/>
+        <property key="Criticality" value="TBC"/>
+        <property key="Technology Owner" value="IT Infrastructure"/>
+        <property key="Source Document / System" value="Drawio - Pinang Dana Talangan"/>
+        <property key="Source Reference" value="Sheet - Master Backup"/>
+        <property key="Status" value="Draft"/>
+        <property key="ArchiMate Element" value="Technology Service"/>
+        <property key="Catalog Source Row" value="24"/>
+      </element>
+      <element xsi:type="archimate:TechnologyService" name="Load Balancer" id="brtech013">
+        <documentation>Komponen yang mendistribusikan permintaan atau trafik ke layanan backend.</documentation>
+        <property key="Technology ID" value="TECH-013"/>
+        <property key="Technology Name" value="Load Balancer"/>
+        <property key="Object Classification" value="Network Infrastructure"/>
+        <property key="TOGAF TRM Service Category" value="Network Services"/>
+        <property key="TOGAF TRM Functional Service" value="Data Communication Services"/>
+        <property key="Technology Description" value="Komponen yang mendistribusikan permintaan atau trafik ke layanan backend."/>
+        <property key="Vendor" value="TBC"/>
+        <property key="Product" value="TBC"/>
+        <property key="Version" value="TBC"/>
+        <property key="Environment" value="Production"/>
+        <property key="Supported Application ID(s)" value="TBC"/>
+        <property key="Technology Service" value="Load Balancing Service"/>
+        <property key="Lifecycle Status" value="Active"/>
+        <property key="Support Status" value="TBC"/>
+        <property key="Criticality" value="TBC"/>
+        <property key="Technology Owner" value="IT Infrastructure"/>
+        <property key="Source Document / System" value="Drawio - Pinang Dana Talangan"/>
+        <property key="Source Reference" value="Sheet - Master Backup"/>
+        <property key="Status" value="Draft"/>
+        <property key="ArchiMate Element" value="Technology Service"/>
+        <property key="Catalog Source Row" value="20"/>
+      </element>
+      <element xsi:type="archimate:TechnologyService" name="Mongo DB Arbiter" id="brtech003">
+        <documentation>Komponen arbiter MongoDB yang mendukung mekanisme pemilihan primary pada replica set.</documentation>
+        <property key="Technology ID" value="TECH-003"/>
+        <property key="Technology Name" value="Mongo DB Arbiter"/>
+        <property key="Object Classification" value="Database Platform"/>
+        <property key="TOGAF TRM Service Category" value="Data Management Services"/>
+        <property key="TOGAF TRM Functional Service" value="Database Management System (DBMS) Services"/>
+        <property key="Technology Description" value="Komponen arbiter MongoDB yang mendukung mekanisme pemilihan primary pada replica set."/>
+        <property key="Vendor" value="MongoDB, inc"/>
+        <property key="Product" value="MongoDB"/>
+        <property key="Version" value="TBC"/>
+        <property key="Environment" value="Production"/>
+        <property key="Supported Application ID(s)" value="APP-031"/>
+        <property key="Technology Service" value="Database High Availability Support"/>
+        <property key="Lifecycle Status" value="Active"/>
+        <property key="Support Status" value="TBC"/>
+        <property key="Criticality" value="TBC"/>
+        <property key="Technology Owner" value="IT Infrastructure"/>
+        <property key="Source Document / System" value="Drawio - Pinang Dana Talangan"/>
+        <property key="Source Reference" value="Sheet - Master Backup"/>
+        <property key="Status" value="Draft"/>
+        <property key="ArchiMate Element" value="Technology Service"/>
+        <property key="Catalog Source Row" value="10"/>
+      </element>
+      <element xsi:type="archimate:TechnologyService" name="Mongo DB Auth – HA 1" id="brtech001">
+        <documentation>Instance MongoDB dalam konfigurasi high availability untuk mendukung penyimpanan data autentikasi.</documentation>
+        <property key="Technology ID" value="TECH-001"/>
+        <property key="Technology Name" value="Mongo DB Auth – HA 1"/>
+        <property key="Object Classification" value="Database Platform"/>
+        <property key="TOGAF TRM Service Category" value="Data Management Services"/>
+        <property key="TOGAF TRM Functional Service" value="Database Management System (DBMS) Services"/>
+        <property key="Technology Description" value="Instance MongoDB dalam konfigurasi high availability untuk mendukung penyimpanan data autentikasi."/>
+        <property key="Vendor" value="MongoDB, inc"/>
+        <property key="Product" value="MongoDB"/>
+        <property key="Version" value="TBC"/>
+        <property key="Environment" value="Production"/>
+        <property key="Supported Application ID(s)" value="APP-031"/>
+        <property key="Technology Service" value="Authentication Data Storage Service"/>
+        <property key="Lifecycle Status" value="Active"/>
+        <property key="Support Status" value="TBC"/>
+        <property key="Criticality" value="TBC"/>
+        <property key="Technology Owner" value="IT Infrastructure"/>
+        <property key="Source Document / System" value="Drawio - Pinang Dana Talangan"/>
+        <property key="Source Reference" value="Sheet - Master Backup"/>
+        <property key="Status" value="Draft"/>
+        <property key="ArchiMate Element" value="Technology Service"/>
+        <property key="Catalog Source Row" value="8"/>
+      </element>
+      <element xsi:type="archimate:TechnologyService" name="Mongo DB Auth – HA 2" id="brtech002">
+        <documentation>Instance MongoDB dalam konfigurasi high availability untuk mendukung penyimpanan data autentikasi.</documentation>
+        <property key="Technology ID" value="TECH-002"/>
+        <property key="Technology Name" value="Mongo DB Auth – HA 2"/>
+        <property key="Object Classification" value="Database Platform"/>
+        <property key="TOGAF TRM Service Category" value="Data Management Services"/>
+        <property key="TOGAF TRM Functional Service" value="Database Management System (DBMS) Services"/>
+        <property key="Technology Description" value="Instance MongoDB dalam konfigurasi high availability untuk mendukung penyimpanan data autentikasi."/>
+        <property key="Vendor" value="MongoDB, inc"/>
+        <property key="Product" value="MongoDB"/>
+        <property key="Version" value="TBC"/>
+        <property key="Environment" value="Production"/>
+        <property key="Supported Application ID(s)" value="APP-031"/>
+        <property key="Technology Service" value="Authentication Data Storage Service"/>
+        <property key="Lifecycle Status" value="Active"/>
+        <property key="Support Status" value="TBC"/>
+        <property key="Criticality" value="TBC"/>
+        <property key="Technology Owner" value="IT Infrastructure"/>
+        <property key="Source Document / System" value="Drawio - Pinang Dana Talangan"/>
+        <property key="Source Reference" value="Sheet - Master Backup"/>
+        <property key="Status" value="Draft"/>
+        <property key="ArchiMate Element" value="Technology Service"/>
+        <property key="Catalog Source Row" value="9"/>
+      </element>
+      <element xsi:type="archimate:TechnologyService" name="Mount NFS Pinang" id="brtech012">
+        <documentation>Layanan akses file melalui Network File System untuk mendukung aplikasi Pinang.</documentation>
+        <property key="Technology ID" value="TECH-012"/>
+        <property key="Technology Name" value="Mount NFS Pinang"/>
+        <property key="Object Classification" value="Storage Infrastructure"/>
+        <property key="TOGAF TRM Service Category" value="Network Services"/>
+        <property key="TOGAF TRM Functional Service" value="Distributed File Services"/>
+        <property key="Technology Description" value="Layanan akses file melalui Network File System untuk mendukung aplikasi Pinang."/>
+        <property key="Vendor" value="TBC"/>
+        <property key="Product" value="NFS"/>
+        <property key="Version" value="TBC"/>
+        <property key="Environment" value="Production"/>
+        <property key="Supported Application ID(s)" value="APP-001"/>
+        <property key="Technology Service" value="Network File Sharing Service"/>
+        <property key="Lifecycle Status" value="Active"/>
+        <property key="Support Status" value="TBC"/>
+        <property key="Criticality" value="TBC"/>
+        <property key="Technology Owner" value="IT Infrastructure"/>
+        <property key="Source Document / System" value="Drawio - Pinang Dana Talangan"/>
+        <property key="Source Reference" value="Sheet - Master Backup"/>
+        <property key="Status" value="Draft"/>
+        <property key="ArchiMate Element" value="Technology Service"/>
+        <property key="Catalog Source Row" value="19"/>
+      </element>
+      <element xsi:type="archimate:TechnologyService" name="Redis Auth" id="brtech011">
+        <documentation>Platform Redis yang mendukung layanan autentikasi.</documentation>
+        <property key="Technology ID" value="TECH-011"/>
+        <property key="Technology Name" value="Redis Auth"/>
+        <property key="Object Classification" value="In-Memory Data Platform"/>
+        <property key="TOGAF TRM Service Category" value="Data Management Services"/>
+        <property key="TOGAF TRM Functional Service" value="Database Management System (DBMS) Services"/>
+        <property key="Technology Description" value="Platform Redis yang mendukung layanan autentikasi."/>
+        <property key="Vendor" value="Redis Ltd. / Redis Open Source"/>
+        <property key="Product" value="Redis"/>
+        <property key="Version" value="TBC"/>
+        <property key="Environment" value="Production"/>
+        <property key="Supported Application ID(s)" value="APP-031"/>
+        <property key="Technology Service" value="Authentication In-Memory Data Service"/>
+        <property key="Lifecycle Status" value="Active"/>
+        <property key="Support Status" value="TBC"/>
+        <property key="Criticality" value="TBC"/>
+        <property key="Technology Owner" value="IT Infrastructure"/>
+        <property key="Source Document / System" value="Drawio - Pinang Dana Talangan"/>
+        <property key="Source Reference" value="Sheet - Master Backup"/>
+        <property key="Status" value="Draft"/>
+        <property key="ArchiMate Element" value="Technology Service"/>
+        <property key="Catalog Source Row" value="18"/>
+      </element>
+      <element xsi:type="archimate:TechnologyService" name="Redis OCH – Instance 1" id="brtech009">
+        <documentation>Instance Redis yang digunakan oleh ekosistem OCH; fungsi cache/session perlu dikonfirmasi.</documentation>
+        <property key="Technology ID" value="TECH-009"/>
+        <property key="Technology Name" value="Redis OCH – Instance 1"/>
+        <property key="Object Classification" value="In-Memory Data Platform"/>
+        <property key="TOGAF TRM Service Category" value="Data Management Services"/>
+        <property key="TOGAF TRM Functional Service" value="Database Management System (DBMS) Services"/>
+        <property key="Technology Description" value="Instance Redis yang digunakan oleh ekosistem OCH; fungsi cache/session perlu dikonfirmasi."/>
+        <property key="Vendor" value="Redis Ltd. / Redis Open Source"/>
+        <property key="Product" value="Redis"/>
+        <property key="Version" value="TBC"/>
+        <property key="Environment" value="Production"/>
+        <property key="Supported Application ID(s)" value="APP-026"/>
+        <property key="Technology Service" value="In-Memory Data Service"/>
+        <property key="Lifecycle Status" value="Active"/>
+        <property key="Support Status" value="TBC"/>
+        <property key="Criticality" value="TBC"/>
+        <property key="Technology Owner" value="IT Infrastructure"/>
+        <property key="Source Document / System" value="Drawio - Pinang Dana Talangan"/>
+        <property key="Source Reference" value="Sheet - Master Backup"/>
+        <property key="Status" value="Draft"/>
+        <property key="ArchiMate Element" value="Technology Service"/>
+        <property key="Catalog Source Row" value="16"/>
+      </element>
+      <element xsi:type="archimate:TechnologyService" name="Redis OCH – Instance 2" id="brtech010">
+        <documentation>Instance Redis kedua dalam ekosistem OCH.</documentation>
+        <property key="Technology ID" value="TECH-010"/>
+        <property key="Technology Name" value="Redis OCH – Instance 2"/>
+        <property key="Object Classification" value="In-Memory Data Platform"/>
+        <property key="TOGAF TRM Service Category" value="Data Management Services"/>
+        <property key="TOGAF TRM Functional Service" value="Database Management System (DBMS) Services"/>
+        <property key="Technology Description" value="Instance Redis kedua dalam ekosistem OCH."/>
+        <property key="Vendor" value="Redis Ltd. / Redis Open Source"/>
+        <property key="Product" value="Redis"/>
+        <property key="Version" value="TBC"/>
+        <property key="Environment" value="Production"/>
+        <property key="Supported Application ID(s)" value="APP-026"/>
+        <property key="Technology Service" value="In-Memory Data Service"/>
+        <property key="Lifecycle Status" value="Active"/>
+        <property key="Support Status" value="TBC"/>
+        <property key="Criticality" value="TBC"/>
+        <property key="Technology Owner" value="IT Infrastructure"/>
+        <property key="Source Document / System" value="Drawio - Pinang Dana Talangan"/>
+        <property key="Source Reference" value="Sheet - Master Backup"/>
+        <property key="Status" value="Draft"/>
+        <property key="ArchiMate Element" value="Technology Service"/>
+        <property key="Catalog Source Row" value="17"/>
+      </element>
+      <element xsi:type="archimate:TechnologyService" name="Service Airflow EDM" id="brtech018">
+        <documentation>Platform penjadwalan dan orkestrasi workflow atau job.</documentation>
+        <property key="Technology ID" value="TECH-018"/>
+        <property key="Technology Name" value="Service Airflow EDM"/>
+        <property key="Object Classification" value="Workflow Orchestration Platform"/>
+        <property key="TOGAF TRM Service Category" value="System and Network Management Services"/>
+        <property key="TOGAF TRM Functional Service" value="Configuration Management (CM) Services"/>
+        <property key="Technology Description" value="Platform penjadwalan dan orkestrasi workflow atau job."/>
+        <property key="Vendor" value="Apache Software Foundation"/>
+        <property key="Product" value="Apache Airflow"/>
+        <property key="Version" value="TBC"/>
+        <property key="Environment" value="Production"/>
+        <property key="Supported Application ID(s)" value="TBC"/>
+        <property key="Technology Service" value="Workflow Orchestration and Scheduling Service"/>
+        <property key="Lifecycle Status" value="Active"/>
+        <property key="Support Status" value="TBC"/>
+        <property key="Criticality" value="TBC"/>
+        <property key="Technology Owner" value="IT Infrastructure"/>
+        <property key="Source Document / System" value="Drawio - Pinang Dana Talangan"/>
+        <property key="Source Reference" value="Sheet - Master Backup"/>
+        <property key="Status" value="Draft"/>
+        <property key="ArchiMate Element" value="Technology Service"/>
+        <property key="Catalog Source Row" value="25"/>
+      </element>
+      <element xsi:type="archimate:TechnologyService" name="Service Apigee" id="brtech015">
+        <documentation>Platform pengelolaan dan penyampaian layanan API.</documentation>
+        <property key="Technology ID" value="TECH-015"/>
+        <property key="Technology Name" value="Service Apigee"/>
+        <property key="Object Classification" value="API Management Platform"/>
+        <property key="TOGAF TRM Service Category" value="Network Services"/>
+        <property key="TOGAF TRM Functional Service" value="Data Communication Services"/>
+        <property key="Technology Description" value="Platform pengelolaan dan penyampaian layanan API."/>
+        <property key="Vendor" value="Google Cloud"/>
+        <property key="Product" value="Apigee"/>
+        <property key="Version" value="TBC"/>
+        <property key="Environment" value="Production"/>
+        <property key="Supported Application ID(s)" value="APP-018"/>
+        <property key="Technology Service" value="API Gateway and Management Service"/>
+        <property key="Lifecycle Status" value="Active"/>
+        <property key="Support Status" value="TBC"/>
+        <property key="Criticality" value="TBC"/>
+        <property key="Technology Owner" value="IT Infrastructure"/>
+        <property key="Source Document / System" value="Drawio - Pinang Dana Talangan"/>
+        <property key="Source Reference" value="Sheet - Master Backup"/>
+        <property key="Status" value="Draft"/>
+        <property key="ArchiMate Element" value="Technology Service"/>
+        <property key="Catalog Source Row" value="22"/>
+      </element>
+      <element xsi:type="archimate:TechnologyService" name="Service Keycloack" id="brtech014">
+        <documentation>Platform layanan autentikasi dan pengelolaan identitas.</documentation>
+        <property key="Technology ID" value="TECH-014"/>
+        <property key="Technology Name" value="Service Keycloack"/>
+        <property key="Object Classification" value="Identity &amp; Access Platform"/>
+        <property key="TOGAF TRM Service Category" value="Security Services"/>
+        <property key="TOGAF TRM Functional Service" value="Identification and Authentication Services"/>
+        <property key="Technology Description" value="Platform layanan autentikasi dan pengelolaan identitas."/>
+        <property key="Vendor" value="Keycloack"/>
+        <property key="Product" value="Keycloack"/>
+        <property key="Version" value="TBC"/>
+        <property key="Environment" value="Production"/>
+        <property key="Supported Application ID(s)" value="APP-035"/>
+        <property key="Technology Service" value="Identity and Access Management Service"/>
+        <property key="Lifecycle Status" value="Active"/>
+        <property key="Support Status" value="TBC"/>
+        <property key="Criticality" value="TBC"/>
+        <property key="Technology Owner" value="IT Infrastructure"/>
+        <property key="Source Document / System" value="Drawio - Pinang Dana Talangan"/>
+        <property key="Source Reference" value="Sheet - Master Backup"/>
+        <property key="Status" value="Draft"/>
+        <property key="ArchiMate Element" value="Technology Service"/>
+        <property key="Catalog Source Row" value="21"/>
+      </element>
+      <element xsi:type="archimate:TechnologyService" name="Service Pinang OCH Go Cronjob (Kube Cronjob)" id="brtech019">
+        <documentation>Mekanisme penjadwalan job dalam lingkungan Kubernetes.</documentation>
+        <property key="Technology ID" value="TECH-019"/>
+        <property key="Technology Name" value="Service Pinang OCH Go Cronjob (Kube Cronjob)"/>
+        <property key="Object Classification" value="Container Scheduling Platform"/>
+        <property key="TOGAF TRM Service Category" value="Operating System Services"/>
+        <property key="TOGAF TRM Functional Service" value="Batch Processing System"/>
+        <property key="Technology Description" value="Mekanisme penjadwalan job dalam lingkungan Kubernetes."/>
+        <property key="Vendor" value="CNCF / Kubernetes ecosystem"/>
+        <property key="Product" value="Kubernetes CronJob"/>
+        <property key="Version" value="TBC"/>
+        <property key="Environment" value="Production"/>
+        <property key="Supported Application ID(s)" value="APP-026"/>
+        <property key="Technology Service" value="Scheduled Job Execution Service"/>
+        <property key="Lifecycle Status" value="Active"/>
+        <property key="Support Status" value="TBC"/>
+        <property key="Criticality" value="TBC"/>
+        <property key="Technology Owner" value="IT Infrastructure"/>
+        <property key="Source Document / System" value="Drawio - Pinang Dana Talangan"/>
+        <property key="Source Reference" value="Sheet - Master Backup"/>
+        <property key="Status" value="Draft"/>
+        <property key="ArchiMate Element" value="Technology Service"/>
+        <property key="Catalog Source Row" value="26"/>
+      </element>
+    </folder>
+  </folder>
   <folder name="Motivation" id="id-b496a8d99312435faff6416419d72190" type="motivation"/>
   <folder name="Implementation &amp; Migration" id="id-51abbd9d6018449f8250e95a176106ce" type="implementation_migration"/>
   <folder name="Other" id="id-365c3907cacd4527b1dcdf3ff6dd9b60" type="other"/>
@@ -2485,5 +4069,326 @@
     <element xsi:type="archimate:ArchimateDiagramModel" name="BA_02_Business Process" id="id-8d6b60a15f3349a9a1f0768ef69a3bc7"/>
     <element xsi:type="archimate:ArchimateDiagramModel" name="BA_03_Business Capabilities" id="id-333b416e977d403ea7b093e4df388077"/>
     <element xsi:type="archimate:ArchimateDiagramModel" name="BA_04_Business Services" id="id-b3cdecc53c1d43da9a81fa182d3fc956"/>
+    <element xsi:type="archimate:ArchimateDiagramModel" name="BA_01_Organization Structure_AUTO_PILOT" id="id-6e6cd05bc70141eda2d952e3470cc7a4">
+      <child xsi:type="archimate:DiagramObject" id="id-77c51c9dfa644957b5daa60727298237" archimateElement="bract001">
+        <bounds x="7003" y="60" width="230" height="70"/>
+        <sourceConnection xsi:type="archimate:Connection" id="id-df86295d8a054eabaf8079e5306445a2" source="id-77c51c9dfa644957b5daa60727298237" target="id-1566619f3f344fbaa82a17b7ec0d1342" archimateRelationship="br2026comp024"/>
+        <sourceConnection xsi:type="archimate:Connection" id="id-03610a3a5c34470db1cc4fd76c74535c" source="id-77c51c9dfa644957b5daa60727298237" target="id-d6ee3732c43c4085b0778f5bb8b2a640" archimateRelationship="br2026comp053"/>
+        <sourceConnection xsi:type="archimate:Connection" id="id-f74f363064334d2eaba55f71ee943687" source="id-77c51c9dfa644957b5daa60727298237" target="id-38875cfa932a4babb992ae36900d43e8" archimateRelationship="br2026comp044"/>
+        <sourceConnection xsi:type="archimate:Connection" id="id-84732fcafa38496abe330953e01b4e11" source="id-77c51c9dfa644957b5daa60727298237" target="id-61b3a144ea7146da8f81641533030f15" archimateRelationship="br2026comp035"/>
+        <sourceConnection xsi:type="archimate:Connection" id="id-2ae7a649c3db439fab8d26728bad8dd6" source="id-77c51c9dfa644957b5daa60727298237" target="id-d71be0ca1e6540a08e8a1433a313c6b1" archimateRelationship="br2026comp047"/>
+        <sourceConnection xsi:type="archimate:Connection" id="id-5eac262bb0ec4e9dab130175141219f4" source="id-77c51c9dfa644957b5daa60727298237" target="id-84a285e25939423bbb71fcd7e756c8d2" archimateRelationship="br2026comp045"/>
+        <sourceConnection xsi:type="archimate:Connection" id="id-30afe59d9c28455aa9d30cde33bc70a5" source="id-77c51c9dfa644957b5daa60727298237" target="id-284fb67c09834e29b1c47c8765c1c9a6" archimateRelationship="br2026comp009"/>
+        <sourceConnection xsi:type="archimate:Connection" id="id-7000ee30d3354124a7d13cad9e196892" source="id-77c51c9dfa644957b5daa60727298237" target="id-25bcb3ef0a744e1fa474538512146989" archimateRelationship="br2026comp028"/>
+        <sourceConnection xsi:type="archimate:Connection" id="id-cba13a2c1ee94e5ea0bc38c7ea6aeeef" source="id-77c51c9dfa644957b5daa60727298237" target="id-d6c5b1592ecd405385dff5d8a838749f" archimateRelationship="br2026comp014"/>
+        <sourceConnection xsi:type="archimate:Connection" id="id-ce9cd18e89e94e268f86bda7ac8f84fd" source="id-77c51c9dfa644957b5daa60727298237" target="id-4ba2980587bc4a87b39605107a90b25b" archimateRelationship="br2026comp049"/>
+        <sourceConnection xsi:type="archimate:Connection" id="id-5a9d2439bba04d3bbf92975df8667fc3" source="id-77c51c9dfa644957b5daa60727298237" target="id-277011502e5149aaa946c819a2bb6776" archimateRelationship="br2026comp030"/>
+        <sourceConnection xsi:type="archimate:Connection" id="id-3d237af1785340d18b9b4072eee05d56" source="id-77c51c9dfa644957b5daa60727298237" target="id-0ed3f707c62f4553a3bbe045e6d8dabb" archimateRelationship="br2026comp048"/>
+        <sourceConnection xsi:type="archimate:Connection" id="id-9756c58080c043378aca3692feff5594" source="id-77c51c9dfa644957b5daa60727298237" target="id-1dc63d8608b249f9bf4c082f43943aee" archimateRelationship="br2026comp011"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="id-1566619f3f344fbaa82a17b7ec0d1342" targetConnections="id-df86295d8a054eabaf8079e5306445a2" archimateElement="bract024">
+        <bounds x="60" y="235" width="230" height="70"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="id-d6ee3732c43c4085b0778f5bb8b2a640" targetConnections="id-03610a3a5c34470db1cc4fd76c74535c" archimateElement="bract053">
+        <bounds x="453" y="235" width="230" height="70"/>
+        <sourceConnection xsi:type="archimate:Connection" id="id-6d5ee1bd022949a69b0820d62c148f40" source="id-d6ee3732c43c4085b0778f5bb8b2a640" target="id-63c765b1076440d8b1bb80ceb05a1451" archimateRelationship="br2026comp160"/>
+        <sourceConnection xsi:type="archimate:Connection" id="id-08e082db23cb402181e7a855d0549edf" source="id-d6ee3732c43c4085b0778f5bb8b2a640" target="id-f0a7e23646a6439d8806ef615320a00e" archimateRelationship="br2026comp161"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="id-63c765b1076440d8b1bb80ceb05a1451" targetConnections="id-6d5ee1bd022949a69b0820d62c148f40" archimateElement="bract160">
+        <bounds x="322" y="410" width="230" height="70"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="id-f0a7e23646a6439d8806ef615320a00e" targetConnections="id-08e082db23cb402181e7a855d0549edf" archimateElement="bract161">
+        <bounds x="584" y="410" width="230" height="70"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="id-38875cfa932a4babb992ae36900d43e8" targetConnections="id-f74f363064334d2eaba55f71ee943687" archimateElement="bract044">
+        <bounds x="846" y="235" width="230" height="70"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="id-61b3a144ea7146da8f81641533030f15" targetConnections="id-84732fcafa38496abe330953e01b4e11" archimateElement="bract035">
+        <bounds x="1894" y="235" width="230" height="70"/>
+        <sourceConnection xsi:type="archimate:Connection" id="id-3a493c3dda1945c9ad69f9b270fcfcff" source="id-61b3a144ea7146da8f81641533030f15" target="id-7fe39357abbf4554a992986033b32632" archimateRelationship="br2026comp146"/>
+        <sourceConnection xsi:type="archimate:Connection" id="id-a6dbd1d3ca2e4ad58f7ddd3d90ae5dbe" source="id-61b3a144ea7146da8f81641533030f15" target="id-d7c4974a3ace40c88cf025209c812175" archimateRelationship="br2026comp147"/>
+        <sourceConnection xsi:type="archimate:Connection" id="id-4b78124584d3494a9a6ef36a9195631c" source="id-61b3a144ea7146da8f81641533030f15" target="id-8bd1c8f0234a4af2a7cade9cfd900184" archimateRelationship="br2026comp036"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="id-7fe39357abbf4554a992986033b32632" targetConnections="id-3a493c3dda1945c9ad69f9b270fcfcff" archimateElement="bract146">
+        <bounds x="1108" y="410" width="230" height="70"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="id-d7c4974a3ace40c88cf025209c812175" targetConnections="id-a6dbd1d3ca2e4ad58f7ddd3d90ae5dbe" archimateElement="bract147">
+        <bounds x="1370" y="410" width="230" height="70"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="id-8bd1c8f0234a4af2a7cade9cfd900184" targetConnections="id-4b78124584d3494a9a6ef36a9195631c" archimateElement="bract036">
+        <bounds x="2156" y="410" width="230" height="70"/>
+        <sourceConnection xsi:type="archimate:Connection" id="id-8277b7ec44c540b694d4981a18169ed5" source="id-8bd1c8f0234a4af2a7cade9cfd900184" target="id-b11faf17ad6244e995fff032f7052296" archimateRelationship="br2026comp037"/>
+        <sourceConnection xsi:type="archimate:Connection" id="id-9962496d2753461b82743ef19edcc06b" source="id-8bd1c8f0234a4af2a7cade9cfd900184" target="id-476eca187b7b4818bb289f936ed42dfe" archimateRelationship="br2026comp150"/>
+        <sourceConnection xsi:type="archimate:Connection" id="id-f8808864b5c74890a5ba9c51b174ce64" source="id-8bd1c8f0234a4af2a7cade9cfd900184" target="id-71b95f48a0444cf2b909059e12859781" archimateRelationship="br2026comp148"/>
+        <sourceConnection xsi:type="archimate:Connection" id="id-aae0a5f0058b40c08ad4918cd2592497" source="id-8bd1c8f0234a4af2a7cade9cfd900184" target="id-5f179634ef654403a2f2a091e9b04f43" archimateRelationship="br2026comp149"/>
+        <sourceConnection xsi:type="archimate:Connection" id="id-6d9dc7edafbf4884b2be3df1f0534400" source="id-8bd1c8f0234a4af2a7cade9cfd900184" target="id-1a3ce598494b4e6fbd6d43ddd5daf268" archimateRelationship="br2026comp151"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="id-b11faf17ad6244e995fff032f7052296" targetConnections="id-8277b7ec44c540b694d4981a18169ed5" archimateElement="bract037">
+        <bounds x="1632" y="585" width="230" height="70"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="id-476eca187b7b4818bb289f936ed42dfe" targetConnections="id-9962496d2753461b82743ef19edcc06b" archimateElement="bract150">
+        <bounds x="1894" y="585" width="230" height="70"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="id-71b95f48a0444cf2b909059e12859781" targetConnections="id-f8808864b5c74890a5ba9c51b174ce64" archimateElement="bract148">
+        <bounds x="2156" y="585" width="230" height="70"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="id-5f179634ef654403a2f2a091e9b04f43" targetConnections="id-aae0a5f0058b40c08ad4918cd2592497" archimateElement="bract149">
+        <bounds x="2418" y="585" width="230" height="70"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="id-1a3ce598494b4e6fbd6d43ddd5daf268" targetConnections="id-6d9dc7edafbf4884b2be3df1f0534400" archimateElement="bract151">
+        <bounds x="2680" y="585" width="230" height="70"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="id-d71be0ca1e6540a08e8a1433a313c6b1" targetConnections="id-2ae7a649c3db439fab8d26728bad8dd6" archimateElement="bract047">
+        <bounds x="3466" y="235" width="230" height="70"/>
+        <sourceConnection xsi:type="archimate:Connection" id="id-c83b15c627b9495ba6c38bf07c7c32f2" source="id-d71be0ca1e6540a08e8a1433a313c6b1" target="id-e0268012c97c4a198d03561c7d1153d2" archimateRelationship="br2026comp158"/>
+        <sourceConnection xsi:type="archimate:Connection" id="id-63a1aed942b44a18be1eea8ee4f84671" source="id-d71be0ca1e6540a08e8a1433a313c6b1" target="id-ad23b77582574822a7cd6b2569e3c3bb" archimateRelationship="br2026comp155"/>
+        <sourceConnection xsi:type="archimate:Connection" id="id-12207519d33b4ffca76fad868fe4d58d" source="id-d71be0ca1e6540a08e8a1433a313c6b1" target="id-1e86a30124c041f0a6e22b5e8f4a0060" archimateRelationship="br2026comp152"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="id-e0268012c97c4a198d03561c7d1153d2" targetConnections="id-c83b15c627b9495ba6c38bf07c7c32f2" archimateElement="bract158">
+        <bounds x="2942" y="410" width="230" height="70"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="id-ad23b77582574822a7cd6b2569e3c3bb" targetConnections="id-63a1aed942b44a18be1eea8ee4f84671" archimateElement="bract155">
+        <bounds x="3335" y="410" width="230" height="70"/>
+        <sourceConnection xsi:type="archimate:Connection" id="id-bdc8a07dfcd34107ae992b03baad0d0d" source="id-ad23b77582574822a7cd6b2569e3c3bb" target="id-6e739d41c2b349fbb2de869f8082f22c" archimateRelationship="br2026comp156"/>
+        <sourceConnection xsi:type="archimate:Connection" id="id-a58d00e5812b4acca059f965552a969c" source="id-ad23b77582574822a7cd6b2569e3c3bb" target="id-9d1304d7e24e46e4b0387e20349bb7bd" archimateRelationship="br2026comp157"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="id-6e739d41c2b349fbb2de869f8082f22c" targetConnections="id-bdc8a07dfcd34107ae992b03baad0d0d" archimateElement="bract156">
+        <bounds x="3204" y="585" width="230" height="70"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="id-9d1304d7e24e46e4b0387e20349bb7bd" targetConnections="id-a58d00e5812b4acca059f965552a969c" archimateElement="bract157">
+        <bounds x="3466" y="585" width="230" height="70"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="id-1e86a30124c041f0a6e22b5e8f4a0060" targetConnections="id-12207519d33b4ffca76fad868fe4d58d" archimateElement="bract152">
+        <bounds x="3859" y="410" width="230" height="70"/>
+        <sourceConnection xsi:type="archimate:Connection" id="id-cdb46269de8f464ba4549b98dafcf53d" source="id-1e86a30124c041f0a6e22b5e8f4a0060" target="id-d3168413338042a8aa285125b80d1d58" archimateRelationship="br2026comp154"/>
+        <sourceConnection xsi:type="archimate:Connection" id="id-052865e3c42346a39664acc56a89e68b" source="id-1e86a30124c041f0a6e22b5e8f4a0060" target="id-6d7be48aa27d42da997d5d6a5e2fd699" archimateRelationship="br2026comp153"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="id-d3168413338042a8aa285125b80d1d58" targetConnections="id-cdb46269de8f464ba4549b98dafcf53d" archimateElement="bract154">
+        <bounds x="3728" y="585" width="230" height="70"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="id-6d7be48aa27d42da997d5d6a5e2fd699" targetConnections="id-052865e3c42346a39664acc56a89e68b" archimateElement="bract153">
+        <bounds x="3990" y="585" width="230" height="70"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="id-84a285e25939423bbb71fcd7e756c8d2" targetConnections="id-5eac262bb0ec4e9dab130175141219f4" archimateElement="bract045">
+        <bounds x="4776" y="235" width="230" height="70"/>
+        <sourceConnection xsi:type="archimate:Connection" id="id-e62326fc90e74ee6a6509b78f5f457cb" source="id-84a285e25939423bbb71fcd7e756c8d2" target="id-5a6575a9e36e49a1ae45922f8e048bd5" archimateRelationship="br2026comp069"/>
+        <sourceConnection xsi:type="archimate:Connection" id="id-21f71bcdaed64591a1b7710b626b8080" source="id-84a285e25939423bbb71fcd7e756c8d2" target="id-be7f6a784fb940669141c3ad3839875b" archimateRelationship="br2026comp065"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="id-5a6575a9e36e49a1ae45922f8e048bd5" targetConnections="id-e62326fc90e74ee6a6509b78f5f457cb" archimateElement="bract069">
+        <bounds x="4383" y="410" width="230" height="70"/>
+        <sourceConnection xsi:type="archimate:Connection" id="id-51e21ce54b0041f0977b91c8eadd55d4" source="id-5a6575a9e36e49a1ae45922f8e048bd5" target="id-f59532740bd74c1eaaae4e3fe807f36e" archimateRelationship="br2026comp070"/>
+        <sourceConnection xsi:type="archimate:Connection" id="id-1779cdee3db748528a0fc92fe239e10b" source="id-5a6575a9e36e49a1ae45922f8e048bd5" target="id-3cbc951e80484cd1aaa1a10d385c05b9" archimateRelationship="br2026comp071"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="id-f59532740bd74c1eaaae4e3fe807f36e" targetConnections="id-51e21ce54b0041f0977b91c8eadd55d4" archimateElement="bract070">
+        <bounds x="4252" y="585" width="230" height="70"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="id-3cbc951e80484cd1aaa1a10d385c05b9" targetConnections="id-1779cdee3db748528a0fc92fe239e10b" archimateElement="bract071">
+        <bounds x="4514" y="585" width="230" height="70"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="id-be7f6a784fb940669141c3ad3839875b" targetConnections="id-21f71bcdaed64591a1b7710b626b8080" archimateElement="bract065">
+        <bounds x="5038" y="410" width="230" height="70"/>
+        <sourceConnection xsi:type="archimate:Connection" id="id-1d399b108d2c48eabda06ff3c9fb5121" source="id-be7f6a784fb940669141c3ad3839875b" target="id-98259854fc54482a9017c9b25f2d57cb" archimateRelationship="br2026comp066"/>
+        <sourceConnection xsi:type="archimate:Connection" id="id-22ccd3afe4b34d50b033fda730b781f9" source="id-be7f6a784fb940669141c3ad3839875b" target="id-305a951c38aa4e40a2c7e982878a34a6" archimateRelationship="br2026comp067"/>
+        <sourceConnection xsi:type="archimate:Connection" id="id-2a34cc9ab3904a93b13b62d537cceed4" source="id-be7f6a784fb940669141c3ad3839875b" target="id-6eb8f2f19b67420d9b4fc3a32d67b020" archimateRelationship="br2026comp068"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="id-98259854fc54482a9017c9b25f2d57cb" targetConnections="id-1d399b108d2c48eabda06ff3c9fb5121" archimateElement="bract066">
+        <bounds x="4776" y="585" width="230" height="70"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="id-305a951c38aa4e40a2c7e982878a34a6" targetConnections="id-22ccd3afe4b34d50b033fda730b781f9" archimateElement="bract067">
+        <bounds x="5038" y="585" width="230" height="70"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="id-6eb8f2f19b67420d9b4fc3a32d67b020" targetConnections="id-2a34cc9ab3904a93b13b62d537cceed4" archimateElement="bract068">
+        <bounds x="5300" y="585" width="230" height="70"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="id-284fb67c09834e29b1c47c8765c1c9a6" targetConnections="id-30afe59d9c28455aa9d30cde33bc70a5" archimateElement="bract009">
+        <bounds x="5824" y="235" width="230" height="70"/>
+        <sourceConnection xsi:type="archimate:Connection" id="id-fa16971ad46946a791c5aa89377643cd" source="id-284fb67c09834e29b1c47c8765c1c9a6" target="id-48a606c833984391a13669d1b4536969" archimateRelationship="br2026comp111"/>
+        <sourceConnection xsi:type="archimate:Connection" id="id-23c2fc043236477d9064a7a584c99539" source="id-284fb67c09834e29b1c47c8765c1c9a6" target="id-5c6c248b99e54537a19764b9fda50dc2" archimateRelationship="br2026comp112"/>
+        <sourceConnection xsi:type="archimate:Connection" id="id-304f15406f884ea6888987995dd0052c" source="id-284fb67c09834e29b1c47c8765c1c9a6" target="id-b3ec3c87fc69432ab73161217022a84b" archimateRelationship="br2026comp113"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="id-48a606c833984391a13669d1b4536969" targetConnections="id-fa16971ad46946a791c5aa89377643cd" archimateElement="bract111">
+        <bounds x="5562" y="410" width="230" height="70"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="id-5c6c248b99e54537a19764b9fda50dc2" targetConnections="id-23c2fc043236477d9064a7a584c99539" archimateElement="bract112">
+        <bounds x="5824" y="410" width="230" height="70"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="id-b3ec3c87fc69432ab73161217022a84b" targetConnections="id-304f15406f884ea6888987995dd0052c" archimateElement="bract113">
+        <bounds x="6086" y="410" width="230" height="70"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="id-25bcb3ef0a744e1fa474538512146989" targetConnections="id-7000ee30d3354124a7d13cad9e196892" archimateElement="bract028">
+        <bounds x="6741" y="235" width="230" height="70"/>
+        <sourceConnection xsi:type="archimate:Connection" id="id-ff484824848a4db9b47050b1b282fc29" source="id-25bcb3ef0a744e1fa474538512146989" target="id-2f88270ffe7144398c84d9653a1f52f6" archimateRelationship="br2026comp092"/>
+        <sourceConnection xsi:type="archimate:Connection" id="id-efd90f4a76f8443b992467e0fca741d0" source="id-25bcb3ef0a744e1fa474538512146989" target="id-0bd863ec8d694f65ad7f5ee70af1bad5" archimateRelationship="br2026comp094"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="id-2f88270ffe7144398c84d9653a1f52f6" targetConnections="id-ff484824848a4db9b47050b1b282fc29" archimateElement="bract092">
+        <bounds x="6348" y="410" width="230" height="70"/>
+        <sourceConnection xsi:type="archimate:Connection" id="id-fa2abb3ccb384ae3b64cb8800d1fa379" source="id-2f88270ffe7144398c84d9653a1f52f6" target="id-4281da80ec344daeb4474e758c2e04b1" archimateRelationship="br2026comp093"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="id-4281da80ec344daeb4474e758c2e04b1" targetConnections="id-fa2abb3ccb384ae3b64cb8800d1fa379" archimateElement="bract093">
+        <bounds x="6348" y="585" width="230" height="70"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="id-0bd863ec8d694f65ad7f5ee70af1bad5" targetConnections="id-efd90f4a76f8443b992467e0fca741d0" archimateElement="bract094">
+        <bounds x="6872" y="410" width="230" height="70"/>
+        <sourceConnection xsi:type="archimate:Connection" id="id-943e98484b184b4aaf47d22d2babec3a" source="id-0bd863ec8d694f65ad7f5ee70af1bad5" target="id-0be87e0b51db4a0c9fef0086517eadfb" archimateRelationship="br2026comp097"/>
+        <sourceConnection xsi:type="archimate:Connection" id="id-8d64839c62a84eba92a25d6d9142a4b9" source="id-0bd863ec8d694f65ad7f5ee70af1bad5" target="id-965d60fab74148bd8e9521f4d57ea322" archimateRelationship="br2026comp095"/>
+        <sourceConnection xsi:type="archimate:Connection" id="id-319c943f5e91407c9cba4e431c002f86" source="id-0bd863ec8d694f65ad7f5ee70af1bad5" target="id-397b3ab5a4d345858685adecbcee5022" archimateRelationship="br2026comp096"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="id-0be87e0b51db4a0c9fef0086517eadfb" targetConnections="id-943e98484b184b4aaf47d22d2babec3a" archimateElement="bract097">
+        <bounds x="6610" y="585" width="230" height="70"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="id-965d60fab74148bd8e9521f4d57ea322" targetConnections="id-8d64839c62a84eba92a25d6d9142a4b9" archimateElement="bract095">
+        <bounds x="6872" y="585" width="230" height="70"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="id-397b3ab5a4d345858685adecbcee5022" targetConnections="id-319c943f5e91407c9cba4e431c002f86" archimateElement="bract096">
+        <bounds x="7134" y="585" width="230" height="70"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="id-d6c5b1592ecd405385dff5d8a838749f" targetConnections="id-cba13a2c1ee94e5ea0bc38c7ea6aeeef" archimateElement="bract014">
+        <bounds x="7920" y="235" width="230" height="70"/>
+        <sourceConnection xsi:type="archimate:Connection" id="id-6476a30f71604f3abe6c9aaaaabf2f5b" source="id-d6c5b1592ecd405385dff5d8a838749f" target="id-99e6c265ed62466b831c212006336ad3" archimateRelationship="br2026comp018"/>
+        <sourceConnection xsi:type="archimate:Connection" id="id-bae6676ebfdb4f96b5c2be1109e7e89f" source="id-d6c5b1592ecd405385dff5d8a838749f" target="id-f405c09ae1ca425e8c27d598552b4a25" archimateRelationship="br2026comp017"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="id-99e6c265ed62466b831c212006336ad3" targetConnections="id-6476a30f71604f3abe6c9aaaaabf2f5b" archimateElement="bract018">
+        <bounds x="7527" y="410" width="230" height="70"/>
+        <sourceConnection xsi:type="archimate:Connection" id="id-962aea89c3b947bf9de5fcf7459338a7" source="id-99e6c265ed62466b831c212006336ad3" target="id-a91ee37c80074bdda3dcad30ff621587" archimateRelationship="br2026comp129"/>
+        <sourceConnection xsi:type="archimate:Connection" id="id-cd52e8a77da24a44a6b25b089743bbdc" source="id-99e6c265ed62466b831c212006336ad3" target="id-e8780e8ede1548e897f32c881bc41b7d" archimateRelationship="br2026comp025"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="id-a91ee37c80074bdda3dcad30ff621587" targetConnections="id-962aea89c3b947bf9de5fcf7459338a7" archimateElement="bract129">
+        <bounds x="7396" y="585" width="230" height="70"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="id-e8780e8ede1548e897f32c881bc41b7d" targetConnections="id-cd52e8a77da24a44a6b25b089743bbdc" archimateElement="bract025">
+        <bounds x="7658" y="585" width="230" height="70"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="id-f405c09ae1ca425e8c27d598552b4a25" targetConnections="id-bae6676ebfdb4f96b5c2be1109e7e89f" archimateElement="bract017">
+        <bounds x="8182" y="410" width="230" height="70"/>
+        <sourceConnection xsi:type="archimate:Connection" id="id-e00c6a3a7b4545b1b413c7ac89c56b38" source="id-f405c09ae1ca425e8c27d598552b4a25" target="id-207e847e4b264fa3821adb33cfd684a9" archimateRelationship="br2026comp019"/>
+        <sourceConnection xsi:type="archimate:Connection" id="id-808ee9672a094cca97741ab53e73616b" source="id-f405c09ae1ca425e8c27d598552b4a25" target="id-ce1c3224f1f94fc4bae01565c0693997" archimateRelationship="br2026comp021"/>
+        <sourceConnection xsi:type="archimate:Connection" id="id-f18f9371a2fd4615a53c6962331ae557" source="id-f405c09ae1ca425e8c27d598552b4a25" target="id-41770021377442bf8f85be5a0aac769e" archimateRelationship="br2026comp022"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="id-207e847e4b264fa3821adb33cfd684a9" targetConnections="id-e00c6a3a7b4545b1b413c7ac89c56b38" archimateElement="bract019">
+        <bounds x="7920" y="585" width="230" height="70"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="id-ce1c3224f1f94fc4bae01565c0693997" targetConnections="id-808ee9672a094cca97741ab53e73616b" archimateElement="bract021">
+        <bounds x="8182" y="585" width="230" height="70"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="id-41770021377442bf8f85be5a0aac769e" targetConnections="id-f18f9371a2fd4615a53c6962331ae557" archimateElement="bract022">
+        <bounds x="8444" y="585" width="230" height="70"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="id-4ba2980587bc4a87b39605107a90b25b" targetConnections="id-ce9cd18e89e94e268f86bda7ac8f84fd" archimateElement="bract049">
+        <bounds x="9230" y="235" width="230" height="70"/>
+        <sourceConnection xsi:type="archimate:Connection" id="id-2462beddcdfd4038b8c2d5ed46f0b7a1" source="id-4ba2980587bc4a87b39605107a90b25b" target="id-cf4f829552bf4c55854826e04753cc99" archimateRelationship="br2026comp131"/>
+        <sourceConnection xsi:type="archimate:Connection" id="id-3cd831aa6dd94a029e31dd83c3b0c175" source="id-4ba2980587bc4a87b39605107a90b25b" target="id-6232daa8d9844803bbb798dc892fe46f" archimateRelationship="br2026comp135"/>
+        <sourceConnection xsi:type="archimate:Connection" id="id-13c04bb4006f4751adc3306880b4fae4" source="id-4ba2980587bc4a87b39605107a90b25b" target="id-959f75d8a30d46e2b154ce99a4ff474a" archimateRelationship="br2026comp133"/>
+        <sourceConnection xsi:type="archimate:Connection" id="id-69102ff9953141dfadcea935086ba2e9" source="id-4ba2980587bc4a87b39605107a90b25b" target="id-8586e10cd5a94c31ba364b5a0a9fb3f7" archimateRelationship="br2026comp132"/>
+        <sourceConnection xsi:type="archimate:Connection" id="id-a69925e9d98c4041814d811d80563445" source="id-4ba2980587bc4a87b39605107a90b25b" target="id-478792644b7d4b68a3cb64f6cfe3f86d" archimateRelationship="br2026comp134"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="id-cf4f829552bf4c55854826e04753cc99" targetConnections="id-2462beddcdfd4038b8c2d5ed46f0b7a1" archimateElement="bract131">
+        <bounds x="8706" y="410" width="230" height="70"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="id-6232daa8d9844803bbb798dc892fe46f" targetConnections="id-3cd831aa6dd94a029e31dd83c3b0c175" archimateElement="bract135">
+        <bounds x="8968" y="410" width="230" height="70"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="id-959f75d8a30d46e2b154ce99a4ff474a" targetConnections="id-13c04bb4006f4751adc3306880b4fae4" archimateElement="bract133">
+        <bounds x="9230" y="410" width="230" height="70"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="id-8586e10cd5a94c31ba364b5a0a9fb3f7" targetConnections="id-69102ff9953141dfadcea935086ba2e9" archimateElement="bract132">
+        <bounds x="9492" y="410" width="230" height="70"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="id-478792644b7d4b68a3cb64f6cfe3f86d" targetConnections="id-a69925e9d98c4041814d811d80563445" archimateElement="bract134">
+        <bounds x="9754" y="410" width="230" height="70"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="id-277011502e5149aaa946c819a2bb6776" targetConnections="id-5a9d2439bba04d3bbf92975df8667fc3" archimateElement="bract030">
+        <bounds x="10540" y="235" width="230" height="70"/>
+        <sourceConnection xsi:type="archimate:Connection" id="id-4d14a2efc4824c958b53331ede1fd855" source="id-277011502e5149aaa946c819a2bb6776" target="id-c9b4e2dcafe840b0b77b457bec116f01" archimateRelationship="br2026comp038"/>
+        <sourceConnection xsi:type="archimate:Connection" id="id-4d8ac987dfa64b5c9e95705a15bdda03" source="id-277011502e5149aaa946c819a2bb6776" target="id-552dc3ba2ecd4046bc4b43fd148f4827" archimateRelationship="br2026comp117"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="id-c9b4e2dcafe840b0b77b457bec116f01" targetConnections="id-4d14a2efc4824c958b53331ede1fd855" archimateElement="bract038">
+        <bounds x="10147" y="410" width="230" height="70"/>
+        <sourceConnection xsi:type="archimate:Connection" id="id-b430e999d2f04f71b330fb9eb091e92f" source="id-c9b4e2dcafe840b0b77b457bec116f01" target="id-49c72ae33451487389bb212640bf6579" archimateRelationship="br2026comp115"/>
+        <sourceConnection xsi:type="archimate:Connection" id="id-9f0288a3806148f1a53e588d946c53f3" source="id-c9b4e2dcafe840b0b77b457bec116f01" target="id-54ec7556a1c84c148a985fd650cc07a0" archimateRelationship="br2026comp116"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="id-49c72ae33451487389bb212640bf6579" targetConnections="id-b430e999d2f04f71b330fb9eb091e92f" archimateElement="bract115">
+        <bounds x="10016" y="585" width="230" height="70"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="id-54ec7556a1c84c148a985fd650cc07a0" targetConnections="id-9f0288a3806148f1a53e588d946c53f3" archimateElement="bract116">
+        <bounds x="10278" y="585" width="230" height="70"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="id-552dc3ba2ecd4046bc4b43fd148f4827" targetConnections="id-4d8ac987dfa64b5c9e95705a15bdda03" archimateElement="bract117">
+        <bounds x="10802" y="410" width="230" height="70"/>
+        <sourceConnection xsi:type="archimate:Connection" id="id-b8ba30401c9f44148dfdf0991ede10a8" source="id-552dc3ba2ecd4046bc4b43fd148f4827" target="id-bb184e92ebff412f85557a4852463849" archimateRelationship="br2026comp120"/>
+        <sourceConnection xsi:type="archimate:Connection" id="id-010e61c59c7045458a24ea15095e065a" source="id-552dc3ba2ecd4046bc4b43fd148f4827" target="id-14a7f089b9734bef95f73846659538ca" archimateRelationship="br2026comp118"/>
+        <sourceConnection xsi:type="archimate:Connection" id="id-c6a3439d32b04124af12a1c9b36b14a5" source="id-552dc3ba2ecd4046bc4b43fd148f4827" target="id-88eb7047449d4b90a11a0caecfc2bed6" archimateRelationship="br2026comp119"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="id-bb184e92ebff412f85557a4852463849" targetConnections="id-b8ba30401c9f44148dfdf0991ede10a8" archimateElement="bract120">
+        <bounds x="10540" y="585" width="230" height="70"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="id-14a7f089b9734bef95f73846659538ca" targetConnections="id-010e61c59c7045458a24ea15095e065a" archimateElement="bract118">
+        <bounds x="10802" y="585" width="230" height="70"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="id-88eb7047449d4b90a11a0caecfc2bed6" targetConnections="id-c6a3439d32b04124af12a1c9b36b14a5" archimateElement="bract119">
+        <bounds x="11064" y="585" width="230" height="70"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="id-0ed3f707c62f4553a3bbe045e6d8dabb" targetConnections="id-3d237af1785340d18b9b4072eee05d56" archimateElement="bract048">
+        <bounds x="11981" y="235" width="230" height="70"/>
+        <sourceConnection xsi:type="archimate:Connection" id="id-36e930ead3334794931405bb744f3cfb" source="id-0ed3f707c62f4553a3bbe045e6d8dabb" target="id-426379256eb84145b73111ccb56c4ec2" archimateRelationship="br2026comp121"/>
+        <sourceConnection xsi:type="archimate:Connection" id="id-a90ea2c5007f45c4ab2aa37c056c4d25" source="id-0ed3f707c62f4553a3bbe045e6d8dabb" target="id-f54c66f8667e4e4197f6c13a86afe64c" archimateRelationship="br2026comp125"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="id-426379256eb84145b73111ccb56c4ec2" targetConnections="id-36e930ead3334794931405bb744f3cfb" archimateElement="bract121">
+        <bounds x="11588" y="410" width="230" height="70"/>
+        <sourceConnection xsi:type="archimate:Connection" id="id-cbee44490e0541b19c448085b241b789" source="id-426379256eb84145b73111ccb56c4ec2" target="id-da11f3bf6b1e40729bb47e8b5ac8ed60" archimateRelationship="br2026comp124"/>
+        <sourceConnection xsi:type="archimate:Connection" id="id-07ce63a2764d40f98f86822459c87899" source="id-426379256eb84145b73111ccb56c4ec2" target="id-929635517392491ca76786d98424ce6d" archimateRelationship="br2026comp122"/>
+        <sourceConnection xsi:type="archimate:Connection" id="id-30788eebc53844ba959f63b12bb1c72f" source="id-426379256eb84145b73111ccb56c4ec2" target="id-2d86d3d12d3b4d9facb7c8943109c661" archimateRelationship="br2026comp123"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="id-da11f3bf6b1e40729bb47e8b5ac8ed60" targetConnections="id-cbee44490e0541b19c448085b241b789" archimateElement="bract124">
+        <bounds x="11326" y="585" width="230" height="70"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="id-929635517392491ca76786d98424ce6d" targetConnections="id-07ce63a2764d40f98f86822459c87899" archimateElement="bract122">
+        <bounds x="11588" y="585" width="230" height="70"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="id-2d86d3d12d3b4d9facb7c8943109c661" targetConnections="id-30788eebc53844ba959f63b12bb1c72f" archimateElement="bract123">
+        <bounds x="11850" y="585" width="230" height="70"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="id-f54c66f8667e4e4197f6c13a86afe64c" targetConnections="id-a90ea2c5007f45c4ab2aa37c056c4d25" archimateElement="bract125">
+        <bounds x="12374" y="410" width="230" height="70"/>
+        <sourceConnection xsi:type="archimate:Connection" id="id-f5d932715bad446594fafaffa1ddce31" source="id-f54c66f8667e4e4197f6c13a86afe64c" target="id-4515b064b69e4e049f6952a4700f6552" archimateRelationship="br2026comp126"/>
+        <sourceConnection xsi:type="archimate:Connection" id="id-b0a6fdd70be74be4bb1f86db09e9ece9" source="id-f54c66f8667e4e4197f6c13a86afe64c" target="id-9390ff39a5e64cfca47f31078c8b6a24" archimateRelationship="br2026comp127"/>
+        <sourceConnection xsi:type="archimate:Connection" id="id-8e36c97a6cd14d0b9c8b8d165bd4c9c3" source="id-f54c66f8667e4e4197f6c13a86afe64c" target="id-badf41a7be4842e5ad3f056b03e42b94" archimateRelationship="br2026comp128"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="id-4515b064b69e4e049f6952a4700f6552" targetConnections="id-f5d932715bad446594fafaffa1ddce31" archimateElement="bract126">
+        <bounds x="12112" y="585" width="230" height="70"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="id-9390ff39a5e64cfca47f31078c8b6a24" targetConnections="id-b0a6fdd70be74be4bb1f86db09e9ece9" archimateElement="bract127">
+        <bounds x="12374" y="585" width="230" height="70"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="id-badf41a7be4842e5ad3f056b03e42b94" targetConnections="id-8e36c97a6cd14d0b9c8b8d165bd4c9c3" archimateElement="bract128">
+        <bounds x="12636" y="585" width="230" height="70"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="id-1dc63d8608b249f9bf4c082f43943aee" targetConnections="id-9756c58080c043378aca3692feff5594" archimateElement="bract011">
+        <bounds x="13422" y="235" width="230" height="70"/>
+        <sourceConnection xsi:type="archimate:Connection" id="id-e870c6087521440d8a9dcd38dad5420d" source="id-1dc63d8608b249f9bf4c082f43943aee" target="id-37927cb6d4f94b7f9c0d19a1e176965f" archimateRelationship="br2026comp166"/>
+        <sourceConnection xsi:type="archimate:Connection" id="id-5baaf674edab4765b81eba1a7769151f" source="id-1dc63d8608b249f9bf4c082f43943aee" target="id-7329b92cf0ee40d3b54be5e030b3fbd0" archimateRelationship="br2026comp167"/>
+        <sourceConnection xsi:type="archimate:Connection" id="id-084cccd749074299abb1044255a14490" source="id-1dc63d8608b249f9bf4c082f43943aee" target="id-3a04492922594c65be1ea87b9d2cad0e" archimateRelationship="br2026comp162"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="id-37927cb6d4f94b7f9c0d19a1e176965f" targetConnections="id-e870c6087521440d8a9dcd38dad5420d" archimateElement="bract166">
+        <bounds x="12898" y="410" width="230" height="70"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="id-7329b92cf0ee40d3b54be5e030b3fbd0" targetConnections="id-5baaf674edab4765b81eba1a7769151f" archimateElement="bract167">
+        <bounds x="13160" y="410" width="230" height="70"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="id-3a04492922594c65be1ea87b9d2cad0e" targetConnections="id-084cccd749074299abb1044255a14490" archimateElement="bract162">
+        <bounds x="13684" y="410" width="230" height="70"/>
+        <sourceConnection xsi:type="archimate:Connection" id="id-cb9263d1164545739bbdd76bb81f9eaf" source="id-3a04492922594c65be1ea87b9d2cad0e" target="id-c78f272620ca403492cf71460a79f7f5" archimateRelationship="br2026comp165"/>
+        <sourceConnection xsi:type="archimate:Connection" id="id-fa9041f94a4a4c90b01bfc1089074b2d" source="id-3a04492922594c65be1ea87b9d2cad0e" target="id-56bd8f328d0f49bca04bbcaf4327c280" archimateRelationship="br2026comp163"/>
+        <sourceConnection xsi:type="archimate:Connection" id="id-12bb7c3678ab44e3b101e647085e2952" source="id-3a04492922594c65be1ea87b9d2cad0e" target="id-b6dd29a4a51d4cb2b2a64f0641c39ab3" archimateRelationship="br2026comp164"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="id-c78f272620ca403492cf71460a79f7f5" targetConnections="id-cb9263d1164545739bbdd76bb81f9eaf" archimateElement="bract165">
+        <bounds x="13422" y="585" width="230" height="70"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="id-56bd8f328d0f49bca04bbcaf4327c280" targetConnections="id-fa9041f94a4a4c90b01bfc1089074b2d" archimateElement="bract163">
+        <bounds x="13684" y="585" width="230" height="70"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="id-b6dd29a4a51d4cb2b2a64f0641c39ab3" targetConnections="id-12bb7c3678ab44e3b101e647085e2952" archimateElement="bract164">
+        <bounds x="13946" y="585" width="230" height="70"/>
+      </child>
+    </element>
   </folder>
 </archimate:model>
